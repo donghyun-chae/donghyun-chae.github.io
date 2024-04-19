@@ -1,4 +1,5 @@
 ---
+weight: 4
 bookCollapseSection: true
-weight: 20
+title: "4. 반성"
 ---
