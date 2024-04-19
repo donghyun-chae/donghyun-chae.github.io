@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1. 문제 이해하기 on Dongle-log</title>
+    <link>https://donghyun-chae.github.io/docs/HowToSolveIt/KnowingProblem/</link>
+    <description>Recent content in 1. 문제 이해하기 on Dongle-log</description>
+    <generator>Hugo 0.125.0</generator>
+    <language>en</language>
+    <atom:link href="https://donghyun-chae.github.io/docs/HowToSolveIt/KnowingProblem/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>구하려는 것은 무엇인가?</title>
+      <link>https://donghyun-chae.github.io/docs/HowToSolveIt/KnowingProblem/eyeson/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donghyun-chae.github.io/docs/HowToSolveIt/KnowingProblem/eyeson/</guid>
+      <description>구하려는 것은 무엇인가? # 문제를 보며 구하려는것이 뭔지 스스로에게 질문해야 한다. # 추가적으로 자료와 조건에 대해서도 질문해야 한다.&#xA;이러한 맥락에서 질문을 약간 변형하는 것은 유용하다.&#xA;목적을 잊지 말아라. # 목적에 주의와 의지를 집중시키고 수단과 방법을 생각해라.&#xA;구하려는 것 살펴보기 # 구하려는 것이 같은 문제를 생각해보기 (ex 직선의 길이)&#xA;보조요소를 도입하면 구하려는게 같아지는지 생각해보기&#xA;구하려는 것을 통해 구하는 과정을 개연적으로 추측해보기&#xA;구하려는 것이 같은 문제가 없다면 유사한 문제 찾기&#xA;증명 문제는 같은 결론 갖는 것을 찾기</description>
+    </item>
+  </channel>
+</rss>
