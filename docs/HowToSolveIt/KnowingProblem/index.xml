@@ -8,11 +8,39 @@
     <language>en</language>
     <atom:link href="https://donghyun-chae.github.io/docs/HowToSolveIt/KnowingProblem/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>구하려는 것은 무엇인가?</title>
-      <link>https://donghyun-chae.github.io/docs/HowToSolveIt/KnowingProblem/eyeson/</link>
+      <title>구하려는 것이 뭐야?</title>
+      <link>https://donghyun-chae.github.io/docs/HowToSolveIt/KnowingProblem/whatisproblem/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donghyun-chae.github.io/docs/HowToSolveIt/KnowingProblem/eyeson/</guid>
-      <description>구하려는 것은 무엇인가? # 문제를 보며 구하려는것이 뭔지 스스로에게 질문해야 한다. # 추가적으로 자료와 조건에 대해서도 질문해야 한다.&#xA;이러한 맥락에서 질문을 약간 변형하는 것은 유용하다.&#xA;목적을 잊지 말아라. # 목적에 주의와 의지를 집중시키고 수단과 방법을 생각해라.&#xA;구하려는 것 살펴보기 # 구하려는 것이 같은 문제를 생각해보기 (ex 직선의 길이)&#xA;보조요소를 도입하면 구하려는게 같아지는지 생각해보기&#xA;구하려는 것을 통해 구하는 과정을 개연적으로 추측해보기&#xA;구하려는 것이 같은 문제가 없다면 유사한 문제 찾기&#xA;증명 문제는 같은 결론 갖는 것을 찾기</description>
+      <guid>https://donghyun-chae.github.io/docs/HowToSolveIt/KnowingProblem/whatisproblem/</guid>
+      <description>구하려는 것이 뭐야? # 문제를 보며 구하려는것이 뭔지 스스로에게 물어봐. # 구하려는 것이 무엇인지 부터 무엇이 주어져있고 어떤 조건이 있는지 같은 질문을 스스로에게 해봐.&#xA;이런 질문이 너가 문제에 대해 얼마나 이해했는지 알려줄꺼야.&#xA;문제에 따라서는 구하려는 것이 여러 개 있을 수 있고 조건을 따로 생각해야 할 수도 있고 경우가 다양해.&#xA;그니깐 질문을 조금 바꿔서 처음 자료는 뭐지? 두번째는? 문제에 따라서 질문을 변형해봐.&#xA;증명하는 문제에선 중요한 것이 가정과 결론이라 무엇을 가정하고 있어?</description>
+    </item>
+    <item>
+      <title>구하려는 것을 살펴봐</title>
+      <link>https://donghyun-chae.github.io/docs/HowToSolveIt/KnowingProblem/seeproblem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donghyun-chae.github.io/docs/HowToSolveIt/KnowingProblem/seeproblem/</guid>
+      <description>구하려는 것을 살펴봐 # 내가 구하려는 것이 뭔지에 집중해 # 답을 구하는 문제에선 구하려는 것이 뭔지 보고&#xA;증명하는 문제에선 결론이 뭔지 봐.&#xA;구하려는 것 살펴보기 # 구하려는 것이 같은 다른 문제를 생각해봐. (ex 직선의 길이를 구할때 직선의 길이 구하는 다른 문제) 전에 풀었던 문제를 떠올리면서 어떻게 활용할까? 보조 요소가 필요할까? 고민해봐. 구하려는 것이 같거나 유사한 문제를 활용하면 문제에 접근하기 더욱 쉬워져. 구하려는 것이 같은 문제가 없으면 문제가 상당히 어려워지는데 그럴땐 유사한 문제를 최대한 찾고 활용해.</description>
+    </item>
+    <item>
+      <title>조건은 만족될 수 있어?</title>
+      <link>https://donghyun-chae.github.io/docs/HowToSolveIt/KnowingProblem/coditionsati/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donghyun-chae.github.io/docs/HowToSolveIt/KnowingProblem/coditionsati/</guid>
+      <description>조건은 만족될 수 있어? # 조건은 충분히 주어진거야? 과다해? 모순돼? # 이런 생각은 문제 초기에 유용해.&#xA;조건이라는 것은 주어진 무언가인데 이걸로 답을 낼 수 있냐는거야.&#xA;이런 생각을 거쳐서 조건이 합리적이라 느끼고 답이 하나일 것 같으면 우리는 흥미를 느끼지.&#xA;만약 이 대답을 하기가 어렵거나 모호하면 다른 생각으로 넘어가는 것이 좋아.&#xA;증명하는 문제에선 그 명제가 참일것 같아? 거짓일것 같아? 이렇게 질문해 볼 수 있지.</description>
+    </item>
+    <item>
+      <title>그림으로 그려봐</title>
+      <link>https://donghyun-chae.github.io/docs/HowToSolveIt/KnowingProblem/draw/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donghyun-chae.github.io/docs/HowToSolveIt/KnowingProblem/draw/</guid>
+      <description>그림으로 그려봐 # 그림으로 그려보는 것은 기하 문제가 아니더라도 중요한 도움을 주는 경우가 많아. # 기하 문제는 세세한 것들을 검토하는데 큰 도움을 얻을 수 있어.&#xA;그림을 그리는 것은 어떤 가정을 하는 것이며 구하려는 것과 자료를 포함하는 가정은 필요해.&#xA;그림을 너무 정확하게 그릴려고 할 필요는 없지만 의미는 정확하게 전달되게 그려야해.&#xA;그림은 도움의 존재이지 근거가 아니야.</description>
+    </item>
+    <item>
+      <title>조건을 여러 부분으로 나눠봐</title>
+      <link>https://donghyun-chae.github.io/docs/HowToSolveIt/KnowingProblem/divide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donghyun-chae.github.io/docs/HowToSolveIt/KnowingProblem/divide/</guid>
+      <description>조건을 여러 부분으로 나눠봐 # 문제에서 구해야하는 것, 자료, 조건을 따로 생각하는데 아이디어가 안떠오르면 작게 나눠봐.&#xA;자료도 따로 따로 생각해보고 전체적인 조건을 이해했다면 조건을 여러 부분으로 분해해봐.&#xA;이렇게 주어진 것들을 분리하고 다시 결합하는 것은 문제를 명확히 아는 것에 도움을 줘.</description>
     </item>
   </channel>
 </rss>
