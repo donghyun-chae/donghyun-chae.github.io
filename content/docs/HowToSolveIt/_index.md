@@ -7,10 +7,16 @@ title: "어떻게 문제를 풀 것인가?"
 
 # 어떻게 문제를 풀 것인가?
 
+**어떻게 문제를 풀 것인가? (How to solve it)** 을 읽고 정리하기 위한 글 입니다.
+
+책이 너무 딱딱한 느낌이 들어 <mark>**친구와 대화하듯**</mark> 정리한 것입니다.
+
+**상당히 반복되는 내용이 많습니다. 중요한 것은 실제 문제에 적용해보며 체화하는 것입니다.**
+
 수학에서 어떤 어려운 문제는 **직선을 하나 그림으로써** 상당히 쉽게 풀린다.  
 그렇다면 이 직선을 그려보겠다는 **생각**은 어디서 나오는걸까?
 
-{{< hint warning >}}
+{{< hint  >}}
 
 - 제목 그대로 문제를 어떻게 풀 것인가에 대한 고찰이다.
 - 정확히 말하면 어떻게 "수학적으로" "소프트웨어적으로" 풀 것인가에 대한 것이다.
@@ -19,31 +25,58 @@ title: "어떻게 문제를 풀 것인가?"
 
 ## **1. 문제 이해하기**
 
-- 구해야하는 것, 자료, 조건 파악하기
-- 조건이 만족 될 수 있는가? 충분한가? 나눠 볼 수 있는가?
-- 그림과 기호 활용하기
+- [구하려는 것이 뭐야?]({{< relref "/docs/HowToSolveIt/KnowingProblem/whatisproblem" >}})
+- [구하려는 것을 살펴봐]({{< relref "/docs/HowToSolveIt/KnowingProblem/seeproblem" >}})
+- [조건은 만족될 수 있어?]({{< relref "/docs/HowToSolveIt/KnowingProblem/coditionsati" >}})
+- [그림으로 그려봐]({{< relref "/docs/HowToSolveIt/KnowingProblem/draw" >}})
+- [조건을 여러 부분으로 나눠봐]({{< relref "/docs/HowToSolveIt/KnowingProblem/divide" >}})
+
+{{< hint info >}}
+문제를 **이해**해야한다.
+{{< /hint >}}
 
 ## **2. 계획하기**
 
-- 관련된 문제 떠올리기
-- 문제를 다르게 바꿔보기
-- 유사한 것을 떠올리고 필요하다면 변형하기
+- [전에 본 적 있어?]({{< relref "/docs/HowToSolveIt/Planning/haveseen" >}})
+- [관련된 문제를 알고 있어?]({{< relref "/docs/HowToSolveIt/Planning/knowsimilar" >}})
+- [관련된 문제를 풀어봤으면 그것을 활용할 수 있을까?]({{< relref "/docs/HowToSolveIt/Planning/canutilize" >}})
+- [문제를 다른 말로 바꿔봐]({{< relref "/docs/HowToSolveIt/Planning/otherwords" >}})
+- [그래도 안된다면..]({{< relref "/docs/HowToSolveIt/Planning/notwork" >}})
+- [자료에 무언가 유용한게 숨겨져 있나?]({{< relref "/docs/HowToSolveIt/Planning/hidden" >}})
+- [자료는 모두 썼어?]({{< relref "/docs/HowToSolveIt/Planning/useall" >}})
+
+{{< hint warning >}}
+구하려는 것과 자료 사이의 관계를 찾아보고 찾을 수 없다면 보조 문제를 고려해야 한다.  
+이 단계에서 풀이에 대한 **계획**이 작성돼야 한다.
+{{< /hint >}}
 
 ## **3. 실행하기**
 
-- 매 단계를 점검하기
+- [실행 전 생각을 검토해봐]({{< relref "/docs/HowToSolveIt/KnowingProblem/seeproblem" >}})
+
+{{< hint danger >}}
+계획을 **실행**한다.
+{{< /hint >}}
 
 ## **4. 반성**
 
-- 결과를 점검하기
-- 다른 방법 생각하기
+- [결과를 점검할 수 있어?]({{< relref "/docs/HowToSolveIt/KnowingProblem/seeproblem" >}})
+- [다른 방법은 없을까?]({{< relref "/docs/HowToSolveIt/KnowingProblem/seeproblem" >}})
+- [결과를 활용할 수 있나?]({{< relref "/docs/HowToSolveIt/KnowingProblem/seeproblem" >}})
+
+{{< hint normal >}}
+풀이를 **점검**한다.
+{{< /hint >}}
 
 ---
 
-<mark> 문제 이해하기 -> 계획하기 -> 실행하기 -> 반성 </mark>
-이런 절차에 따라 문제를 푸는 것은 상식적이고 당연한 것이다.
+문제를 푸는 과정은 다음과 같아!
 
-아래는 조금 더 구체화 된 설명이다.
+<mark> 문제 이해하기 -> 계획하기 -> 실행하기 -> 반성 </mark>
+
+이런 절차에 따라 문제를 푸는 것은 당연하지.
+
+아래는 각 단계를 진행할 때 도움이 될 설명이야.
 
 - **눈에 익히기 - 문제 이해하기**
 
@@ -66,6 +99,10 @@ title: "어떻게 문제를 풀 것인가?"
 - **반성**
   - 해답에 대해 다시 생각해보기
   - 단순화 해보기
+
+---
+
+## 여러 아이디어 사전
 
 ---
 
