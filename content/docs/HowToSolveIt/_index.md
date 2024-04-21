@@ -42,7 +42,7 @@ title: "어떻게 문제를 풀 것인가?"
 - [관련된 문제를 풀어봤으면 그것을 활용할 수 있을까?]({{< relref "/docs/HowToSolveIt/Planning/canutilize" >}})
 - [문제를 다른 말로 바꿔봐]({{< relref "/docs/HowToSolveIt/Planning/otherwords" >}})
 - [그래도 안된다면..]({{< relref "/docs/HowToSolveIt/Planning/notwork" >}})
-- [자료에 무언가 유용한게 숨겨져 있나?]({{< relref "/docs/HowToSolveIt/Planning/hidden" >}})
+- [자료에서 유용한 것을 찾아보자]({{< relref "/docs/HowToSolveIt/Planning/hidden" >}})
 - [자료는 모두 썼어?]({{< relref "/docs/HowToSolveIt/Planning/useall" >}})
 
 {{< hint warning >}}
