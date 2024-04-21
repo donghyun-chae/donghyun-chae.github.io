@@ -8,11 +8,11 @@
     <language>en</language>
     <atom:link href="https://donghyun-chae.github.io/docs/HowToSolveIt/Excuting/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>눈에 익히기</title>
-      <link>https://donghyun-chae.github.io/docs/HowToSolveIt/Excuting/eyeson/</link>
-      <pubDate>Fri, 11 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>https://donghyun-chae.github.io/docs/HowToSolveIt/Excuting/eyeson/</guid>
-      <description>알고리즘 공부 방향성 # 💡 Summary # [ 목적 ]&#xA;코딩테스트 더 효율적인 코드 구현 능력 향상 : “왜?”에 집중하여 학습하자 Snippet 만들기 : 깃허브 기스트 [ 기본서 ] 파이썬 알고리즘 인터뷰&#xA;[ 언어 ] 파이썬&#xA;[ 문제풀이 플랫폼 ] LeetCode&#xA;방향성 # 나의 1차적 목적은 코딩테스트이다.&#xA;하지만 더 멀게는 효율적인 코드 구현 능력 향상을 목적으로하며 “왜?”에 집중하여 학습하고자 한다. 전체적으로 파이썬 알고리즘 인터뷰 책을 따라 학습하며&#xA;(1) 개념 정리 (2) 실습 2가지로 정리한다.</description>
+      <title>실행 전 생각을 검토해봐</title>
+      <link>https://donghyun-chae.github.io/docs/HowToSolveIt/Excuting/beforeexcute/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donghyun-chae.github.io/docs/HowToSolveIt/Excuting/beforeexcute/</guid>
+      <description>실행 전 생각을 검토해봐 # 틀려도 좋으니 많은 예상들을 검토해봐 나쁜 것은 틀린 생각이 아니라 생각이 없는거야. # 생각이라는 것이 한번 자리를 잡으면 바꾸기가 어려운데 자기 생각을 의심하는 것이 매우 중요해.&#xA;가장 훌륭한 생각은 비판적인 검토에 의해 커지고 아무 의심 없이 수용하면서 작아져.</description>
     </item>
   </channel>
 </rss>

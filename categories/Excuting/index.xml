@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Excuting on Dongle-log</title>
+    <link>https://donghyun-chae.github.io/categories/Excuting/</link>
+    <description>Recent content in Excuting on Dongle-log</description>
+    <generator>Hugo 0.125.0</generator>
+    <language>en</language>
+    <atom:link href="https://donghyun-chae.github.io/categories/Excuting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>실행 전 생각을 검토해봐</title>
+      <link>https://donghyun-chae.github.io/docs/HowToSolveIt/Excuting/beforeexcute/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donghyun-chae.github.io/docs/HowToSolveIt/Excuting/beforeexcute/</guid>
+      <description>실행 전 생각을 검토해봐 # 틀려도 좋으니 많은 예상들을 검토해봐 나쁜 것은 틀린 생각이 아니라 생각이 없는거야. # 생각이라는 것이 한번 자리를 잡으면 바꾸기가 어려운데 자기 생각을 의심하는 것이 매우 중요해.&#xA;가장 훌륭한 생각은 비판적인 검토에 의해 커지고 아무 의심 없이 수용하면서 작아져.</description>
+    </item>
+  </channel>
+</rss>
