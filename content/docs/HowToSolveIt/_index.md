@@ -9,7 +9,7 @@ title: "어떻게 문제를 풀 것인가?"
 
 **어떻게 문제를 풀 것인가? (How to solve it)** 을 읽고 정리하기 위한 글 입니다.
 
-책이 너무 딱딱한 느낌이 들어 <mark>**친구와 대화하듯**</mark> 정리한 것입니다.
+책이 너무 딱딱한 느낌이 들어 <mark>**친구와 대화하듯**</mark> 정리한 것입니다. (구어체)
 
 **상당히 반복되는 내용이 많습니다. 중요한 것은 실제 문제에 적용해보며 체화하는 것입니다.**
 
@@ -52,7 +52,7 @@ title: "어떻게 문제를 풀 것인가?"
 
 ## **3. 실행하기**
 
-- [실행 전 생각을 검토해봐]({{< relref "/docs/HowToSolveIt/KnowingProblem/seeproblem" >}})
+- [실행 전 생각을 검토해봐]({{< relref "/docs/HowToSolveIt/Excuting/beforeexcute" >}})
 
 {{< hint danger >}}
 계획을 **실행**한다.
