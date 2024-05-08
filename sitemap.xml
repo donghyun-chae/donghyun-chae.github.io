@@ -7,7 +7,12 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/workingbackwards/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Reflection/checkresult/</loc>
+    <lastmod>2024-04-21T22:08:26+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -16,17 +21,17 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/induction/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Excuting/beforeexcute/</loc>
+    <lastmod>2024-04-21T22:08:26+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Planning/haveseen/</loc>
     <lastmod>2024-04-20T23:15:25+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/eyeson/</loc>
-    <lastmod>2024-04-19T20:40:12+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -40,6 +45,10 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/wisdomofproverbs/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/KnowingProblem/seeproblem/</loc>
     <lastmod>2024-04-20T23:15:25+09:00</lastmod>
     <changefreq>daily</changefreq>
@@ -47,6 +56,10 @@
   </url><url>
     <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Excuting/</loc>
     <lastmod>2024-04-19T20:40:12+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/DHS/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -80,13 +93,13 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/</loc>
-    <lastmod>2024-04-21T13:06:21+09:00</lastmod>
+    <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/</loc>
+    <lastmod>2024-04-19T20:40:12+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/</loc>
-    <lastmod>2024-04-19T20:40:12+09:00</lastmod>
+    <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/</loc>
+    <lastmod>2024-04-21T22:08:26+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -96,42 +109,12 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Planning/hidden/</loc>
-    <lastmod>2024-04-21T13:06:21+09:00</lastmod>
+    <lastmod>2024-04-21T22:08:26+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Planning/useall/</loc>
-    <lastmod>2024-04-20T23:15:25+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://donghyun-chae.github.io/tags/Algorithms/</loc>
-    <lastmod>2024-04-19T20:40:12+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://donghyun-chae.github.io/categories/Algorithms/</loc>
-    <lastmod>2024-04-19T20:40:12+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://donghyun-chae.github.io/categories/</loc>
-    <lastmod>2024-04-21T13:06:21+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://donghyun-chae.github.io/docs/</loc>
-    <lastmod>2024-04-21T13:06:21+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://donghyun-chae.github.io/tags/Python/</loc>
-    <lastmod>2024-04-19T20:40:12+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://donghyun-chae.github.io/tags/</loc>
-    <lastmod>2024-04-21T13:06:21+09:00</lastmod>
+    <lastmod>2024-04-21T22:08:26+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -140,8 +123,30 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Reflection/otherway/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Reflection/useresult/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://donghyun-chae.github.io/posts/</loc>
     <lastmod>2024-04-18T09:35:39+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://donghyun-chae.github.io/categories/</loc>
+    <lastmod>2024-04-21T22:08:26+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://donghyun-chae.github.io/categories/Dictionary/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://donghyun-chae.github.io/docs/</loc>
+    <lastmod>2024-04-21T22:08:26+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -151,11 +156,12 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/categories/Excuting/</loc>
+    <lastmod>2024-04-21T22:08:26+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/tags/HowToSolveIt/</loc>
-    <lastmod>2024-04-21T13:06:21+09:00</lastmod>
+    <lastmod>2024-04-21T22:08:26+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -165,11 +171,17 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/categories/Planning/</loc>
-    <lastmod>2024-04-21T13:06:21+09:00</lastmod>
+    <lastmod>2024-04-21T22:08:26+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/categories/Reflection/</loc>
+    <lastmod>2024-04-21T22:08:26+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://donghyun-chae.github.io/tags/</loc>
+    <lastmod>2024-04-21T22:08:26+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

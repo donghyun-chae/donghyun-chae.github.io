@@ -8,11 +8,18 @@
     <language>en</language>
     <atom:link href="https://donghyun-chae.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>결과를 점검할 수 있어?</title>
+      <title>거꾸로 생각하기</title>
+      <link>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/workingbackwards/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/workingbackwards/</guid>
+      <description>거꾸로 생각하기 # 거꾸로 생각하기 방법은 동물이 문제를 푸는 방법에서 착안했으며 # 여기선 이 실험에 대해 개략적으로 살펴 볼 것이다. # 이 방법에 대한 구체적 서술은 &amp;ldquo;파푸스&amp;quot;에서 진행된다&#xA;1. 4L 와 9L 통이 있을 때 정확히 6L를 담으시오. 라는 문제가 있을때 이런 2개의 용기를 생각할 수 있을 것이다. 그러나 6L짜리 눈금은 없으므로 이런 저런 궁리를 시작할 것이다.&#xA;일반적으로 쏟았다가 채워보기를 반복하며 주어진 것으로 구하려는 것을 곧바로 연구할 것이다. 2. 현명한 사람들은 그런 시도에 너무 많은 시간을 쏟지 않고 방향을 바꾸어 거꾸로 생각해본다.</description>
+    </item>
+    <item>
+      <title>결과를 점검할 수 있는가?</title>
       <link>https://donghyun-chae.github.io/docs/HowToSolveIt/Reflection/checkresult/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donghyun-chae.github.io/docs/HowToSolveIt/Reflection/checkresult/</guid>
-      <description>결과를 점검할 수 있어? # 가장 먼저 우리의 직관으로 결과를 점검하는거야.&#xA;만약 어떤 할아버지의 나이를 구하는데 8살 이라는 결과라면 직관적으로 틀렸음을 알 수 있지.&#xA;수치로 주어진 문제보다는 문자로 주어진 문제가 더 쉽게 접근할 수 있기에 적절한 변형이 필요할 때가 있어.&#xA;논증에서의 점검은 취약점 검토와 합리적 추론으로 진행돼.</description>
+      <description> 결과를 점검할 수 있는가? # 생각의 과정을 점검할 수 있는가? 라는 질문에 대한 대답은 우리의 생각에 대한 믿음과 지식을 단단히 만들어 준다. # 1. 실질적 필요성에 의해 생긴 문제는 사실을 목표로 하기 때문에, 사실과의 비교는 유의미하다. 그러나 직관적인 사실을 고려하지 않는 것이 반드시 나쁜 것은 아니다.&#xA;2. 실질적 필요성에 의해 생긴 문제는 사실을 목표로 하기 때문에, 사실과의 비교는 유의미하다. 그러나 직관적인 사실을 고려하지 않는 것이 반드시 나쁜 것은 아니다. </description>
     </item>
     <item>
       <title>구하려는 것이 뭐야?</title>
@@ -20,6 +27,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donghyun-chae.github.io/docs/HowToSolveIt/KnowingProblem/whatisproblem/</guid>
       <description>구하려는 것이 뭐야? # 문제를 보며 구하려는것이 뭔지 스스로에게 물어봐. # 구하려는 것이 무엇인지 부터 무엇이 주어져있고 어떤 조건이 있는지 같은 질문을 스스로에게 해봐.&#xA;이런 질문이 너가 문제에 대해 얼마나 이해했는지 알려줄꺼야.&#xA;문제에 따라서는 구하려는 것이 여러 개 있을 수 있고 조건을 따로 생각해야 할 수도 있고 경우가 다양해.&#xA;그니깐 질문을 조금 바꿔서 처음 자료는 뭐지? 두번째는? 문제에 따라서 질문을 변형해봐.&#xA;증명하는 문제에선 중요한 것이 가정과 결론이라 무엇을 가정하고 있어?</description>
+    </item>
+    <item>
+      <title>귀납 / 수학적 귀납법</title>
+      <link>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/induction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/induction/</guid>
+      <description>귀납 / 수학적 귀납법 # 귀납은 특수한 상황에서 일반적인 것을 발견하는 것으로 # 여기선 이 실험에 대해 개략적으로 살펴 볼 것이다. # 이 방법에 대한 구체적 서술은 &amp;ldquo;파푸스&amp;quot;에서 진행된다&#xA;1. 4L 와 9L 통이 있을 때 정확히 6L를 담으시오. 라는 문제가 있을때 이런 2개의 용기를 생각할 수 있을 것이다. 그러나 6L짜리 눈금은 없으므로 이런 저런 궁리를 시작할 것이다.&#xA;일반적으로 쏟았다가 채워보기를 반복하며 주어진 것으로 구하려는 것을 곧바로 연구할 것이다. 2.</description>
     </item>
     <item>
       <title>실행 전 생각을 검토해봐</title>
@@ -36,13 +50,6 @@
       <description>전에 본 적 있어? # 이 질문은 본 적이 없어도 쓸만한 생각에 도움이 돼. # 그 문제를 전에 본 적 있어? 약간 다른 형태의 비슷한 문제는?&#xA;머릿 속에 이 문제랑 관련된 요소를 이끌어내고 활용해야해.&#xA;물론 내가 가지고 있는 것 중 어떤 것과 관련되는지는 모르지만 가능성이 있는 것을 반드시 찾아내야지.</description>
     </item>
     <item>
-      <title>눈에 익히기</title>
-      <link>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/eyeson/</link>
-      <pubDate>Fri, 11 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/eyeson/</guid>
-      <description>알고리즘 공부 방향성 # 💡 Summary # [ 목적 ]&#xA;코딩테스트 더 효율적인 코드 구현 능력 향상 : “왜?”에 집중하여 학습하자 Snippet 만들기 : 깃허브 기스트 [ 기본서 ] 파이썬 알고리즘 인터뷰&#xA;[ 언어 ] 파이썬&#xA;[ 문제풀이 플랫폼 ] LeetCode&#xA;방향성 # 나의 1차적 목적은 코딩테스트이다.&#xA;하지만 더 멀게는 효율적인 코드 구현 능력 향상을 목적으로하며 “왜?”에 집중하여 학습하고자 한다. 전체적으로 파이썬 알고리즘 인터뷰 책을 따라 학습하며&#xA;(1) 개념 정리 (2) 실습 2가지로 정리한다.</description>
-    </item>
-    <item>
       <title>관련된 문제를 알고 있어?</title>
       <link>https://donghyun-chae.github.io/docs/HowToSolveIt/Planning/knowsimilar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -50,11 +57,25 @@
       <description>관련된 문제를 알고 있어? # 전에 보지 못했던 완전히 새로운 문제란 해결하기 불가능 할거야.&#xA;분명히 어떤 것과 관련 있을 거야.&#xA;문제와 관련된 것을 떠올리는 것은 아마 어렵지 않을거야 아니, 아마 너무 많이 떠오를 수도 있어.&#xA;중요한 건 그 많은 유용한 것 중에 밀접하게 연관되어 있는 것을 골라야해.&#xA;유용하게 쓰일 것 같은 정리를 알고 있어? 특히 증명 문제에선 이것이 큰 도움이 돼.</description>
     </item>
     <item>
+      <title>교훈에 담긴 지혜</title>
+      <link>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/wisdomofproverbs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/wisdomofproverbs/</guid>
+      <description>교훈에 담긴 지혜 # 문제를 해결한다는 것은 인간의 기본적인 활동이고 사고의 목적이다. # 여기선 문제 해결 시 도움을 주는 교훈을 살펴본다. # 교훈은 이 색으로 표시한다. # 1. 잘못 이해한 사람은 잘못 대답한다.&#xA;문제를 해결하기 위해 가장 먼저 해야하는 것은 문제를 이해하는 것이다.&#xA;시작하기 전 목표를 생각해라.&#xA;우리는 달성하고자 하는 목표를 분명히 알아야 한다.&#xA;바보는 출발점을 주시하고 현인은 목표를 주시한다.&#xA;사람들은 흔히 달성하고자 하는 목표를 이해하기도 전에 행동에 나선다.</description>
+    </item>
+    <item>
       <title>구하려는 것을 살펴봐</title>
       <link>https://donghyun-chae.github.io/docs/HowToSolveIt/KnowingProblem/seeproblem/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donghyun-chae.github.io/docs/HowToSolveIt/KnowingProblem/seeproblem/</guid>
       <description>구하려는 것을 살펴봐 # 내가 구하려는 것이 뭔지에 집중해 # 답을 구하는 문제에선 구하려는 것이 뭔지 보고&#xA;증명하는 문제에선 결론이 뭔지 봐.&#xA;구하려는 것 살펴보기 # 구하려는 것이 같은 다른 문제를 생각해봐. (ex 직선의 길이를 구할때 직선의 길이 구하는 다른 문제) 전에 풀었던 문제를 떠올리면서 어떻게 활용할까? 보조 요소가 필요할까? 고민해봐. 구하려는 것이 같거나 유사한 문제를 활용하면 문제에 접근하기 더욱 쉬워져. 구하려는 것이 같은 문제가 없으면 문제가 상당히 어려워지는데 그럴땐 유사한 문제를 최대한 찾고 활용해.</description>
+    </item>
+    <item>
+      <title>결의, 희망, 성공</title>
+      <link>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/DHS/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/DHS/</guid>
+      <description>결의, 희망, 성공 # 문제를 해결하는 것은 지적인 활동을 넘어서 의지와 정서가 중요하다. # 1. 잘될 때 계속하는 것은 쉽지만 일이 잘 안풀릴때 견디기는 어렵다.&#xA;계속하기 위해선 희망을 갖고 출발해야 하며, 작은 성공을 반복해야한다.&#xA;성공하지 못했다고 경멸해서는 안되며 성공할 수 있는 목표를 찾아야 한다.&#xA;2. 문제를 해결하는 것은 의지의 문제다.&#xA;문제를 해결하고자 하는 욕구가 없다면 아무런 문제도 해결 할 수 없다.&#xA;실패를 통해 인내를 배우고 조그만 진전의 가치를 평가하는 법을 배우며</description>
     </item>
     <item>
       <title>관련된 문제를 풀어봤으면 그것을 활용할 수 있을까?</title>
@@ -111,6 +132,20 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donghyun-chae.github.io/docs/HowToSolveIt/Planning/useall/</guid>
       <description>자료는 모두 썼어? # 문제를 풀다보면 자료를 모두 사용하지 않았는데 계획이 나올 때도 있지만&amp;hellip;&#xA;주어진 자료나 조건에서 무언가 빠뜨렸다면 그것을 활용하려는 과정에서 실마리를 찾을 수 있어.&#xA;주어진 것들을 모두 썼는지 검증하는 과정에서 더 체계적으로 문제를 볼 수 있게 돼.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://donghyun-chae.github.io/docs/HowToSolveIt/Reflection/otherway/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donghyun-chae.github.io/docs/HowToSolveIt/Reflection/otherway/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://donghyun-chae.github.io/docs/HowToSolveIt/Reflection/useresult/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donghyun-chae.github.io/docs/HowToSolveIt/Reflection/useresult/</guid>
+      <description></description>
     </item>
   </channel>
 </rss>
