@@ -60,9 +60,10 @@ title: "어떻게 문제를 풀 것인가?"
 
 ## **4. 반성**
 
-- [결과를 점검할 수 있어?]({{< relref "/docs/HowToSolveIt/KnowingProblem/seeproblem" >}})
-- [다른 방법은 없을까?]({{< relref "/docs/HowToSolveIt/KnowingProblem/seeproblem" >}})
-- [결과를 활용할 수 있나?]({{< relref "/docs/HowToSolveIt/KnowingProblem/seeproblem" >}})
+- [결과를 점검할 수 있어?]({{< relref "/docs/HowToSolveIt/Reflection/checkresult" >}})
+- [다른 방법은 없을까?]({{< relref "/docs/HowToSolveIt/Reflection/otherway" >}})
+- [결과를 활용할 수 있나?]({{< relref "/docs/HowToSolveIt/Reflection/useresult" >}})
+- [귀납 / 수학적 귀납법]({{< relref "/docs/HowToSolveIt/Reflection/useresult" >}})
 
 {{< hint normal >}}
 풀이를 **점검**한다.
@@ -102,11 +103,15 @@ title: "어떻게 문제를 풀 것인가?"
 
 ---
 
-## 여러 아이디어 사전
+## 아이디어 사전
+
+- [거꾸로 생각하기]({{< relref "/docs/HowToSolveIt/Dictionary/workingbackwards" >}})
+- [교훈에 담긴 지혜]({{< relref "/docs/HowToSolveIt/Dictionary/wisdomofproverbs" >}})
+- [결의, 희망, 성공]({{< relref "/docs/HowToSolveIt/Dictionary/DHS" >}})
 
 ---
 
 ## 참고 서적
 
-[https://product.kyobobook.co.kr/detail/S000001261487]
-[https://product.kyobobook.co.kr/detail/S000002749977]
+[어떻게 문제를 풀 것인가?](https://product.kyobobook.co.kr/detail/S000001261487 "어떻게 문제를 풀 것인가?")  
+[How to solve it](https://product.kyobobook.co.kr/detail/S000002749977 "How to solve it")
