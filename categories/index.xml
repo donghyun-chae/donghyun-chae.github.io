@@ -42,5 +42,12 @@
       <guid>https://donghyun-chae.github.io/categories/Reflection/</guid>
       <description></description>
     </item>
+    <item>
+      <title>SICP</title>
+      <link>https://donghyun-chae.github.io/categories/SICP/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donghyun-chae.github.io/categories/SICP/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
