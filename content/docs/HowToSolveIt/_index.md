@@ -1,5 +1,5 @@
 ---
-weight: 5
+weight: 1
 bookCollapseSection: true
 bookFlatSection: true
 title: "어떻게 문제를 풀 것인가?"

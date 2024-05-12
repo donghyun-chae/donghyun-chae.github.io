@@ -7,20 +7,38 @@ weight= 1
 
 # **귀납 / 수학적 귀납법**
 
-### 귀납은 특수한 상황에서 일반적인 것을 발견하는 것으로
+### <span style = 'background-color:#ffdce0'>**귀납**</span>은 특수한 상황에서 일반적인 것을 발견하는 과정이다.
 
-### 여기선 이 <span style = 'background-color:#fff5b1'>실험에 대해 개략적</span>으로 살펴 볼 것이다.
-
-_*이 방법에 대한 구체적 서술은 "파푸스"에서 진행된다*_
+### <span style = 'background-color:#ffdce0'>**수학적 귀납**</span>은 어떤 종류의 정리를 증명하기 위한 것으로 수학에서만 쓰인다.
 
 <hr/>
 
 {{< hint normal >}}
-**_1._** <span style = 'background-color:#F7DDBE'>**4L 와 9L 통이 있을 때 정확히 6L를 담으시오.**</span> 라는 문제가 있을때
-![](/img/HowToSolveIt/Dictionary/workingbackwards/1.png)
+**_1._** <span style = 'background-color:#F7DDBE'>**우연히**</span> 다음 사실을 접했다.
+![](/img/HowToSolveIt/Dictionary/induction/1.png)
+이런 식에서 각 수를 어떤 수의 **제곱이나 세제곱**으로 바라보면 다음과 같이 다시 바라볼 수 있다.
 
-이런 2개의 용기를 생각할 수 있을 것이다. 그러나 6L짜리 눈금은 없으므로 이런 저런 **궁리**를 시작할 것이다.  
-일반적으로 쏟았다가 채워보기를 반복하며 주어진 것으로 구하려는 것을 <span style = 'background-color:#D6F0FF'>**곧바로 연구**</span>할 것이다.
+<br/>
+<br/>
+
+![](/img/HowToSolveIt/Dictionary/induction/2.png)
+
+여기서 <span style = 'background-color:#D6F0FF'>**1부터 순차적인 수의 세제곱의 합은 어떤 수의 제곱**</span>이 되는 것을 볼 수 있는데  
+이것이 <span style = 'background-color:#D6F0FF'>**일반적으로 적용되는 지**</span>를 연구하는 것이 귀납인 것이다. <span style = 'background-color:#D6F0FF'>**특수한 상황 -> 일반적인 상황**</span>
+
+<br/>
+<br/>
+
+![](/img/HowToSolveIt/Dictionary/induction/3.png)
+n = 4 를 <span style = 'background-color:#D6F0FF'>**특수한 상황**</span>이라고 생각하고  
+n 을 1부터 넣어보면서 <span style = 'background-color:#D6F0FF'>**지질학자가 어떤 광성 표본을 정리하듯**</span> 정리해 볼 수 있다.
+
+<br/>
+<br/>
+
+![](/img/HowToSolveIt/Dictionary/induction/4.png)
+일반적인 과학에서 이런 귀납에 의한 증명은 사실로 받아들여지지만 수학의 경우엔 좀 더 엄밀한 증명을 원한다.
+<span style = 'background-color:#D6F0FF'>**처음 n개의 수의 세제곱의 합은 어떤 수의 제곱이 된다.**</span> 라는 명제를 증명해야 하는 것이다.
 <br/>
 <br/>
 
