@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>수학 on Dongle-log</title>
+    <link>https://donghyun-chae.github.io/docs/Mathematics/</link>
+    <description>Recent content in 수학 on Dongle-log</description>
+    <generator>Hugo 0.125.0</generator>
+    <language>en</language>
+    <atom:link href="https://donghyun-chae.github.io/docs/Mathematics/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

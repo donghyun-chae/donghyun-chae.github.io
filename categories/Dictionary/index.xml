@@ -19,7 +19,7 @@
       <link>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/induction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/induction/</guid>
-      <description>귀납 / 수학적 귀납법 # 귀납은 특수한 상황에서 일반적인 것을 발견하는 것으로 # 여기선 이 실험에 대해 개략적으로 살펴 볼 것이다. # 이 방법에 대한 구체적 서술은 &amp;ldquo;파푸스&amp;quot;에서 진행된다&#xA;1. 4L 와 9L 통이 있을 때 정확히 6L를 담으시오. 라는 문제가 있을때 이런 2개의 용기를 생각할 수 있을 것이다. 그러나 6L짜리 눈금은 없으므로 이런 저런 궁리를 시작할 것이다.&#xA;일반적으로 쏟았다가 채워보기를 반복하며 주어진 것으로 구하려는 것을 곧바로 연구할 것이다. 2.</description>
+      <description>귀납 / 수학적 귀납법 # 귀납은 특수한 상황에서 일반적인 것을 발견하는 과정이다. # 수학적 귀납은 어떤 종류의 정리를 증명하기 위한 것으로 수학에서만 쓰인다. # 1. 우연히 다음 사실을 접했다. 이런 식에서 각 수를 어떤 수의 제곱이나 세제곱으로 바라보면 다음과 같이 다시 바라볼 수 있다.&#xA;여기서 1부터 순차적인 수의 세제곱의 합은 어떤 수의 제곱이 되는 것을 볼 수 있는데&#xA;이것이 일반적으로 적용되는 지를 연구하는 것이 귀납인 것이다. 특수한 상황 -&amp;gt; 일반적인 상황</description>
     </item>
     <item>
       <title>교훈에 담긴 지혜</title>
