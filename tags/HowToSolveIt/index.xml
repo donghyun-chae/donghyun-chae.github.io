@@ -29,13 +29,6 @@
       <description>구하려는 것이 뭐야? # 문제를 보며 구하려는것이 뭔지 스스로에게 물어봐. # 구하려는 것이 무엇인지 부터 무엇이 주어져있고 어떤 조건이 있는지 같은 질문을 스스로에게 해봐.&#xA;이런 질문이 너가 문제에 대해 얼마나 이해했는지 알려줄꺼야.&#xA;문제에 따라서는 구하려는 것이 여러 개 있을 수 있고 조건을 따로 생각해야 할 수도 있고 경우가 다양해.&#xA;그니깐 질문을 조금 바꿔서 처음 자료는 뭐지? 두번째는? 문제에 따라서 질문을 변형해봐.&#xA;증명하는 문제에선 중요한 것이 가정과 결론이라 무엇을 가정하고 있어?</description>
     </item>
     <item>
-      <title>귀납 / 수학적 귀납법</title>
-      <link>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/induction/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/induction/</guid>
-      <description>귀납 / 수학적 귀납법 # 귀납은 특수한 상황에서 일반적인 것을 발견하는 과정이다. # 수학적 귀납은 어떤 종류의 정리를 증명하기 위한 것으로 수학에서만 쓰인다. # 1. 우연히 다음 사실을 접했다. 이런 식에서 각 수를 어떤 수의 제곱이나 세제곱으로 바라보면 다음과 같이 다시 바라볼 수 있다.&#xA;여기서 1부터 순차적인 수의 세제곱의 합은 어떤 수의 제곱이 되는 것을 볼 수 있는데&#xA;이것이 일반적으로 적용되는 지를 연구하는 것이 귀납인 것이다. 특수한 상황 -&amp;gt; 일반적인 상황</description>
-    </item>
-    <item>
       <title>실행 전 생각을 검토해봐</title>
       <link>https://donghyun-chae.github.io/docs/HowToSolveIt/Excuting/beforeexcute/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -90,6 +83,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donghyun-chae.github.io/docs/HowToSolveIt/KnowingProblem/coditionsati/</guid>
       <description>조건은 만족될 수 있어? # 조건은 충분히 주어진거야? 과다해? 모순돼? # 이런 생각은 문제 초기에 유용해.&#xA;조건이라는 것은 주어진 무언가인데 이걸로 답을 낼 수 있냐는거야.&#xA;이런 생각을 거쳐서 조건이 합리적이라 느끼고 답이 하나일 것 같으면 우리는 흥미를 느끼지.&#xA;만약 이 대답을 하기가 어렵거나 모호하면 다른 생각으로 넘어가는 것이 좋아.&#xA;증명하는 문제에선 그 명제가 참일것 같아? 거짓일것 같아? 이렇게 질문해 볼 수 있지.</description>
+    </item>
+    <item>
+      <title>귀납 / 수학적 귀납법</title>
+      <link>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/induction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/induction/</guid>
+      <description>귀납 / 수학적 귀납법 # 귀납은 특수한 상황에서 일반적인 것을 발견하는 과정이다. # 수학적 귀납은 어떤 종류의 정리를 증명하기 위한 것으로 수학에서만 쓰인다. # 1. 우연히 다음 사실을 접했다. 이런 식에서 각 수를 어떤 수의 제곱이나 세제곱으로 바라보면 다음과 같이 다시 바라볼 수 있다.&#xA;여기서 1부터 순차적인 수의 세제곱의 합은 어떤 수의 제곱이 되는 것을 볼 수 있는데&#xA;이것이 일반적으로 적용되는 지를 연구하는 것이 귀납인 것이다. 특수한 상황 -&amp;gt; 일반적인 상황</description>
     </item>
     <item>
       <title>그림으로 그려봐</title>

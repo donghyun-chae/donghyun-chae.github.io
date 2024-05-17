@@ -8,10 +8,20 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/101/</loc>
+    <lastmod>2024-05-12T22:21:12+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/</loc>
+    <lastmod>2024-05-12T22:21:12+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/MIT6037/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/SNU4910210/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -32,11 +42,6 @@
   </url><url>
     <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/KnowingProblem/whatisproblem/</loc>
     <lastmod>2024-04-20T23:15:25+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/induction/</loc>
-    <lastmod>2024-05-12T19:58:01+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -61,11 +66,16 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/</loc>
+    <lastmod>2024-05-12T22:21:12+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/docs/ComputerScience/Programming/</loc>
     <lastmod>2024-05-12T19:58:01+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/102/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -89,6 +99,10 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/103/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Excuting/</loc>
     <lastmod>2024-04-19T20:40:12+09:00</lastmod>
     <changefreq>daily</changefreq>
@@ -109,8 +123,17 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/104/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Reflection/</loc>
     <lastmod>2024-04-19T20:40:12+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/induction/</loc>
+    <lastmod>2024-05-12T19:58:01+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -121,6 +144,10 @@
   </url><url>
     <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Planning/otherwords/</loc>
     <lastmod>2024-04-21T13:06:21+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/105/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -149,13 +176,25 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/106/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Planning/hidden/</loc>
     <lastmod>2024-04-21T22:08:26+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/107/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Planning/useall/</loc>
     <lastmod>2024-04-21T22:08:26+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/108/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -175,7 +214,7 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/categories/</loc>
-    <lastmod>2024-05-12T19:58:01+09:00</lastmod>
+    <lastmod>2024-05-12T22:21:12+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -185,12 +224,12 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/docs/</loc>
-    <lastmod>2024-05-12T19:58:01+09:00</lastmod>
+    <lastmod>2024-05-12T22:21:12+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/</loc>
-    <lastmod>2024-04-19T20:40:12+09:00</lastmod>
+    <lastmod>2024-05-12T22:21:12+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -220,15 +259,17 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/tags/SICP/</loc>
+    <lastmod>2024-05-12T22:21:12+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/categories/SICP/</loc>
+    <lastmod>2024-05-12T22:21:12+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/tags/</loc>
-    <lastmod>2024-05-12T19:58:01+09:00</lastmod>
+    <lastmod>2024-05-12T22:21:12+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

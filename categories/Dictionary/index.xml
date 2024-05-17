@@ -15,13 +15,6 @@
       <description>거꾸로 생각하기 # 거꾸로 생각하기 방법은 동물이 문제를 푸는 방법에서 착안했으며 # 여기선 이 실험에 대해 개략적으로 살펴 볼 것이다. # 이 방법에 대한 구체적 서술은 &amp;ldquo;파푸스&amp;quot;에서 진행된다&#xA;1. 4L 와 9L 통이 있을 때 정확히 6L를 담으시오. 라는 문제가 있을때 이런 2개의 용기를 생각할 수 있을 것이다. 그러나 6L짜리 눈금은 없으므로 이런 저런 궁리를 시작할 것이다.&#xA;일반적으로 쏟았다가 채워보기를 반복하며 주어진 것으로 구하려는 것을 곧바로 연구할 것이다. 2. 현명한 사람들은 그런 시도에 너무 많은 시간을 쏟지 않고 방향을 바꾸어 거꾸로 생각해본다.</description>
     </item>
     <item>
-      <title>귀납 / 수학적 귀납법</title>
-      <link>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/induction/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/induction/</guid>
-      <description>귀납 / 수학적 귀납법 # 귀납은 특수한 상황에서 일반적인 것을 발견하는 과정이다. # 수학적 귀납은 어떤 종류의 정리를 증명하기 위한 것으로 수학에서만 쓰인다. # 1. 우연히 다음 사실을 접했다. 이런 식에서 각 수를 어떤 수의 제곱이나 세제곱으로 바라보면 다음과 같이 다시 바라볼 수 있다.&#xA;여기서 1부터 순차적인 수의 세제곱의 합은 어떤 수의 제곱이 되는 것을 볼 수 있는데&#xA;이것이 일반적으로 적용되는 지를 연구하는 것이 귀납인 것이다. 특수한 상황 -&amp;gt; 일반적인 상황</description>
-    </item>
-    <item>
       <title>교훈에 담긴 지혜</title>
       <link>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/wisdomofproverbs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -34,6 +27,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/DHS/</guid>
       <description>결의, 희망, 성공 # 문제를 해결하는 것은 지적인 활동을 넘어서 의지와 정서가 중요하다. # 1. 잘될 때 계속하는 것은 쉽지만 일이 잘 안풀릴때 견디기는 어렵다.&#xA;계속하기 위해선 희망을 갖고 출발해야 하며, 작은 성공을 반복해야한다.&#xA;성공하지 못했다고 경멸해서는 안되며 성공할 수 있는 목표를 찾아야 한다.&#xA;2. 문제를 해결하는 것은 의지의 문제다.&#xA;문제를 해결하고자 하는 욕구가 없다면 아무런 문제도 해결 할 수 없다.&#xA;실패를 통해 인내를 배우고 조그만 진전의 가치를 평가하는 법을 배우며</description>
+    </item>
+    <item>
+      <title>귀납 / 수학적 귀납법</title>
+      <link>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/induction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/induction/</guid>
+      <description>귀납 / 수학적 귀납법 # 귀납은 특수한 상황에서 일반적인 것을 발견하는 과정이다. # 수학적 귀납은 어떤 종류의 정리를 증명하기 위한 것으로 수학에서만 쓰인다. # 1. 우연히 다음 사실을 접했다. 이런 식에서 각 수를 어떤 수의 제곱이나 세제곱으로 바라보면 다음과 같이 다시 바라볼 수 있다.&#xA;여기서 1부터 순차적인 수의 세제곱의 합은 어떤 수의 제곱이 되는 것을 볼 수 있는데&#xA;이것이 일반적으로 적용되는 지를 연구하는 것이 귀납인 것이다. 특수한 상황 -&amp;gt; 일반적인 상황</description>
     </item>
   </channel>
 </rss>
