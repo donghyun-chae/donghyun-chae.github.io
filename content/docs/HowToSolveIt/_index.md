@@ -19,7 +19,7 @@ title: "어떻게 문제를 풀 것인가?"
 {{< hint  >}}
 
 - 제목 그대로 문제를 어떻게 풀 것인가에 대한 고찰이다.
-- 정확히 말하면 어떻게 "수학적으로" "소프트웨어적으로" 풀 것인가에 대한 것이다.
+- 정확히 말하면 어떻게 "수학적으로" 풀 것인가에 대한 것이다.
 - 프로그래밍이란 컴퓨터와 코드로 어떤 문제를 푸는 것인데 그것에 대한 이야기이다.
   {{< /hint >}}
 
@@ -108,7 +108,7 @@ title: "어떻게 문제를 풀 것인가?"
 - [거꾸로 생각하기]({{< relref "/docs/HowToSolveIt/Dictionary/workingbackwards" >}})
 - [교훈에 담긴 지혜]({{< relref "/docs/HowToSolveIt/Dictionary/wisdomofproverbs" >}})
 - [결의, 희망, 성공]({{< relref "/docs/HowToSolveIt/Dictionary/DHS" >}})
-
+- [귀납 / 수학적 귀납법]({{< relref "/docs/HowToSolveIt/Dictionary/induction" >}})
 ---
 
 ## 참고 서적

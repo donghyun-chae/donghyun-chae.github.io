@@ -2,7 +2,7 @@
 title = "귀납 / 수학적 귀납법"
 categories = ["Dictionary"]
 tags = ["HowToSolveIt"]
-weight= 1
+weight= 4
 +++
 
 # **귀납 / 수학적 귀납법**
