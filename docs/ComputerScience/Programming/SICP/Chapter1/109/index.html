@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="SICP 1.09 # 문제 # 2개의 더하기 프로시저가 (&#43; 4 5)를 맞바꿈 계산법으로 계산하는 과정을 밝히고 프로세스가 반복하는지 되도는지 말하여라.
+#lang scheme (define (&#43; a b) (if (= a 0) b (inc (&#43; (dec a) b)))) (define (&#43; a b) (if (= a 0) b (&#43; (dec a) (inc b)))) 문제풀이 # 첫 번째 계산 과정 # #lang scheme (define (&#43; a b) (if (= a 0) b (inc (&#43; (dec a) b)))) (inc (&#43; (dec 4) 5)) (inc (inc (&#43; (dec 3) 5))) (inc (inc (inc (&#43; (dec 2) 5)))) (inc (inc (inc (inc (&#43; (dec 1) 5))))) (inc (inc (inc (inc 5)))) (inc (inc (inc 6))) (inc (inc 7)) (inc 8) 9 되도는 프로세스">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/109/">
+  <meta property="og:site_name" content="Dongle-log">
+  <meta property="og:title" content="1.09">
+  <meta property="og:description" content="SICP 1.09 # 문제 # 2개의 더하기 프로시저가 (&#43; 4 5)를 맞바꿈 계산법으로 계산하는 과정을 밝히고 프로세스가 반복하는지 되도는지 말하여라.
+#lang scheme (define (&#43; a b) (if (= a 0) b (inc (&#43; (dec a) b)))) (define (&#43; a b) (if (= a 0) b (&#43; (dec a) (inc b)))) 문제풀이 # 첫 번째 계산 과정 # #lang scheme (define (&#43; a b) (if (= a 0) b (inc (&#43; (dec a) b)))) (inc (&#43; (dec 4) 5)) (inc (inc (&#43; (dec 3) 5))) (inc (inc (inc (&#43; (dec 2) 5)))) (inc (inc (inc (inc (&#43; (dec 1) 5))))) (inc (inc (inc (inc 5)))) (inc (inc (inc 6))) (inc (inc 7)) (inc 8) 9 되도는 프로세스">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+  <meta property="article:section" content="docs">
+    <meta property="article:tag" content="SICP">
+<title>1.09 | Dongle-log</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="canonical" href="https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/109/">
+<link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.f3898bb210913781d79a84631526fbc7f42a7530db2af9a1f274a0ea68809eca.js" integrity="sha256-84mLshCRN4HXmoRjFSb7x/QqdTDbKvmh8nSg6miAnso=" crossorigin="anonymous"></script>
+
+  
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-P9T7P0F1VP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-P9T7P0F1VP');
+        }
+      </script>
+    
+  
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><img src="/logo.png" alt="Logo" /><span>Dongle-log</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c702cc3fba0c88b3540371e9ffc2449c" class="toggle"  />
+    <label for="section-c702cc3fba0c88b3540371e9ffc2449c" class="flex justify-between">
+      <a href="/docs/HowToSolveIt/" class="">어떻게 문제를 풀 것인가?</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8d4a381a82e9d88f9a37982175135486" class="toggle"  />
+    <label for="section-8d4a381a82e9d88f9a37982175135486" class="flex justify-between">
+      <a role="button" class="">1. 문제 이해하기</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/KnowingProblem/whatisproblem/" class="">구하려는 것이 뭐야?</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/KnowingProblem/seeproblem/" class="">구하려는 것을 살펴봐</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/KnowingProblem/coditionsati/" class="">조건은 만족될 수 있어?</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/KnowingProblem/draw/" class="">그림으로 그려봐</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/KnowingProblem/divide/" class="">조건을 여러 부분으로 나눠봐</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8c6edf5de069960a380014347e39c522" class="toggle"  />
+    <label for="section-8c6edf5de069960a380014347e39c522" class="flex justify-between">
+      <a role="button" class="">2. 계획하기</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Planning/haveseen/" class="">전에 본 적 있어?</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Planning/knowsimilar/" class="">관련된 문제를 알고 있어?</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Planning/canutilize/" class="">관련된 문제를 풀어봤으면 그것을 활용할 수 있을까?</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Planning/otherwords/" class="">문제를 다른 말로 바꿔봐</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Planning/notwork/" class="">그래도 안된다면..</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Planning/hidden/" class="">자료에서 유용한 것을 찾아보자</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Planning/useall/" class="">자료는 모두 썼어?</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-dcb34f0d0588899a59641d655a5714d0" class="toggle"  />
+    <label for="section-dcb34f0d0588899a59641d655a5714d0" class="flex justify-between">
+      <a role="button" class="">3. 실행하기</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Excuting/beforeexcute/" class="">실행 전 생각을 검토해봐</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-15ad3088383e6183ab70bfaf5c68e8b6" class="toggle"  />
+    <label for="section-15ad3088383e6183ab70bfaf5c68e8b6" class="flex justify-between">
+      <a role="button" class="">4. 반성</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Reflection/checkresult/" class="">결과를 점검할 수 있는가?</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8a2f57a0eadde746e733ecc5b7eb5832" class="toggle"  />
+    <label for="section-8a2f57a0eadde746e733ecc5b7eb5832" class="flex justify-between">
+      <a role="button" class="">아이디어 사전</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Dictionary/workingbackwards/" class="">거꾸로 생각하기</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Dictionary/wisdomofproverbs/" class="">교훈에 담긴 지혜</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Dictionary/DHS/" class="">결의, 희망, 성공</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Dictionary/induction/" class="">귀납 / 수학적 귀납법</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2252be8c449429ddc53fb362d4884fac" class="toggle"  />
+    <label for="section-2252be8c449429ddc53fb362d4884fac" class="flex justify-between">
+      <a role="button" class="">수학</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-bca02ac8f844b3d999d1ab458bde5b86" class="toggle"  />
+    <label for="section-bca02ac8f844b3d999d1ab458bde5b86" class="flex justify-between">
+      <a role="button" class="">구체 수학</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3e0d4517ff1bad64c1136cf9291e0985" class="toggle"  />
+    <label for="section-3e0d4517ff1bad64c1136cf9291e0985" class="flex justify-between">
+      <a role="button" class="">선형대수학</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-eae88e73edcc9dc8f420f11812970218" class="toggle" checked />
+    <label for="section-eae88e73edcc9dc8f420f11812970218" class="flex justify-between">
+      <a role="button" class="">컴퓨터 공학</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-976ec6b153c84ecb9daec4b14f57cdd1" class="toggle" checked />
+    <label for="section-976ec6b153c84ecb9daec4b14f57cdd1" class="flex justify-between">
+      <a role="button" class="">프로그래밍</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-56dc9c31c377262d8cfd0faf85b6b93f" class="toggle" checked />
+    <label for="section-56dc9c31c377262d8cfd0faf85b6b93f" class="flex justify-between">
+      <a href="/docs/ComputerScience/Programming/SICP/" class="">컴퓨터 프로그램의 구조와 해석</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3a38039995da08de3317c24c5a322d48" class="toggle" checked />
+    <label for="section-3a38039995da08de3317c24c5a322d48" class="flex justify-between">
+      <a role="button" class="">Chapter1</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/101/" class="">1.01 🟢</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/102/" class="">1.02 🟢</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/103/" class="">1.03 🟢</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/104/" class="">1.04 🟢</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/105/" class="">1.05 </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/106/" class="">1.06</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/107/" class="">1.07</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/108/" class="">1.08</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/109/" class="active">1.09</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/110/" class="">1.10</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/111/" class="">1.11</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/112/" class="">1.12</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-509deb64a0e30b369cce09fe5e0820d1" class="toggle"  />
+    <label for="section-509deb64a0e30b369cce09fe5e0820d1" class="flex justify-between">
+      <a role="button" class="">MIT 6.037</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ea7a55c208160329a9a9c8c88d7a5104" class="toggle"  />
+    <label for="section-ea7a55c208160329a9a9c8c88d7a5104" class="flex justify-between">
+      <a role="button" class="">SNU 4910.210</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/posts/"  >
+        Blog
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://github.com/donghyun-chae/"  target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>1.09</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#sicp-109">SICP 1.09</a>
+      <ul>
+        <li><a href="#문제"><strong>문제</strong></a></li>
+        <li><a href="#문제풀이"><strong>문제풀이</strong></a></li>
+        <li><a href="#검토"><strong>검토</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="sicp-109">
+  SICP 1.09
+  <a class="anchor" href="#sicp-109">#</a>
+</h1>
+<h2 id="문제">
+  <strong>문제</strong>
+  <a class="anchor" href="#%eb%ac%b8%ec%a0%9c">#</a>
+</h2>
+<blockquote class="book-hint info">
+  <p>2개의 더하기 프로시저가 (+ 4 5)를 맞바꿈 계산법으로 계산하는 과정을 밝히고 프로세스가 반복하는지 되도는지 말하여라.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span><span style="color:#f92672">#</span>lang scheme
+</span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">define </span>(+ a b)
+</span></span><span style="display:flex;"><span>  (<span style="color:#66d9ef">if </span>(= a <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>      b
+</span></span><span style="display:flex;"><span>      (<span style="color:#a6e22e">inc</span> (+ (<span style="color:#a6e22e">dec</span> a) b))))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">define </span>(+ a b)
+</span></span><span style="display:flex;"><span>  (<span style="color:#66d9ef">if </span>(= a <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>      b
+</span></span><span style="display:flex;"><span>      (+ (<span style="color:#a6e22e">dec</span> a) (<span style="color:#a6e22e">inc</span> b))))
+</span></span></code></pre></div>
+</blockquote>
+
+<hr>
+<h2 id="문제풀이">
+  <strong>문제풀이</strong>
+  <a class="anchor" href="#%eb%ac%b8%ec%a0%9c%ed%92%80%ec%9d%b4">#</a>
+</h2>
+<blockquote class="book-hint warning">
+  <h2 id="첫-번째-계산-과정">
+  첫 번째 계산 과정
+  <a class="anchor" href="#%ec%b2%ab-%eb%b2%88%ec%a7%b8-%ea%b3%84%ec%82%b0-%ea%b3%bc%ec%a0%95">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span><span style="color:#f92672">#</span>lang scheme
+</span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">define </span>(+ a b)
+</span></span><span style="display:flex;"><span>  (<span style="color:#66d9ef">if </span>(= a <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>      b
+</span></span><span style="display:flex;"><span>      (<span style="color:#a6e22e">inc</span> (+ (<span style="color:#a6e22e">dec</span> a) b))))
+</span></span></code></pre></div><pre tabindex="0"><code>(inc (+ (dec 4) 5))   
+(inc (inc (+ (dec 3) 5)))   
+(inc (inc (inc (+ (dec 2) 5))))   
+(inc (inc (inc (inc (+ (dec 1) 5)))))   
+(inc (inc (inc (inc 5))))   
+(inc (inc (inc 6)))   
+(inc (inc 7))   
+(inc 8)   
+9   
+</code></pre><p><strong>되도는 프로세스</strong></p>
+<h2 id="두-번째-계산-과정">
+  두 번째 계산 과정
+  <a class="anchor" href="#%eb%91%90-%eb%b2%88%ec%a7%b8-%ea%b3%84%ec%82%b0-%ea%b3%bc%ec%a0%95">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span><span style="color:#f92672">#</span>lang scheme
+</span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">define </span>(+ a b)
+</span></span><span style="display:flex;"><span>  (<span style="color:#66d9ef">if </span>(= a <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>      b
+</span></span><span style="display:flex;"><span>      (+ (<span style="color:#a6e22e">dec</span> a) (<span style="color:#a6e22e">inc</span> b))))
+</span></span></code></pre></div><pre tabindex="0"><code>(+ (dec 4) (inc 5))   
+(+ (dec 3) (inc 6))   
+(+ (dec 2) (inc 7))   
+(+ (dec 1) (inc 8))   
+9   
+</code></pre><p><strong>반복하는 프로세스</strong></p>
+
+</blockquote>
+
+<hr>
+<h2 id="검토">
+  <strong>검토</strong>
+  <a class="anchor" href="#%ea%b2%80%ed%86%a0">#</a>
+</h2>
+<blockquote class="book-hint danger">
+  
+</blockquote>
+
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/donghyun-chae//edit/main/exampleSite/content/docs/ComputerScience/Programming/SICP/Chapter1/109.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+<script
+  src="https://utteranc.es/client.js"
+  repo="donghyun-chae/donghyun-chae.github.io"
+  issue-term="pathname"
+  theme="preferred-color-scheme"
+  crossorigin="anonymous"
+  async
+></script>
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#sicp-109">SICP 1.09</a>
+      <ul>
+        <li><a href="#문제"><strong>문제</strong></a></li>
+        <li><a href="#문제풀이"><strong>문제풀이</strong></a></li>
+        <li><a href="#검토"><strong>검토</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
