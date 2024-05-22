@@ -89,7 +89,7 @@
       <link>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/112/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/112/</guid>
-      <description>SICP 1.12 # 문제 # 파스칼 삼각형을 되도는 프로세스가 나오게끔 프로시저를 작성하라. 문제풀이 # 되도는 프로세스 # #lang scheme (define (recur n) (cond ((&amp;lt; n 3) n) (else (+ (recur(- n 1)) (* 2 (recur(- n 2))) (* 3 (recur(- n 3))))))) 반복하는 프로세스 # #lang scheme (define (iter-process n) (define (iter a b c d count) (cond ((= count 2) a) ((= count 1) b) ((= count 0) c) (else (+ (iter (- d (* 2 b) (* 3 c)) (/ (- d a (* 3 c)) 2) (/ (- d a (* 2 b)) 3) (+ a (* 2 b) (* 3 c)) (- count 1)) (* 2 (iter (- d (* 2 b) (* 3 c)) (/ (- d a (* 3 c)) 2) (/ (- d a (* 2 b)) 3) (+ a (* 2 b) (* 3 c)) (- count 2))) (* 3 (iter (- d (* 2 b) (* 3 c)) (/ (- d a (* 3 c)) 2) (/ (- d a (* 2 b)) 3) (+ a (* 2 b) (* 3 c)) (- count 3))) )))) (iter 2 1 0 4 n)) 검토 # 다른 사람의 풀이를 보며 검토해봤을 때 내가 짠 프로시저는 쓸데없이 복잡했다.</description>
+      <description> SICP 1.12 # 문제 # 파스칼 삼각형을 되도는 프로세스가 나오게끔 프로시저를 작성하라. 문제풀이 # 파스칼 삼각형 # #lang scheme (define (p-recursion index n) (cond ((= index 1) 1) ((= index n) 1) ((= n 1) 1) (else (+ (p-recursion (- index 1) (- n 1)) (p-recursion index (- n 1)))))) (define (pascal n) (define (p-display index n) (cond ((&amp;lt; index n) (p-display (+ 1 index) n))) (display (p-recursion index n)) (display &amp;#34; &amp;#34;)) (p-display 1 n)) (define (pascal-all n) (cond ((&amp;gt; n 0) (pascal-all (- n 1)))) (pascal n) (newline) ) 검토 # </description>
     </item>
   </channel>
 </rss>
