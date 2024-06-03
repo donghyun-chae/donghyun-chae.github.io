@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="SICP 1.14 # 문제 # #lang sicp (define (count-change n) (define (count amount kinds-of-coins) (cond ((= amount 0) 1) ((or (&lt; amount 0) (= kinds-of-coins 0)) 0) (else (&#43; (count (- amount (value-of-coins kinds-of-coins)) kinds-of-coins) (count amount (- kinds-of-coins 1)) ) ) )) (define (value-of-coins kinds-of-coins) (cond ((= kinds-of-coins 1) 50) ((= kinds-of-coins 2) 25) ((= kinds-of-coins 3) 10) ((= kinds-of-coins 4) 5) ((= kinds-of-coins 5) 1))) (count n 5) ) (count-change 11) 1.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/114/">
+  <meta property="og:site_name" content="Dongle-log">
+  <meta property="og:title" content="1.14">
+  <meta property="og:description" content="SICP 1.14 # 문제 # #lang sicp (define (count-change n) (define (count amount kinds-of-coins) (cond ((= amount 0) 1) ((or (&amp;lt; amount 0) (= kinds-of-coins 0)) 0) (else (&#43; (count (- amount (value-of-coins kinds-of-coins)) kinds-of-coins) (count amount (- kinds-of-coins 1)) ) ) )) (define (value-of-coins kinds-of-coins) (cond ((= kinds-of-coins 1) 50) ((= kinds-of-coins 2) 25) ((= kinds-of-coins 3) 10) ((= kinds-of-coins 4) 5) ((= kinds-of-coins 5) 1))) (count n 5) ) (count-change 11) 1.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+  <meta property="article:section" content="docs">
+    <meta property="article:tag" content="SICP">
+<title>1.14 | Dongle-log</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="canonical" href="https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/114/">
+<link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.c09ca681b2f343dea6f07b8fba696c3c358d7c25f0906d8cd3d9f80400519077.js" integrity="sha256-wJymgbLzQ96m8HuPumlsPDWNfCXwkG2M09n4BABRkHc=" crossorigin="anonymous"></script>
+
+  
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-P9T7P0F1VP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-P9T7P0F1VP');
+        }
+      </script>
+    
+  
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><img src="/logo.png" alt="Logo" /><span>Dongle-log</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c702cc3fba0c88b3540371e9ffc2449c" class="toggle"  />
+    <label for="section-c702cc3fba0c88b3540371e9ffc2449c" class="flex justify-between">
+      <a href="/docs/HowToSolveIt/" class="">어떻게 문제를 풀 것인가?</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8d4a381a82e9d88f9a37982175135486" class="toggle"  />
+    <label for="section-8d4a381a82e9d88f9a37982175135486" class="flex justify-between">
+      <a role="button" class="">1. 문제 이해하기</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/KnowingProblem/whatisproblem/" class="">구하려는 것이 뭐야?</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/KnowingProblem/seeproblem/" class="">구하려는 것을 살펴봐</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/KnowingProblem/coditionsati/" class="">조건은 만족될 수 있어?</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/KnowingProblem/draw/" class="">그림으로 그려봐</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/KnowingProblem/divide/" class="">조건을 여러 부분으로 나눠봐</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8c6edf5de069960a380014347e39c522" class="toggle"  />
+    <label for="section-8c6edf5de069960a380014347e39c522" class="flex justify-between">
+      <a role="button" class="">2. 계획하기</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Planning/haveseen/" class="">전에 본 적 있어?</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Planning/knowsimilar/" class="">관련된 문제를 알고 있어?</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Planning/canutilize/" class="">관련된 문제를 풀어봤으면 그것을 활용할 수 있을까?</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Planning/otherwords/" class="">문제를 다른 말로 바꿔봐</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Planning/notwork/" class="">그래도 안된다면..</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Planning/hidden/" class="">자료에서 유용한 것을 찾아보자</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Planning/useall/" class="">자료는 모두 썼어?</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-dcb34f0d0588899a59641d655a5714d0" class="toggle"  />
+    <label for="section-dcb34f0d0588899a59641d655a5714d0" class="flex justify-between">
+      <a role="button" class="">3. 실행하기</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Excuting/beforeexcute/" class="">실행 전 생각을 검토해봐</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-15ad3088383e6183ab70bfaf5c68e8b6" class="toggle"  />
+    <label for="section-15ad3088383e6183ab70bfaf5c68e8b6" class="flex justify-between">
+      <a role="button" class="">4. 반성</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Reflection/checkresult/" class="">결과를 점검할 수 있는가?</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8a2f57a0eadde746e733ecc5b7eb5832" class="toggle"  />
+    <label for="section-8a2f57a0eadde746e733ecc5b7eb5832" class="flex justify-between">
+      <a role="button" class="">아이디어 사전</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Dictionary/workingbackwards/" class="">거꾸로 생각하기</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Dictionary/wisdomofproverbs/" class="">교훈에 담긴 지혜</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Dictionary/DHS/" class="">결의, 희망, 성공</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Dictionary/induction/" class="">귀납 / 수학적 귀납법</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Dictionary/reductio/" class="">귀류법 / 간접증명법</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2252be8c449429ddc53fb362d4884fac" class="toggle"  />
+    <label for="section-2252be8c449429ddc53fb362d4884fac" class="flex justify-between">
+      <a role="button" class="">수학</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-bca02ac8f844b3d999d1ab458bde5b86" class="toggle"  />
+    <label for="section-bca02ac8f844b3d999d1ab458bde5b86" class="flex justify-between">
+      <a role="button" class="">구체 수학</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3e0d4517ff1bad64c1136cf9291e0985" class="toggle"  />
+    <label for="section-3e0d4517ff1bad64c1136cf9291e0985" class="flex justify-between">
+      <a role="button" class="">선형대수학</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-eae88e73edcc9dc8f420f11812970218" class="toggle" checked />
+    <label for="section-eae88e73edcc9dc8f420f11812970218" class="flex justify-between">
+      <a role="button" class="">컴퓨터 공학</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-976ec6b153c84ecb9daec4b14f57cdd1" class="toggle" checked />
+    <label for="section-976ec6b153c84ecb9daec4b14f57cdd1" class="flex justify-between">
+      <a role="button" class="">프로그래밍</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-56dc9c31c377262d8cfd0faf85b6b93f" class="toggle" checked />
+    <label for="section-56dc9c31c377262d8cfd0faf85b6b93f" class="flex justify-between">
+      <a href="/docs/ComputerScience/Programming/SICP/" class="">컴퓨터 프로그램의 구조와 해석</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3a38039995da08de3317c24c5a322d48" class="toggle" checked />
+    <label for="section-3a38039995da08de3317c24c5a322d48" class="flex justify-between">
+      <a role="button" class="">Chapter1</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/101/" class="">1.01 </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/102/" class="">1.02 </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/103/" class="">1.03</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/104/" class="">1.04</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/105/" class="">1.05 </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/106/" class="">1.06</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/107/" class="">1.07</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/108/" class="">1.08</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/109/" class="">1.09</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/110/" class="">1.10</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/111/" class="">1.11</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/112/" class="">1.12</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/113/" class="">1.13</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/114/" class="active">1.14</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/115/" class="">1.15</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/116/" class="">1.16</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/117/" class="">1.17</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/118/" class="">1.18</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/119/" class="">1.19</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/120/" class="">1.20</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/121/" class="">1.21</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/posts/"  >
+        Blog
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://github.com/donghyun-chae/"  target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>1.14</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#sicp-114">SICP 1.14</a>
+      <ul>
+        <li><a href="#문제"><strong>문제</strong></a></li>
+        <li><a href="#문제풀이"><strong>문제풀이</strong></a></li>
+        <li><a href="#검토"><strong>검토</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="sicp-114">
+  SICP 1.14
+  <a class="anchor" href="#sicp-114">#</a>
+</h1>
+<h2 id="문제">
+  <strong>문제</strong>
+  <a class="anchor" href="#%eb%ac%b8%ec%a0%9c">#</a>
+</h2>
+<blockquote class="book-hint info">
+  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span><span style="color:#f92672">#</span>lang sicp
+</span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">define </span>(<span style="color:#a6e22e">count-change</span> n)
+</span></span><span style="display:flex;"><span>  (<span style="color:#66d9ef">define </span>(<span style="color:#a6e22e">count</span> amount kinds-of-coins)
+</span></span><span style="display:flex;"><span>    (<span style="color:#66d9ef">cond </span>((= amount <span style="color:#ae81ff">0</span>) <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>          ((<span style="color:#66d9ef">or </span>(&lt; amount <span style="color:#ae81ff">0</span>) (= kinds-of-coins <span style="color:#ae81ff">0</span>)) <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>          (<span style="color:#66d9ef">else </span>(+ (<span style="color:#a6e22e">count</span> (- amount (<span style="color:#a6e22e">value-of-coins</span> kinds-of-coins)) kinds-of-coins)
+</span></span><span style="display:flex;"><span>                   (<span style="color:#a6e22e">count</span> amount (- kinds-of-coins <span style="color:#ae81ff">1</span>))
+</span></span><span style="display:flex;"><span>                   )
+</span></span><span style="display:flex;"><span>                )
+</span></span><span style="display:flex;"><span>          ))
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  (<span style="color:#66d9ef">define </span>(<span style="color:#a6e22e">value-of-coins</span> kinds-of-coins)
+</span></span><span style="display:flex;"><span>    (<span style="color:#66d9ef">cond </span>((= kinds-of-coins <span style="color:#ae81ff">1</span>) <span style="color:#ae81ff">50</span>)
+</span></span><span style="display:flex;"><span>          ((= kinds-of-coins <span style="color:#ae81ff">2</span>) <span style="color:#ae81ff">25</span>)
+</span></span><span style="display:flex;"><span>          ((= kinds-of-coins <span style="color:#ae81ff">3</span>) <span style="color:#ae81ff">10</span>)
+</span></span><span style="display:flex;"><span>          ((= kinds-of-coins <span style="color:#ae81ff">4</span>) <span style="color:#ae81ff">5</span>)
+</span></span><span style="display:flex;"><span>          ((= kinds-of-coins <span style="color:#ae81ff">5</span>) <span style="color:#ae81ff">1</span>)))
+</span></span><span style="display:flex;"><span>  (<span style="color:#a6e22e">count</span> n <span style="color:#ae81ff">5</span>)
+</span></span><span style="display:flex;"><span>  )
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#a6e22e">count-change</span> <span style="color:#ae81ff">11</span>)
+</span></span></code></pre></div><h3 id="1-위-count-change-프로시저가-만들어내는-프로세스를-나무꼴로-그려라">
+  <strong>1. 위 count-change 프로시저가 만들어내는 프로세스를 나무꼴로 그려라.</strong>
+  <a class="anchor" href="#1-%ec%9c%84-count-change-%ed%94%84%eb%a1%9c%ec%8b%9c%ec%a0%80%ea%b0%80-%eb%a7%8c%eb%93%a4%ec%96%b4%eb%82%b4%eb%8a%94-%ed%94%84%eb%a1%9c%ec%84%b8%ec%8a%a4%eb%a5%bc-%eb%82%98%eb%ac%b4%ea%bc%b4%eb%a1%9c-%ea%b7%b8%eb%a0%a4%eb%9d%bc">#</a>
+</h3>
+<h3 id="2-프로세스가-거치는-단계-수와-기억-공간의-크기는-어떤-자람-차수를-보이는가">
+  <strong>2. 프로세스가 거치는 단계 수와 기억 공간의 크기는 어떤 자람 차수를 보이는가?</strong>
+  <a class="anchor" href="#2-%ed%94%84%eb%a1%9c%ec%84%b8%ec%8a%a4%ea%b0%80-%ea%b1%b0%ec%b9%98%eb%8a%94-%eb%8b%a8%ea%b3%84-%ec%88%98%ec%99%80-%ea%b8%b0%ec%96%b5-%ea%b3%b5%ea%b0%84%ec%9d%98-%ed%81%ac%ea%b8%b0%eb%8a%94-%ec%96%b4%eb%96%a4-%ec%9e%90%eb%9e%8c-%ec%b0%a8%ec%88%98%eb%a5%bc-%eb%b3%b4%ec%9d%b4%eb%8a%94%ea%b0%80">#</a>
+</h3>
+
+</blockquote>
+
+<hr>
+<h2 id="문제풀이">
+  <strong>문제풀이</strong>
+  <a class="anchor" href="#%eb%ac%b8%ec%a0%9c%ed%92%80%ec%9d%b4">#</a>
+</h2>
+<blockquote class="book-hint warning">
+  <h3 id="1-위-count-change-프로시저가-만들어내는-프로세스를-나무꼴로-그려라">
+  <strong>1. 위 count-change 프로시저가 만들어내는 프로세스를 나무꼴로 그려라.</strong>
+  <a class="anchor" href="#1-%ec%9c%84-count-change-%ed%94%84%eb%a1%9c%ec%8b%9c%ec%a0%80%ea%b0%80-%eb%a7%8c%eb%93%a4%ec%96%b4%eb%82%b4%eb%8a%94-%ed%94%84%eb%a1%9c%ec%84%b8%ec%8a%a4%eb%a5%bc-%eb%82%98%eb%ac%b4%ea%bc%b4%eb%a1%9c-%ea%b7%b8%eb%a0%a4%eb%9d%bc">#</a>
+</h3>
+<p>
+
+<p class="md__image">
+  <img
+    src="/img/ComputerScience/Programming/SICP/Chapter1/14.jpeg"
+    style="max-width: 70%"
+    alt=""
+    
+  />
+</p>
+<br>
+<em><em>6, 10의 가장 최하위 노드들의 가지 1개가 생략됨</em></em></p>
+<h3 id="2-프로세스가-거치는-단계-수와-기억-공간의-크기는-어떤-자람-차수를-보이는가">
+  <strong>2. 프로세스가 거치는 단계 수와 기억 공간의 크기는 어떤 자람 차수를 보이는가?</strong>
+  <a class="anchor" href="#2-%ed%94%84%eb%a1%9c%ec%84%b8%ec%8a%a4%ea%b0%80-%ea%b1%b0%ec%b9%98%eb%8a%94-%eb%8b%a8%ea%b3%84-%ec%88%98%ec%99%80-%ea%b8%b0%ec%96%b5-%ea%b3%b5%ea%b0%84%ec%9d%98-%ed%81%ac%ea%b8%b0%eb%8a%94-%ec%96%b4%eb%96%a4-%ec%9e%90%eb%9e%8c-%ec%b0%a8%ec%88%98%eb%a5%bc-%eb%b3%b4%ec%9d%b4%eb%8a%94%ea%b0%80">#</a>
+</h3>
+<p>우선 기억공간의 크기는 n=11 일때 15이고 n=12 일때 16이다. 즉 선형적으로 증가한다.<br>
+빅오표기법으로는 O(n) 이다.</p>
+<p>프로세스가 자라나는 정도는 작은 것 부터 생각해나가는 것이 도움이 되는데, (count-change n 1) 의 경우에<br>
+2n+1 의 크기이고 (count-change n 2) 은 (count-change n 1)이 n/5+1 개가 존재하기 때문에<br>
+이차식이 만들어지고 (count-change n 2) 는 O(n^2) 의 복잡도를 갖는다.<br>
+이것을 확장시키면 (count-change n 5)의 복잡도는 O(n^5) 이다.</p>
+
+</blockquote>
+
+<hr>
+<h2 id="검토">
+  <strong>검토</strong>
+  <a class="anchor" href="#%ea%b2%80%ed%86%a0">#</a>
+</h2>
+<blockquote class="book-hint danger">
+  
+</blockquote>
+
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/donghyun-chae//edit/main/exampleSite/content/docs/ComputerScience/Programming/SICP/Chapter1/114.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+<script
+  src="https://utteranc.es/client.js"
+  repo="donghyun-chae/donghyun-chae.github.io"
+  issue-term="pathname"
+  theme="preferred-color-scheme"
+  crossorigin="anonymous"
+  async
+></script>
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#sicp-114">SICP 1.14</a>
+      <ul>
+        <li><a href="#문제"><strong>문제</strong></a></li>
+        <li><a href="#문제풀이"><strong>문제풀이</strong></a></li>
+        <li><a href="#검토"><strong>검토</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

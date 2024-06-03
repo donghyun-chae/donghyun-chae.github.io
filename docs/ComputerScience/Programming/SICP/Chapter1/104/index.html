@@ -3,27 +3,27 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="SICP 1.04 🟢 # 문제 # 엮은식 연산자 자리에 다른 식이 와도 다음 규칙이 성립한다.
-엮은식에서 부분 식의 값을 모두 구한다. 엮은식에서 맨 왼쪽에 있는 식의 값은 프로시저가 되고 나머지 식의 값은 인자가 된다. 프로시저를 인자에 적용하여 엮은식의 값을 구한다. 문제풀이 # (a-plus-abs-b 4 -5) 1. 부분식의 값이 이미 기본상태이다. ((if (&gt; -5 0) &#43; -) 4 -5) 2. 프로시저를 인자에 적용하여 엮은식의 값을 구한다. (if (- 4 -5)) 1.">
+<meta name="description" content="SICP 1.04 # 문제 # 엮은식 연산자 자리에 다른 식이 와도 다음 규칙이 성립한다.
+엮은식에서 부분 식의 값을 모두 구한다. 엮은식에서 맨 왼쪽에 있는 식의 값은 프로시저가 되고 나머지 식의 값은 인자가 된다. 프로시저를 인자에 적용하여 엮은식의 값을 구한다. 문제풀이 # (a-plus-abs-b 4 -5) 1. 부분식의 값이 이미 기본상태이다. ((if (&gt; -5 0) &#43; -) 4 -5) 2. 프로시저를 인자에 적용하여 엮은식의 값을 구한다. (if (- 4 -5)) 1. 부분식의 값을 모두 구한다.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:url" content="https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/104/">
   <meta property="og:site_name" content="Dongle-log">
-  <meta property="og:title" content="1.04 🟢">
-  <meta property="og:description" content="SICP 1.04 🟢 # 문제 # 엮은식 연산자 자리에 다른 식이 와도 다음 규칙이 성립한다.
-엮은식에서 부분 식의 값을 모두 구한다. 엮은식에서 맨 왼쪽에 있는 식의 값은 프로시저가 되고 나머지 식의 값은 인자가 된다. 프로시저를 인자에 적용하여 엮은식의 값을 구한다. 문제풀이 # (a-plus-abs-b 4 -5) 1. 부분식의 값이 이미 기본상태이다. ((if (&amp;gt; -5 0) &#43; -) 4 -5) 2. 프로시저를 인자에 적용하여 엮은식의 값을 구한다. (if (- 4 -5)) 1.">
+  <meta property="og:title" content="1.04">
+  <meta property="og:description" content="SICP 1.04 # 문제 # 엮은식 연산자 자리에 다른 식이 와도 다음 규칙이 성립한다.
+엮은식에서 부분 식의 값을 모두 구한다. 엮은식에서 맨 왼쪽에 있는 식의 값은 프로시저가 되고 나머지 식의 값은 인자가 된다. 프로시저를 인자에 적용하여 엮은식의 값을 구한다. 문제풀이 # (a-plus-abs-b 4 -5) 1. 부분식의 값이 이미 기본상태이다. ((if (&amp;gt; -5 0) &#43; -) 4 -5) 2. 프로시저를 인자에 적용하여 엮은식의 값을 구한다. (if (- 4 -5)) 1. 부분식의 값을 모두 구한다.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
   <meta property="article:section" content="docs">
     <meta property="article:modified_time" content="2024-05-17T15:19:36+09:00">
     <meta property="article:tag" content="SICP">
-<title>1.04 🟢 | Dongle-log</title>
+<title>1.04 | Dongle-log</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
 <link rel="canonical" href="https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/104/">
 <link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.56f64f902ff7bda445ba6aac4d6363cb89aa1f3ec7ac9abb83606a8f4e4ea3f3.js" integrity="sha256-VvZPkC/3vaRFumqsTWNjy4mqHz7HrJq7g2Bqj05Oo/M=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.c09ca681b2f343dea6f07b8fba696c3c358d7c25f0906d8cd3d9f80400519077.js" integrity="sha256-wJymgbLzQ96m8HuPumlsPDWNfCXwkG2M09n4BABRkHc=" crossorigin="anonymous"></script>
 
   
     
@@ -442,6 +442,19 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Dictionary/reductio/" class="">귀류법 / 간접증명법</a>
+  
+
+        </li>
+      
+    
   </ul>
 
         </li>
@@ -586,7 +599,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/101/" class="">1.01 🟢</a>
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/101/" class="">1.01 </a>
   
 
         </li>
@@ -599,7 +612,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/102/" class="">1.02 🟢</a>
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/102/" class="">1.02 </a>
   
 
         </li>
@@ -612,7 +625,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/103/" class="">1.03 🟢</a>
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/103/" class="">1.03</a>
   
 
         </li>
@@ -625,7 +638,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/104/" class="active">1.04 🟢</a>
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/104/" class="active">1.04</a>
   
 
         </li>
@@ -735,7 +748,15 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
-  </ul>
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/113/" class="">1.13</a>
+  
 
         </li>
       
@@ -747,16 +768,8 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-509deb64a0e30b369cce09fe5e0820d1" class="toggle"  />
-    <label for="section-509deb64a0e30b369cce09fe5e0820d1" class="flex justify-between">
-      <a role="button" class="">MIT 6.037</a>
-    </label>
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/114/" class="">1.14</a>
   
-
-          
-  <ul>
-    
-  </ul>
 
         </li>
       
@@ -768,14 +781,89 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-ea7a55c208160329a9a9c8c88d7a5104" class="toggle"  />
-    <label for="section-ea7a55c208160329a9a9c8c88d7a5104" class="flex justify-between">
-      <a role="button" class="">SNU 4910.210</a>
-    </label>
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/115/" class="">1.15</a>
   
 
+        </li>
+      
+    
+      
+        <li>
           
-  <ul>
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/116/" class="">1.16</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/117/" class="">1.17</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/118/" class="">1.18</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/119/" class="">1.19</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/120/" class="">1.20</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/121/" class="">1.21</a>
+  
+
+        </li>
+      
     
   </ul>
 
@@ -851,7 +939,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>1.04 🟢</strong>
+  <strong>1.04</strong>
 
   <label for="toc-control">
     
@@ -867,7 +955,7 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#sicp-104-">SICP 1.04 🟢</a>
+    <li><a href="#sicp-104">SICP 1.04</a>
       <ul>
         <li><a href="#문제"><strong>문제</strong></a></li>
         <li><a href="#문제풀이"><strong>문제풀이</strong></a></li>
@@ -886,9 +974,9 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"><h1 id="sicp-104-">
-  SICP 1.04 🟢
-  <a class="anchor" href="#sicp-104-">#</a>
+  <article class="markdown book-article"><h1 id="sicp-104">
+  SICP 1.04
+  <a class="anchor" href="#sicp-104">#</a>
 </h1>
 <h2 id="문제">
   <strong>문제</strong>
@@ -998,7 +1086,7 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#sicp-104-">SICP 1.04 🟢</a>
+    <li><a href="#sicp-104">SICP 1.04</a>
       <ul>
         <li><a href="#문제"><strong>문제</strong></a></li>
         <li><a href="#문제풀이"><strong>문제풀이</strong></a></li>

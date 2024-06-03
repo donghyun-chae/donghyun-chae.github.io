@@ -17,16 +17,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/MIT6037/</loc>
-    <lastmod>2024-05-17T15:19:36+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/SNU4910210/</loc>
-    <lastmod>2024-05-17T15:19:36+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/workingbackwards/</loc>
     <lastmod>2024-05-20T12:07:46+09:00</lastmod>
     <changefreq>daily</changefreq>
@@ -157,6 +147,10 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/reductio/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Planning/notwork/</loc>
     <lastmod>2024-04-21T13:06:21+09:00</lastmod>
     <changefreq>daily</changefreq>
@@ -223,7 +217,43 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/112/</loc>
-    <lastmod>2024-05-20T12:07:46+09:00</lastmod>
+    <lastmod>2024-05-22T10:11:14+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/113/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/114/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/115/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/116/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/117/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/118/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/119/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/120/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/121/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -243,7 +273,7 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/categories/</loc>
-    <lastmod>2024-05-20T12:07:46+09:00</lastmod>
+    <lastmod>2024-05-22T10:11:14+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -253,7 +283,7 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/docs/</loc>
-    <lastmod>2024-05-20T12:07:46+09:00</lastmod>
+    <lastmod>2024-05-22T10:11:14+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -288,17 +318,17 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/tags/SICP/</loc>
-    <lastmod>2024-05-20T12:07:46+09:00</lastmod>
+    <lastmod>2024-05-22T10:11:14+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/categories/SICP/</loc>
-    <lastmod>2024-05-20T12:07:46+09:00</lastmod>
+    <lastmod>2024-05-22T10:11:14+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/tags/</loc>
-    <lastmod>2024-05-20T12:07:46+09:00</lastmod>
+    <lastmod>2024-05-22T10:11:14+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
