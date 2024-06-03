@@ -109,6 +109,7 @@ title: "어떻게 문제를 풀 것인가?"
 - [교훈에 담긴 지혜]({{< relref "/docs/HowToSolveIt/Dictionary/wisdomofproverbs" >}})
 - [결의, 희망, 성공]({{< relref "/docs/HowToSolveIt/Dictionary/DHS" >}})
 - [귀납 / 수학적 귀납법]({{< relref "/docs/HowToSolveIt/Dictionary/induction" >}})
+- [귀류법 / 간접증명법]({{< relref "/docs/HowToSolveIt/Dictionary/induction" >}})
 ---
 
 ## 참고 서적
