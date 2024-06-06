@@ -3,31 +3,23 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="SICP 1.05 # 문제 # 인자 먼저 계산법 vs 정의대로 계산법
-(define (p) (p)) (define (test x y) (if (= x 0) 0 y)) 문제풀이 # (test 0 (p))
-인자 먼저 계산법
-(test 0 (p)) (test 0 (p))
-&hellip; ∞(test 0 (p)) 정의대로 계산법
-(test 0 (p)) (if (= 0 0)
-0
-(p)) 0 인자 먼저 계산법은 인자가 먼저 평가 되기 때문에 (define (p) (p)) 자기 자신을 호출하는 (p) 로 인해 무한 루프에 빠진다.">
+<meta name="description" content="SICP 1.05 # 문제 # 실행기가 인자 먼저 계산법을 따르는지 정의대로 계산법을 따르는지 알아보기 위해 다음과 같이 두 프로시저를 정의했을 때 어떤 결과가 나오는지 밝혀라.
+(define (p) (p)) (define (test x y) (if (= x 0) 0 y)) (test 0 (p)) 문제풀이 # 인자 먼저 계산법
+(test 0 (p)) (test 0 (p)) ... 정의대로 계산법
+(test 0 (p)) (if (= 0 0) 0 (p)) 0 인자 먼저 계산법은 인자가 먼저 평가 되기 때문에 (define (p) (p)) 자기 자신을 호출하는">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:url" content="https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/105/">
   <meta property="og:site_name" content="Dongle-log">
   <meta property="og:title" content="1.05 ">
-  <meta property="og:description" content="SICP 1.05 # 문제 # 인자 먼저 계산법 vs 정의대로 계산법
-(define (p) (p)) (define (test x y) (if (= x 0) 0 y)) 문제풀이 # (test 0 (p))
-인자 먼저 계산법
-(test 0 (p)) (test 0 (p))
-&amp;hellip; ∞(test 0 (p)) 정의대로 계산법
-(test 0 (p)) (if (= 0 0)
-0
-(p)) 0 인자 먼저 계산법은 인자가 먼저 평가 되기 때문에 (define (p) (p)) 자기 자신을 호출하는 (p) 로 인해 무한 루프에 빠진다.">
+  <meta property="og:description" content="SICP 1.05 # 문제 # 실행기가 인자 먼저 계산법을 따르는지 정의대로 계산법을 따르는지 알아보기 위해 다음과 같이 두 프로시저를 정의했을 때 어떤 결과가 나오는지 밝혀라.
+(define (p) (p)) (define (test x y) (if (= x 0) 0 y)) (test 0 (p)) 문제풀이 # 인자 먼저 계산법
+(test 0 (p)) (test 0 (p)) ... 정의대로 계산법
+(test 0 (p)) (if (= 0 0) 0 (p)) 0 인자 먼저 계산법은 인자가 먼저 평가 되기 때문에 (define (p) (p)) 자기 자신을 호출하는">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
   <meta property="article:section" content="docs">
-    <meta property="article:modified_time" content="2024-05-17T15:19:36+09:00">
+    <meta property="article:modified_time" content="2024-06-03T19:40:02+09:00">
     <meta property="article:tag" content="SICP">
 <title>1.05  | Dongle-log</title>
 <link rel="manifest" href="/manifest.json">
@@ -35,7 +27,7 @@
 <link rel="canonical" href="https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/105/">
 <link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.c09ca681b2f343dea6f07b8fba696c3c358d7c25f0906d8cd3d9f80400519077.js" integrity="sha256-wJymgbLzQ96m8HuPumlsPDWNfCXwkG2M09n4BABRkHc=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.498cca51548567516e7f99ede2f6a34311fa6f84886e1014a3f6761bcd19b525.js" integrity="sha256-SYzKUVSFZ1Fuf5nt4vajQxH6b4SIbhAUo/Z2G80ZtSU=" crossorigin="anonymous"></script>
 
   
     
@@ -877,6 +869,97 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/122/" class="">1.22</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/123/" class="">1.23</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/124/" class="">1.24</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/125/" class="">1.25</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/126/" class="">1.26</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/127/" class="">1.27</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/128/" class="">1.28</a>
+  
+
+        </li>
+      
+    
   </ul>
 
         </li>
@@ -994,52 +1077,50 @@ https://github.com/alex-shpak/hugo-book
   <strong>문제</strong>
   <a class="anchor" href="#%eb%ac%b8%ec%a0%9c">#</a>
 </h2>
-<blockquote class="book-hint info">
-  <p>인자 먼저 계산법 vs 정의대로 계산법</p>
+<blockquote>
+<p>실행기가 인자 먼저 계산법을 따르는지 정의대로 계산법을 따르는지 알아보기 위해 다음과 같이 두 프로시저를 정의했을 때 어떤 결과가 나오는지 밝혀라.</p>
+</blockquote>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span>(<span style="color:#66d9ef">define </span>(<span style="color:#a6e22e">p</span>) (<span style="color:#a6e22e">p</span>))
 </span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">define </span>(<span style="color:#a6e22e">test</span> x y)
 </span></span><span style="display:flex;"><span>  (<span style="color:#66d9ef">if </span>(= x <span style="color:#ae81ff">0</span>)
 </span></span><span style="display:flex;"><span>      <span style="color:#ae81ff">0</span>
 </span></span><span style="display:flex;"><span>      y))
-</span></span></code></pre></div>
-</blockquote>
-
-<hr>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#a6e22e">test</span> <span style="color:#ae81ff">0</span> (<span style="color:#a6e22e">p</span>))
+</span></span></code></pre></div><hr>
+</br>
+</br>
 <h2 id="문제풀이">
   <strong>문제풀이</strong>
   <a class="anchor" href="#%eb%ac%b8%ec%a0%9c%ed%92%80%ec%9d%b4">#</a>
 </h2>
-<blockquote class="book-hint warning">
-  <p><strong>(test 0 (p))</strong></p>
-<p><strong>인자 먼저 계산법</strong></p>
-<ol>
-<li>(test 0 (p))</li>
-<li>(test 0 (p))<br>
-&hellip;</li>
-<li>∞(test 0 (p))</li>
-</ol>
-<p><strong>정의대로 계산법</strong></p>
-<ol>
-<li>(test 0 (p))</li>
-<li>(if (= 0 0)<br>
-0<br>
-(p))</li>
-<li>0</li>
-</ol>
-<p>인자 먼저 계산법은 인자가 먼저 평가 되기 때문에 (define (p) (p)) 자기 자신을 호출하는 (p) 로 인해 무한 루프에 빠진다.<br>
-정의대로 계산법은 우선 계산을 펼칠 수 있을 때 까지 펼치기 때문에 (p) 를 호출하기 전에 if 가 먼저 실행된다.</p>
-
+<blockquote>
+<p>인자 먼저 계산법</p>
 </blockquote>
-
+<pre tabindex="0"><code>(test 0 (p))
+(test 0 (p))
+...
+</code></pre><blockquote>
+<p>정의대로 계산법</p>
+</blockquote>
+<pre tabindex="0"><code>(test 0 (p))
+(if (= 0 0) 
+        0   
+        (p))
+0
+</code></pre><blockquote>
+<p>인자 먼저 계산법은 인자가 먼저 평가 되기 때문에 (define (p) (p)) 자기 자신을 호출하는<br>
+(p) 로 인해 무한 루프에 빠진다.<br>
+정의대로 계산법은 우선 계산을 펼칠 수 있을 때 까지 펼치기 때문에 (p) 를 호출하기 전에 if 가 먼저 실행된다.</p>
+</blockquote>
 <hr>
+</br>
+</br>
 <h2 id="검토">
   <strong>검토</strong>
   <a class="anchor" href="#%ea%b2%80%ed%86%a0">#</a>
 </h2>
-<blockquote class="book-hint danger">
-  
-</blockquote>
-
+<hr>
 </article>
  
       
@@ -1049,9 +1130,9 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex flex-wrap justify-between">
 
 
-  <div><a class="flex align-center" href="https://github.com/donghyun-chae//commit/7013c1cc1ae4a7a5e5268f13704fa162ed27c6cd" title='Last modified by donghyun-chae | May 17, 2024' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/donghyun-chae//commit/4015bb5a35436f34e80b09a1f2bc14103641a8a9" title='Last modified by donghyun-chae | June 3, 2024' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="" />
-      <span>May 17, 2024</span>
+      <span>June 3, 2024</span>
     </a>
   </div>
 

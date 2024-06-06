@@ -12,147 +12,196 @@
       <link>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/101/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/101/</guid>
-      <description> SICP 1.01 # 문제 # 여러 식들이 어떻게 계산되는가? 문제풀이 # 검토 # </description>
+      <description> SICP 1.01 # 문제 # 여러 식들이 어떻게 계산되는가?&#xA;문제풀이 # 검토 # </description>
     </item>
     <item>
       <title>1.02 </title>
       <link>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/102/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/102/</guid>
-      <description> SICP 1.02 # 문제 # 식을 전위표기법으로 표현해보기. 문제풀이 # 검토 # \[\frac{5&amp;#43;4&amp;#43;(2-(3-(6&amp;#43;\frac{4}{5})))}{3(6-2)(2-7)} = \frac{14.8}{-60} = -\frac{37}{150}\] </description>
+      <description>\( \) SICP 1.02 # 문제 # 다음 식을 &amp;lsquo;앞가지 쓰기&amp;rsquo; 꼴로 바꿔보자.&#xA;$${\frac{5+4+(2-(3-(6+\frac45)))}{3(6-2)(2-7)}}$$&#xA;문제풀이 # 검토 # $${\frac{5+4+(2-(3-(6+\frac{4}{5})))}{3(6-2)(2-7)} = \frac{14.8}{-60} = -\frac{37}{150}}$$</description>
     </item>
     <item>
       <title>1.03</title>
       <link>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/103/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/103/</guid>
-      <description> SICP 1.03 # 문제 # 숫자 3개를 받아 큰 숫자 2개를 제곱한 후 그 2개 값을 덧셈하는 프로시저 정의하기. 문제풀이 # #lang scheme (define (sum_large_square x y z) (cond ((and (&amp;gt;= x z) (&amp;gt;= y z)) (+ (* x x) (* y y))) ((and (&amp;gt;= y x) (&amp;gt;= z x)) (+ (* y y) (* z z))) ((and (&amp;gt;= z y) (&amp;gt;= x y)) (+ (* z z) (* x x))) ) ) 검토 # </description>
+      <description> SICP 1.03 # 문제 # 숫자 3개를 받아 그 중 큰 숫자 2개를 제곱한 후, 그 2개 값을 덧셈하여 내놓는 프로시저를 정의하라.&#xA;문제풀이 # #lang scheme (define (sum_large_square x y z) (cond ((and (&amp;gt;= x z) (&amp;gt;= y z)) (+ (* x x) (* y y))) ((and (&amp;gt;= y x) (&amp;gt;= z x)) (+ (* y y) (* z z))) ((and (&amp;gt;= z y) (&amp;gt;= x y)) (+ (* z z) (* x x))) ) ) 검토 # </description>
     </item>
     <item>
       <title>1.04</title>
       <link>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/104/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/104/</guid>
-      <description>SICP 1.04 # 문제 # 엮은식 연산자 자리에 다른 식이 와도 다음 규칙이 성립한다.&#xA;엮은식에서 부분 식의 값을 모두 구한다. 엮은식에서 맨 왼쪽에 있는 식의 값은 프로시저가 되고 나머지 식의 값은 인자가 된다. 프로시저를 인자에 적용하여 엮은식의 값을 구한다. 문제풀이 # (a-plus-abs-b 4 -5) 1. 부분식의 값이 이미 기본상태이다. ((if (&amp;gt; -5 0) + -) 4 -5) 2. 프로시저를 인자에 적용하여 엮은식의 값을 구한다. (if (- 4 -5)) 1. 부분식의 값을 모두 구한다.</description>
+      <description>SICP 1.04 # 문제 # 엮은식 연산자 자리에 다른 식이 와도 다음 규칙이 성립한다.&#xA;엮은식에서 부분 식의 값을 모두 구한다. 엮은식에서 맨 왼쪽에 있는 식의 값은 프로시저가 되고 나머지 식의 값은 인자가 된다. 프로시저를 인자에 적용하여 엮은식의 값을 구한다. 다음 프로시저에 인자를 주고 어떻게 계산되는지 밝혀보아라.&#xA;(define (a-plus-abs-b a b) ((if (&amp;gt; b 0) + - ) a b)) 문제풀이 # (a-plus-abs-b 4 -5) 1. 부분식의 값이 이미 기본상태이다. ((if (&amp;gt; -5 0) + -) 4 -5) 2.</description>
     </item>
     <item>
       <title>1.05 </title>
       <link>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/105/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/105/</guid>
-      <description>SICP 1.05 # 문제 # 인자 먼저 계산법 vs 정의대로 계산법&#xA;(define (p) (p)) (define (test x y) (if (= x 0) 0 y)) 문제풀이 # (test 0 (p))&#xA;인자 먼저 계산법&#xA;(test 0 (p)) (test 0 (p))&#xA;&amp;hellip; ∞(test 0 (p)) 정의대로 계산법&#xA;(test 0 (p)) (if (= 0 0)&#xA;0&#xA;(p)) 0 인자 먼저 계산법은 인자가 먼저 평가 되기 때문에 (define (p) (p)) 자기 자신을 호출하는 (p) 로 인해 무한 루프에 빠진다.</description>
+      <description>SICP 1.05 # 문제 # 실행기가 인자 먼저 계산법을 따르는지 정의대로 계산법을 따르는지 알아보기 위해 다음과 같이 두 프로시저를 정의했을 때 어떤 결과가 나오는지 밝혀라.&#xA;(define (p) (p)) (define (test x y) (if (= x 0) 0 y)) (test 0 (p)) 문제풀이 # 인자 먼저 계산법&#xA;(test 0 (p)) (test 0 (p)) ... 정의대로 계산법&#xA;(test 0 (p)) (if (= 0 0) 0 (p)) 0 인자 먼저 계산법은 인자가 먼저 평가 되기 때문에 (define (p) (p)) 자기 자신을 호출하는</description>
     </item>
     <item>
       <title>1.06</title>
       <link>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/106/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/106/</guid>
-      <description>SICP 1.06 # 문제 # cond 로 new-if 를 만들면? 문제풀이 # #lang scheme (define (new-if predicate then-clause else-clause) (cond (predicate then-clause) (else else-clause))) (define (sqrt-iter guess x) (new-if (good-enough? guess x) guess (sqrt-iter (imporve guess x) x))) (define (imporve guess x) (average guess (/ x guess))) (define (average x y) (/ (+ x y) 2)) (define (good-enough? guess x) (&amp;lt; (abs (- (square guess) x)) 0.001)) (define (square x) (* x x)) (define (sqrt x) (sqrt-iter 1.</description>
+      <description>SICP 1.06 # 문제 # 다음과 같이 new-if를 정의하여 제곱근 프로그램에서 사용하면 어떤 일이 일어나는가?&#xA;(define (new-if predicate then-clause else-clause) (cond (predicate then-clause) (else else-clause))) 문제풀이 # scheme 에서는 인자먼저 계산법을 채택하고 있다. new-if 의 인자로 (sqrt-iter(imporve guess x))가 먼저 평가되기 때문에 무한 루프에 빠진다.&#xA;new-if 정의 부분의 cond를 if 형태로 바꾸어도 역시 무한 루프에 빠진다.&#xA;#lang scheme (define (new-if predicate then-clause else-clause) (cond (predicate then-clause) (else else-clause))) (define (sqrt-iter guess x) (new-if (good-enough?</description>
     </item>
     <item>
       <title>1.07</title>
       <link>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/107/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/107/</guid>
-      <description>SICP 1.07 # 문제 # 기존 good-enough? 의 문제점 앞서 만든 sqrt의 good-enough? 부분을 개선해보자&#xA;개선방법: 참값에 더 가까운 guess를 구하기 위해 새로 어림잡은 값을 조금씩 고치며 이전 값보다 더 나아지지 않을 때까지 계산을 하는 것이다. 문제풀이 # 1. 기존 good-enough? 의 문제점 # \(x\) 와 \(guess^2\) 의 차이가 0.001이 넘는가?로 판단하는데 뉴튼법의 점화식은 다음과 같다. \[a_{n&amp;#43;1} = \frac{a_n &amp;#43; \frac{x}{a_n}}{2}\] 이 점화식을 무한히 전개하면 특정한 수에 수렴하는 것을 알 수 있다.</description>
+      <description>SICP 1.07 # \( \) 문제 # 기존 good-enough? 의 문제점 앞서 만든 sqrt의 good-enough? 부분을 개선해보자 개선방법: 참값에 더 가까운 guess를 구하기 위해 새로 어림잡은 값을 조금씩 고치며 이전 값보다 더 나아지지 않을 때까지 계산을 하는 것이다.&#xA;문제풀이 # 기존 good-enough? 의 문제점&#xA;\(x\) 와 \(guess^2\) 의 차이가 0.001이 넘는가?로 판단하는데 뉴튼법의 점화식은 다음과 같다. $${a_{n+1} = \frac{a_n + \frac{x}{a_n}}{2}}$$ 이 점화식을 무한히 전개하면 특정한 수에 수렴하는 것을 알 수 있다.</description>
     </item>
     <item>
       <title>1.08</title>
       <link>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/108/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/108/</guid>
-      <description>SICP 1.08 # 문제 # 다음을 이용해서 세제곱근 프로시저를 작성하라.&#xA;\[\frac{\frac{x}{2y^2}&amp;#43;2y}{3}\] 문제풀이 # #lang scheme (define (cube-iter guess x) (if (good-enough? guess x) guess (cube-iter (improve guess x) x))) (define (improve guess x) (average (* 2 guess) (/ x (square guess)))) (define (average x y) (/ (+ x y) 3)) (define (good-enough? guess x) (display guess) (display &amp;#34;\n&amp;#34;) (&amp;lt; (abs (- (improve guess x) guess)) 0.000001)) (define (square x) (* x x)) (define (cube x) (cube-iter 1.</description>
+      <description>SICP 1.08 # \( \) 문제 # 다음을 이용해서 세제곱근 프로시저를 작성하라.&#xA;$${\frac{\frac{x}{2y^2}+2y}{3}}$$&#xA;문제풀이 # 주어진 식을 이용해 improve 프로시저만 수정해주었다.&#xA;#lang scheme (define (cube-iter guess x) (if (good-enough? guess x) guess (cube-iter (improve guess x) x))) (define (improve guess x) (average (* 2 guess) (/ x (square guess)))) (define (average x y) (/ (+ x y) 3)) (define (good-enough? guess x) (display guess) (display &amp;#34;\n&amp;#34;) (&amp;lt; (abs (- (improve guess x) guess)) 0.</description>
     </item>
     <item>
       <title>1.09</title>
       <link>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/109/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/109/</guid>
-      <description>SICP 1.09 # 문제 # 2개의 더하기 프로시저가 (+ 4 5)를 맞바꿈 계산법으로 계산하는 과정을 밝히고 프로세스가 반복하는지 되도는지 말하여라.&#xA;#lang scheme (define (+ a b) (if (= a 0) b (inc (+ (dec a) b)))) (define (+ a b) (if (= a 0) b (+ (dec a) (inc b)))) 문제풀이 # 첫 번째 계산 과정 # #lang scheme (define (+ a b) (if (= a 0) b (inc (+ (dec a) b)))) (inc (+ (dec 4) 5)) (inc (inc (+ (dec 3) 5))) (inc (inc (inc (+ (dec 2) 5)))) (inc (inc (inc (inc (+ (dec 1) 5))))) (inc (inc (inc (inc 5)))) (inc (inc (inc 6))) (inc (inc 7)) (inc 8) 9 되도는 프로세스</description>
+      <description>SICP 1.09 # 문제 # 다음 2개의 더하기 프로시저가 (+ 4 5)를 맞바꿈 계산법으로 계산하는 과정을 맞바꿈 계산법에 따라 프로세스가 반복하는지 되도는지 살펴보아라.&#xA;#lang scheme (define (+ a b) (if (= a 0) b (inc (+ (dec a) b)))) (define (+ a b) (if (= a 0) b (+ (dec a) (inc b)))) 문제풀이 # 첫 번째 계산 과정은 되도는 프로세스가 만들어진다.&#xA;#lang scheme (define (+ a b) (if (= a 0) b (inc (+ (dec a) b)))) (inc (+ (dec 4) 5)) (inc (inc (+ (dec 3) 5))) (inc (inc (inc (+ (dec 2) 5)))) (inc (inc (inc (inc (+ (dec 1) 5))))) (inc (inc (inc (inc 5)))) (inc (inc (inc 6))) (inc (inc 7)) (inc 8) 9 두 번째 계산 과정은 반복하는 프로세스가 만들어진다.</description>
     </item>
     <item>
       <title>1.10</title>
       <link>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/110/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/110/</guid>
-      <description>SICP 1.10 # 문제 # 애커만 함수를 나타낸 프로시저로 다음을 계산하고 f,g,h 프로시저의 기능을 수학적으로 정의하라.&#xA;#lang scheme (define (A x y) (cond ((= y 0) 0) ((= x 0) (* 2 y)) ((= y 1) 2) (else (A (- x 1) (A x (- y 1)))))) (A 1 10) (A 2 4) (A 3 3) (define (f n) (A 0 n)) (define (g n) (A 1 n)) (define (h n) (A 2 n)) 문제풀이 # (A 1 10) # (A 0 (A 1 9)) (A 0 (A 0 (A 1 8))) (A 0 (A 0 (A 0 (A 1 7)))) (A 0 (A 0 (A 0 (A 0 (A 1 6))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 5)))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 4))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 3)))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 2))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 1)))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 2))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 4)))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 8))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 16)))))) (A 0 (A 0 (A 0 (A 0 (A 0 32))))) (A 0 (A 0 (A 0 (A 0 64)))) (A 0 (A 0 (A 0 128))) (A 0 (A 0 256)) (A 0 512) 1024 (A 2 4) # (A 1 (A 2 3)) (A 1 (A 1 (A 2 2))) (A 1 (A 1 (A 1 (A 2 1)))) (A 1 (A 1 (A 1 2))) (A 1 (A 1 (A 0 (A 1 1)))) (A 1 (A 1 (A 0 2))) (A 1 (A 1 4)) (A 1 (A 0 (A 1 3))) (A 1 (A 0 (A 0 (A 1 2)))) (A 1 (A 0 (A 0 (A 0 (A 1 1))))) (A 1 (A 0 (A 0 (A 0 2)))) (A 1 (A 0 (A 0 4))) (A 1 (A 0 8)) (A 1 16) (A 0 (A 1 15)) (A 0 (A 0 (A 1 14))) (A 0 (A 0 (A 0 (A 1 13)))) (A 0 (A 0 (A 0 (A 0 (A 1 12))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 11)))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 10))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 9)))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 8))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 7)))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 6))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 5)))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 4))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 3)))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 2))))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 1)))))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 2))))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 4)))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 8))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 16)))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 32))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 64)))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 128))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 256)))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 512))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 1024)))))) (A 0 (A 0 (A 0 (A 0 (A 0 2048))))) (A 0 (A 0 (A 0 (A 0 4096)))) (A 0 (A 0 (A 0 8192))) (A 0 (A 0 16384)) (A 0 32768) 65536 (A 3 3) # (A 2 (A 3 2)) (A 2 (A 2 (A 3 1))) (A 2 (A 2 2)) (A 2 (A 1 (A 2 1))) (A 2 (A 1 2)) (A 2 (A 0 (A 1 1))) (A 2 (A 0 2)) (A 2 4) (A 1 (A 2 3)) (A 1 (A 1 (A 2 2))) (A 1 (A 1 (A 1 (A 2 1)))) (A 1 (A 1 (A 1 2))) (A 1 (A 1 (A 0 (A 1 1)))) (A 1 (A 1 (A 0 2))) (A 1 (A 1 4)) (A 1 (A 0 (A 1 3))) (A 1 (A 0 (A 0 (A 1 2)))) (A 1 (A 0 (A 0 (A 0 (A 1 1))))) (A 1 (A 0 (A 0 (A 0 2)))) (A 1 (A 0 (A 0 4))) (A 1 (A 0 8)) (A 1 16) (A 0 (A 1 15)) (A 0 (A 0 (A 1 14))) (A 0 (A 0 (A 0 (A 1 13)))) (A 0 (A 0 (A 0 (A 0 (A 1 12))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 11)))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 10))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 9)))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 8))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 7)))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 6))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 5)))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 4))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 3)))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 2))))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 1)))))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 2))))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 4)))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 8))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 16)))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 32))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 64)))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 128))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 256)))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 512))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 1024)))))) (A 0 (A 0 (A 0 (A 0 (A 0 2048))))) (A 0 (A 0 (A 0 (A 0 4096)))) (A 0 (A 0 (A 0 8192))) (A 0 (A 0 16384)) (A 0 32768) 65536 (define (f n) (A 0 n))</description>
+      <description>SICP 1.10 # \( \) 문제 # 애커만 함수를 나타낸 프로시저로 다음을 계산하고 f,g,h 프로시저의 기능을 수학적으로 정의하라.&#xA;#lang scheme (define (A x y) (cond ((= y 0) 0) ((= x 0) (* 2 y)) ((= y 1) 2) (else (A (- x 1) (A x (- y 1)))))) (A 1 10) (A 2 4) (A 3 3) (define (f n) (A 0 n)) (define (g n) (A 1 n)) (define (h n) (A 2 n)) 문제풀이 # (A 1 10)</description>
     </item>
     <item>
       <title>1.11</title>
       <link>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/111/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/111/</guid>
-      <description>SICP 1.11 # 문제 # 다음을 만족하는 되도는 프로시저, 반복하는 프로시저를 작성하라.&#xA;\[n &amp;lt; 3, \ f(n) = n \\ n &amp;gt;= 3, \ f(n) = f(n-1) &amp;#43; 2f(n-2) &amp;#43; 3f(n-3)\] 문제풀이 # 되도는 프로세스 # #lang scheme (define (recur n) (cond ((&amp;lt; n 3) n) (else (+ (recur(- n 1)) (* 2 (recur(- n 2))) (* 3 (recur(- n 3))))))) 반복하는 프로세스 # #lang scheme (define (iter-process n) (define (iter a b c d count) (cond ((= count 2) a) ((= count 1) b) ((= count 0) c) (else (+ (iter (- d (* 2 b) (* 3 c)) (/ (- d a (* 3 c)) 2) (/ (- d a (* 2 b)) 3) (+ a (* 2 b) (* 3 c)) (- count 1)) (* 2 (iter (- d (* 2 b) (* 3 c)) (/ (- d a (* 3 c)) 2) (/ (- d a (* 2 b)) 3) (+ a (* 2 b) (* 3 c)) (- count 2))) (* 3 (iter (- d (* 2 b) (* 3 c)) (/ (- d a (* 3 c)) 2) (/ (- d a (* 2 b)) 3) (+ a (* 2 b) (* 3 c)) (- count 3))) )))) (iter 2 1 0 4 n)) 검토 # 다른 사람의 풀이를 보며 검토해봤을 때 내가 짠 프로시저는 쓸데없이 복잡했다.</description>
+      <description>SICP 1.11 # \( \) 문제 # 다음 제시된 함수의 프로시저를 되도는 프로세스, 반복하는 프로세스로 작성하라.&#xA;$${n &amp;lt; 3, \ f(n) = n \ n &amp;gt;= 3, \ f(n) = f(n-1) + 2f(n-2) + 3f(n-3)}$$&#xA;문제풀이 # 되도는 프로세스&#xA;#lang scheme (define (recur n) (cond ((&amp;lt; n 3) n) (else (+ (recur(- n 1)) (* 2 (recur(- n 2))) (* 3 (recur(- n 3))))))) 반복하는 프로세스&#xA;#lang scheme (define (iter-process n) (define (iter a b c d count) (cond ((= count 2) a) ((= count 1) b) ((= count 0) c) (else (+ (iter (- d (* 2 b) (* 3 c)) (/ (- d a (* 3 c)) 2) (/ (- d a (* 2 b)) 3) (+ a (* 2 b) (* 3 c)) (- count 1)) (* 2 (iter (- d (* 2 b) (* 3 c)) (/ (- d a (* 3 c)) 2) (/ (- d a (* 2 b)) 3) (+ a (* 2 b) (* 3 c)) (- count 2))) (* 3 (iter (- d (* 2 b) (* 3 c)) (/ (- d a (* 3 c)) 2) (/ (- d a (* 2 b)) 3) (+ a (* 2 b) (* 3 c)) (- count 3))) )))) (iter 2 1 0 4 n)) 검토 # 다른 사람의 풀이를 보며 검토해봤을 때 내가 짠 프로시저는 쓸데없이 복잡했다.</description>
     </item>
     <item>
       <title>1.12</title>
       <link>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/112/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/112/</guid>
-      <description> SICP 1.12 # 문제 # 파스칼 삼각형을 되도는 프로세스가 나오게끔 프로시저를 작성하라. 문제풀이 # 파스칼 삼각형 # #lang scheme (define (p-recursion index n) (cond ((= index 1) 1) ((= index n) 1) ((= n 1) 1) (else (+ (p-recursion (- index 1) (- n 1)) (p-recursion index (- n 1)))))) (define (pascal n) (define (p-display index n) (cond ((&amp;lt; index n) (p-display (+ 1 index) n))) (display (p-recursion index n)) (display &amp;#34; &amp;#34;)) (p-display 1 n)) (define (pascal-all n) (cond ((&amp;gt; n 0) (pascal-all (- n 1)))) (pascal n) (newline) ) 검토 # </description>
+      <description> SICP 1.12 # 문제 # 다음과 같은 모양을 파스칼 삼각형이라 할 때 되도는 프로세스가 나오게 파스칼 삼각형의 프로시저를 작성하라.&#xA;1 1 1 1 2 1 1 3 3 1 1 4 6 4 1 ... 문제풀이 # 파스칼 삼각형&#xA;#lang scheme (define (p-recursion index n) (cond ((= index 1) 1) ((= index n) 1) ((= n 1) 1) (else (+ (p-recursion (- index 1) (- n 1)) (p-recursion index (- n 1)))))) (define (pascal n) (define (p-display index n) (cond ((&amp;lt; index n) (p-display (+ 1 index) n))) (display (p-recursion index n)) (display &amp;#34; &amp;#34;)) (p-display 1 n)) (define (pascal-all n) (cond ((&amp;gt; n 0) (pascal-all (- n 1)))) (pascal n) (newline) ) 검토 # </description>
     </item>
     <item>
       <title>1.13</title>
       <link>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/113/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/113/</guid>
-      <description>SICP 1.13 # 문제 # \(\Phi = \frac{1&amp;#43;\sqrt{5}}{2}\) 일때 \(Fib(n)\) 이 \( \frac{\Phi^n}{\sqrt{5}}\) 에 가장 가까운 정수임을 밝혀라. \[\Psi = \frac{1-\sqrt{5}}{2}, \ Fib=(n) = \frac{\Phi^n-\psi^n}{\sqrt{5}}\] 문제풀이 # 피보나치 수열의 정의는 다음과 같다.&#xA;$$\text{Fib}(n) = \text{Fib}(n-1) + \text{Fib}(n-2)$$&#xA;접근성을 위해 a 에 관한 식으로 다시 정리하면 다음과 같다.&#xA;$$a_{n+2} - a_{n+1} - a_n = 0$$&#xA;각 항의 관계식을 이차방정식으로 본다면, 다음과 같다.&#xA;$$a_{n+2} - (\alpha+\beta)a_{n+1} - (\alpha \beta)a_n = 0, \ \alpha+\beta = 1, \ \alpha \beta = -1$$</description>
+      <description>SICP 1.13 # 문제 # \(\Phi = \frac{1&amp;#43;\sqrt{5}}{2}\) 일때 \(Fib(n)\) 이 \( \frac{\Phi^n}{\sqrt{5}}\) 에 가장 가까운 정수임을 밝혀라.&#xA;$${\Psi = \frac{1-\sqrt{5}}{2}, \ Fib=(n) = \frac{\Phi^n-\Psi^n}{\sqrt{5}}}$$ 귀납법과 피보타치 수열 정의를 바탕으로 \(\frac{(\Phi^n - \Psi^n)}{\sqrt{5}}\) 임을 밝혀라.&#xA;문제풀이 # 피보나치 수열의 정의는 다음과 같다.&#xA;$$\text{Fib}(n) = \text{Fib}(n-1) + \text{Fib}(n-2)$$&#xA;접근성을 위해 a 에 관한 식으로 다시 정리하면 다음과 같다.&#xA;$$a_{n+2} - a_{n+1} - a_n = 0$$&#xA;각 항의 관계식을 이차방정식으로 본다면, 다음과 같다.</description>
     </item>
     <item>
       <title>1.14</title>
       <link>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/114/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/114/</guid>
-      <description>SICP 1.14 # 문제 # #lang sicp (define (count-change n) (define (count amount kinds-of-coins) (cond ((= amount 0) 1) ((or (&amp;lt; amount 0) (= kinds-of-coins 0)) 0) (else (+ (count (- amount (value-of-coins kinds-of-coins)) kinds-of-coins) (count amount (- kinds-of-coins 1)) ) ) )) (define (value-of-coins kinds-of-coins) (cond ((= kinds-of-coins 1) 50) ((= kinds-of-coins 2) 25) ((= kinds-of-coins 3) 10) ((= kinds-of-coins 4) 5) ((= kinds-of-coins 5) 1))) (count n 5) ) (count-change 11) 1.</description>
+      <description>SICP 1.14 # 문제 # 다음 count-change 프로시저가 만들어내는 프로세스를 나무꼴로 그려라. 프로세스가 거치는 단계 수와 기억 공간의 크기는 어떤 자람 차수를 보이는가? #lang sicp (define (count-change n) (define (count amount kinds-of-coins) (cond ((= amount 0) 1) ((or (&amp;lt; amount 0) (= kinds-of-coins 0)) 0) (else (+ (count (- amount (value-of-coins kinds-of-coins)) kinds-of-coins) (count amount (- kinds-of-coins 1)) ) ) )) (define (value-of-coins kinds-of-coins) (cond ((= kinds-of-coins 1) 50) ((= kinds-of-coins 2) 25) ((= kinds-of-coins 3) 10) ((= kinds-of-coins 4) 5) ((= kinds-of-coins 5) 1))) (count n 5) ) (count-change 11) 문제풀이 # 다음 count-change 프로시저가 만들어내는 프로세스를 나무꼴로 그려라.</description>
     </item>
     <item>
       <title>1.15</title>
       <link>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/115/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/115/</guid>
-      <description>SICP 1.15 # 문제 # #lang sicp (define (cube x) (* x x x)) (define (p x) (- (* 3 x) (* 4 (cube x)))) (define (sine angle) (if (not (&amp;gt; (abs angle) 0.1)) angle (p (sine (/ angle 3.0))))) 라디안 각 x 로 sinx 를 구하는 프로시저이다.&#xA;1. (sine 12.15) 를 구할 때 p 프로시저가 호출되는 횟수는 몇 번인가? # 2. (sine a) 값을 계산할때 프로시저가 만들어내는 프로세스의 기억 공간과 계산 단계의 자람 차수를 a의 함수로 나타내면?</description>
+      <description>SICP 1.15 # 문제 # 다음은 라디안 각 x 로 sinx 를 구하는 프로시저이다. $$\sin x = 3 \sin\frac x3-4 \sin^3\frac x3$$&#xA;(sine 12.15) 를 구할 때 p 프로시저가 호출되는 횟수는 몇 번인가? (sine a) 값을 계산할때 프로시저가 만들어내는 프로세스의 기억 공간과 계산 단계의 자람 차수를 a의 함수로 나타내라. #lang sicp (define (cube x) (* x x x)) (define (p x) (- (* 3 x) (* 4 (cube x)))) (define (sine angle) (if (not (&amp;gt; (abs angle) 0.</description>
     </item>
     <item>
       <title>1.16</title>
       <link>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/116/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/116/</guid>
-      <description>SICP 1.16 # 문제 # #lang sicp (define (even? n) (= (remainder n 2) 0)) (define (square x) (* x x)) (define (fast-expt b n) (cond ((= n 0) 1) ((even? n) (square (fast-expt b (/ n 2)))) (else (* b (fast-expt b (- n 1)))))) 현재의 fast-expt 는 로그 비례로 계산 시간이 늘어나는데 이를 유지하며 되도는 프로세스에서 반복하는 프로세스로 바꿔보자 # tip: 프로세스가 처음 돌아갈때 새 변수 a는 1로 시작해서 끝날때 결과값이 들어있게 한다.</description>
+      <description>SICP 1.16 # 문제 # 현재의 fast-expt 는 로그 비례로 계산 시간이 늘어나는데 이를 유지하며 되도는 프로세스에서 반복하는 프로세스로 바꿔보자.&#xA;tip: 프로세스가 처음 돌아갈때 새 변수 a는 1로 시작해서 끝날때 결과값이 들어있게 한다.&#xA;#lang sicp (define (even? n) (= (remainder n 2) 0)) (define (square x) (* x x)) (define (fast-expt b n) (cond ((= n 0) 1) ((even? n) (square (fast-expt b (/ n 2)))) (else (* b (fast-expt b (- n 1)))))) 문제풀이 # 다음과 같은 핵심 아이디어를 활용하면 된다.</description>
     </item>
     <item>
       <title>1.17</title>
       <link>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/117/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/117/</guid>
-      <description>SICP 1.17 # 문제 # (define (* a b) (if (= b 0) 0 (+ (* a (- b 1))))) 현재의 * 는 선형 비례로 프로세스가 자라나는데 로그 비례로 자라나는 프로세스를 만드는 프로시저로 바꿔보자 # 문제풀이 # #lang sicp (define (even? a) (= (remainder a 2) 0)) (define (double a) (* a 2)) (define (halve a) (if (even? a) (/ a 2) a)) (define (fast-multi a b) (cond ((= b 0) 0) ((even?</description>
+      <description>SICP 1.17 # 문제 # 현재의 * 는 선형 비례로 프로세스가 자라나는데 로그 비례로 자라나는 프로세스를 만드는 프로시저로 바꿔보자&#xA;(define (* a b) (if (= b 0) 0 (+ (* a (- b 1))))) 문제풀이 # 1.16 과 비슷한 아이디어로 3*4 = 3+3+3+3 = 6+6 의 아이디어를 활용했다. 곱해야할 수를 2배 키움으로써 횟수를 절반으로 줄일 수 있다.(횟수가 짝수인 경우)&#xA;#lang sicp (define (even? a) (= (remainder a 2) 0)) (define (double a) (* a 2)) (define (halve a) (if (even?</description>
     </item>
     <item>
       <title>1.18</title>
       <link>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/118/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/118/</guid>
-      <description> SICP 1.18 # 문제 # 문제 1.16,1.17 결과를 바탕으로 로그 비례로 자라나는 반복 프로세스를 만드는 곱셈 프로시저를 짜보자 # 문제풀이 # #lang sicp (define (even? a) (= (remainder a 2) 0)) (define (double a) (* a 2)) (define (halve a) (if (even? a) (/ a 2) a)) (define (fast-multiply a b) (define (* a b result) (cond ((= b 0) result) ((even? b) (* (double a) (halve b) result)) (else (* a (- b 1) (+ result a))))) (* a b 0)) 검토 # </description>
+      <description> SICP 1.18 # 문제 # 문제 1.16,1.17 결과를 바탕으로 로그 비례로 자라나는 반복 프로세스를 만드는 곱셈 프로시저를 짜보자&#xA;문제풀이 # #lang sicp (define (even? a) (= (remainder a 2) 0)) (define (double a) (* a 2)) (define (halve a) (if (even? a) (/ a 2) a)) (define (fast-multiply a b) (define (* a b result) (cond ((= b 0) result) ((even? b) (* (double a) (halve b) result)) (else (* a (- b 1) (+ result a))))) (* a b 0)) 검토 # </description>
     </item>
     <item>
       <title>1.19</title>
       <link>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/119/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/119/</guid>
-      <description>SICP 1.19 # 문제 # #lang sicp (define (square x) (* x x)) (define (fib n) (fib-iter 1 0 0 1 n)) (define (fib-iter a b p q count) (cond ((= count 0) b) ((even? count) (fib-iter a b ?? ?? (/ count 2))) (else (fib-iter (+ (* b q) (* a q) (* a p)) (+ (* b p) (* a q)) p q (- count 1))))) Tpq 는 (a,b)를 두고 a &amp;lt;- bq+aq+ap, b &amp;lt;- bq+aq 라는 규칙을 나타낸다고 할 때 Tpq 를 두번 거듭 계산한 값이 Tp&amp;rsquo;q&amp;rsquo; 을 한 번 한 것과 같다는 것을 밝히고, p와 q로 p&amp;rsquo;과 q&amp;rsquo;을 계산하는 식을 밝혀라.</description>
+      <description>SICP 1.19 # 문제 # \(Tpq\) 는 \((a, b)\) 를 두고 \(a \gets bq&amp;#43;aq&amp;#43;ap, \ \ b \gets bq&amp;#43;aq\) 라는 규칙을 나타낸다고 할 때 \(Tpq\) 를 두번 거듭 계산한 값이 \(Tp&amp;#39;q&amp;#39;\) 을 한 번 한 것과 같다는 것을 밝히고, \(p\) 와 \(q\) 로 \(p&amp;#39;\) p&amp;rsquo;과 \(q&amp;#39;\) 을 계산하는 식을 밝혀라. 다음 프로시저에서 ?? 부분을 채워보자.&#xA;tip: 이 알고리즘은 제곱 알고리즘을 효율화 할 때 쓰인 아이디어와 같은 아이디어이다. #lang sicp (define (square x) (* x x)) (define (fib n) (fib-iter 1 0 0 1 n)) (define (fib-iter a b p q count) (cond ((= count 0) b) ((even?</description>
     </item>
     <item>
       <title>1.20</title>
       <link>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/120/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/120/</guid>
-      <description>SICP 1.20 # 문제 # #lang sicp (define (gcd a b) (if (= b 0) a (gcd b (remainder a b)))) 유클리드 호제법으로 최대공약수를 구하는 알고리즘이다. (gcd 206 40) 을 계산할 때&#xA;1. 정의대로 계산법을 적용했을 때의 프로세스와 remainder 연산이 쓰이는 곳을 표시하고 얼마나 사용하는지 구하라. # 2. 인자먼저 계산법을 적용했을 때의 프로세스와 remainder 연산이 쓰이는 곳을 표시하고 얼마나 사용하는지 구하라. # 문제풀이 # 1. 정의대로 계산법을 적용했을 때의 프로세스와 remainder 연산이 쓰이는 곳을 표시하고 얼마나 사용하는지 구하라.</description>
+      <description>SICP 1.20 # 문제 # 다음은 유클리드 호제법으로 최대공약수를 구하는 알고리즘이다. (gcd 206 40) 을 계산할 때&#xA;정의대로 계산법을 적용했을 때의 프로세스와 remainder 연산이 쓰이는 곳을 표시하고 얼마나 사용하는지 구하라. 인자먼저 계산법을 적용했을 때의 프로세스와 remainder 연산이 쓰이는 곳을 표시하고 얼마나 사용하는지 구하라. #lang sicp (define (gcd a b) (if (= b 0) a (gcd b (remainder a b)))) 문제풀이 # 정의대로 계산법을 적용했을 때의 프로세스와 remainder 연산이 쓰이는 곳을 표시하고 얼마나 사용하는지 구하라.</description>
     </item>
     <item>
       <title>1.21</title>
       <link>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/121/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/121/</guid>
-      <description> SICP 1.21 # 문제 # #lang sicp (define (smallest-divisor n) (find-divisor n 2)) (define (find-divisor n test-divisor) (cond ((&amp;gt; (square test-divisor) n) n) ((divides? test-divisor n) test-divisor) (else (find-divisor n (+ test-divisor 1))))) (define (divides? a b) (= (remainder b a) 0)) (define (square x) (* x x)) smallest-divisor 프로시저로 199,1999,19999의 가장 작은 약수를 찾아라. # 문제풀이 # (smallest-divisor 199) 199 (smallest-divisor 1999) 1999 (smallest-divisor 19999) 7 검토 # </description>
+      <description> SICP 1.21 # 문제 # smallest-divisor 프로시저로 199,1999,19999의 가장 작은 약수를 찾아라.&#xA;#lang sicp (define (smallest-divisor n) (find-divisor n 2)) (define (find-divisor n test-divisor) (cond ((&amp;gt; (square test-divisor) n) n) ((divides? test-divisor n) test-divisor) (else (find-divisor n (+ test-divisor 1))))) (define (divides? a b) (= (remainder b a) 0)) (define (square x) (* x x)) 문제풀이 # (smallest-divisor 199) 199 (smallest-divisor 1999) 1999 (smallest-divisor 19999) 7 검토 # </description>
+    </item>
+    <item>
+      <title>1.22</title>
+      <link>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/122/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/122/</guid>
+      <description>SICP 1.22 # 문제 # 정해진 넓이에 속하는 홀수를 차례로 소수인지 알아보는 search-for-primes 프로시저를 짜고 이 프로시저로 1000, 10000, 100000, 1000000 을 실행시켜 소수를 찾는 시간이 루트n 즉 루트10에 수렴하는지 봐라.&#xA;#lang sicp (define (timed-prime-test n) (newline) (display n) (start-prime-test n (runtime))) (define (start-prime-test n start-time) (if (prime? n) (report-prime (- (runtime) start-time)))) (define (report-prime elapsed-time) (display &amp;#34; *** &amp;#34;) (display elapsed-time)) (define (prime? n) (= n (smallest-divisor n))) (define (smallest-divisor n) (find-divisor n 2)) (define (find-divisor n test-divisor) (cond ((&amp;gt; (square test-divisor) n) n) ((divides?</description>
+    </item>
+    <item>
+      <title>1.23</title>
+      <link>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/123/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/123/</guid>
+      <description>SICP 1.23 # 문제 # smallest-divisor은 쓸모없는 검사를 많이 하는데 test-divisor에서 2,3,4,5,6 대신 2,3,5,7,9 를 받게끔 다시 작성하고 이전에 비해 얼마나 효율적이여졌는지 밝혀라. 예상대로면 2배 정도 성능이 향상되어야하는데 정말 그러한가?&#xA;#lang sicp (define (timed-prime-test n) (newline) (display n) (start-prime-test n (runtime))) (define (start-prime-test n start-time) (if (prime? n) (report-prime (- (runtime) start-time)))) (define (report-prime elapsed-time) (display &amp;#34; *** &amp;#34;) (display elapsed-time)) (define (prime? n) (= n (smallest-divisor n))) (define (smallest-divisor n) (find-divisor n 2)) (define (find-divisor n test-divisor) (cond ((&amp;gt; (square test-divisor) n) n) ((divides?</description>
+    </item>
+    <item>
+      <title>1.24</title>
+      <link>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/124/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/124/</guid>
+      <description>SICP 1.24 # 문제 # 문제 1.22의 소수 찾기 알고리즘을 페르마 검사로 알고리즘으로 고친후 실험 결과를 비교해 보자.&#xA;페르마 검사는 \(O(\log n)\) 정도로 자라나므로 1,000,000 언저리 소수와 1,000 언저리 소수를 찾을 때 걸리는 시간이 얼마나 차이나는가?&#xA;문제풀이 # 페르마 검사 알고리즘은 \(O(\log n)\) 정도로 자라나기 때문에 1,000,000 과 1,000 은 상수 시간만큼 계산속도의 차이가 나게 되는데 이는 계산해야 할 숫자 뒤에 0이 하나 더 붙었을 때 계산은 한번 더 하면 됨을 의미하므로 계산 숫자가 커질 수록 계산 속도의 차이는 더욱 커짐을 알 수 있다.</description>
+    </item>
+    <item>
+      <title>1.25</title>
+      <link>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/125/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/125/</guid>
+      <description>SICP 1.25 # 문제 # 1.24 문제에서 expmod 를 위 같은 식으로 바꿨을때 문제점은 무엇인가?&#xA;(define (expmod base exp m) (remainder (fast-expt base exp) m)) (define (fast-expt b n) (cond ((= n 0) 1) ((even? n) (square (fast-expt b (/ n 2)))) (else (* b (fast-expt b (- n 1)))))) 문제풀이 # 계산 시간이 급격하게 늘어난 것을 확인 할 수 있는데 이런 현상이 발생한 이유는 그 전에는 expmod, square, remainder가 같이 실행되어 지수 승을 계산하는 과정에서 숫자가 엄청나게 커지지 않았지만 fast-expt 는 먼저 지수 승을 가진 숫자를 계산하고 검사하기 때문에 지수 승이 크다면 시간이 훨씬 오래 걸리고 심지어는 메모리 부족으로 계산하지 못하는 경우가 생긴다.</description>
+    </item>
+    <item>
+      <title>1.26</title>
+      <link>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/126/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/126/</guid>
+      <description>SICP 1.26 # 문제 # expmod가 다음과 같이 square를 부르지 않고 곱셈으로 연산할때 \(O(\log n)\) 프로세스가 \(O(n)\) 프로세스로 변하게 된다. 그 이유가 무엇일까?&#xA;(define (expmod base exp m) (cond ((= exp 0) 1) ((even? exp) (remiander (* (expmod base (/ exp 2) m) (expmod base (/ exp 2) m)) m)) (else (remainder (* base (expmod base (- exp 1) m)) m)))) 문제풀이 # square 를 사용하지 않으면서 프로시저에 expmod 가 2개 담기게 되었는데 이렇게 되면 인자 먼저 계산법에 의해 expmod가 2번 불리게 된다.</description>
+    </item>
+    <item>
+      <title>1.27</title>
+      <link>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/127/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/127/</guid>
+      <description>SICP 1.27 # 문제 # 카마이클 수 (561, 1105, 1729, 2465, 2821, 6601)이 정말 페르마 검사를 쓸모없게 만드는지 알아보자.&#xA;정수 \(n\) 을 받아서 \( a &amp;lt; n \) 인 모든 정수 \(a\) 를 두고 \(a^n \pmod n = a\) 이 맞아떨어지는 프로시저를 작성하고 카마이클 수를 검사해봐라.&#xA;문제풀이 # 카마이클 수 검사 결과는 모두 #t 가 나와야 한다.&#xA;#t 가 나오면 페르마 검사에 따라 소수여야 하지만 카마이클 수는 그렇지 않은 수들 이다.</description>
+    </item>
+    <item>
+      <title>1.28</title>
+      <link>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/128/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/128/</guid>
+      <description>SICP 1.28 # 문제 # 페르마 검사가 틀리지 않게 바꾼 검사 중 밀러-라빈 검사가 있다.&#xA;페르마 검사와 달리 \(n\) 이 소수고 \( 0 &amp;lt; a &amp;lt; n \) 인 정수 \(a\) 에 대하여 \(a^{n-1} \pmod n = 1\) 로 맞아떨어진다.&#xA;밀러-라빈 검사 expmod 에서 제곱을 할 때마다 &amp;lsquo; \( 1 \pmod n\) 의 뻔하지 않은 제곱근&amp;rsquo;, 즉 1이나 \(n-1\) 은 아니면서 제곱한 값이 \( 1 \pmod n\) 인 수인지 알아보고 그런 제곱근이 있다면 \(n\) 이 소수가 아님을 밝힐 수 있다.</description>
     </item>
   </channel>
 </rss>

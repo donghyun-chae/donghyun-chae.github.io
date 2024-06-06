@@ -3,26 +3,29 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="SICP 1.13 # 문제 # \(\Phi = \frac{1&#43;\sqrt{5}}{2}\) 일때 \(Fib(n)\) 이 \( \frac{\Phi^n}{\sqrt{5}}\) 에 가장 가까운 정수임을 밝혀라. \[\Psi = \frac{1-\sqrt{5}}{2}, \ Fib=(n) = \frac{\Phi^n-\psi^n}{\sqrt{5}}\] 문제풀이 # 피보나치 수열의 정의는 다음과 같다.
+<meta name="description" content="SICP 1.13 # 문제 # \(\Phi = \frac{1&#43;\sqrt{5}}{2}\) 일때 \(Fib(n)\) 이 \( \frac{\Phi^n}{\sqrt{5}}\) 에 가장 가까운 정수임을 밝혀라.
+$${\Psi = \frac{1-\sqrt{5}}{2}, \ Fib=(n) = \frac{\Phi^n-\Psi^n}{\sqrt{5}}}$$ 귀납법과 피보타치 수열 정의를 바탕으로 \(\frac{(\Phi^n - \Psi^n)}{\sqrt{5}}\) 임을 밝혀라.
+문제풀이 # 피보나치 수열의 정의는 다음과 같다.
 $$\text{Fib}(n) = \text{Fib}(n-1) &#43; \text{Fib}(n-2)$$
 접근성을 위해 a 에 관한 식으로 다시 정리하면 다음과 같다.
 $$a_{n&#43;2} - a_{n&#43;1} - a_n = 0$$
-각 항의 관계식을 이차방정식으로 본다면, 다음과 같다.
-$$a_{n&#43;2} - (\alpha&#43;\beta)a_{n&#43;1} - (\alpha \beta)a_n = 0, \ \alpha&#43;\beta = 1, \ \alpha \beta = -1$$">
+각 항의 관계식을 이차방정식으로 본다면, 다음과 같다.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:url" content="https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/113/">
   <meta property="og:site_name" content="Dongle-log">
   <meta property="og:title" content="1.13">
-  <meta property="og:description" content="SICP 1.13 # 문제 # \(\Phi = \frac{1&amp;#43;\sqrt{5}}{2}\) 일때 \(Fib(n)\) 이 \( \frac{\Phi^n}{\sqrt{5}}\) 에 가장 가까운 정수임을 밝혀라. \[\Psi = \frac{1-\sqrt{5}}{2}, \ Fib=(n) = \frac{\Phi^n-\psi^n}{\sqrt{5}}\] 문제풀이 # 피보나치 수열의 정의는 다음과 같다.
+  <meta property="og:description" content="SICP 1.13 # 문제 # \(\Phi = \frac{1&amp;#43;\sqrt{5}}{2}\) 일때 \(Fib(n)\) 이 \( \frac{\Phi^n}{\sqrt{5}}\) 에 가장 가까운 정수임을 밝혀라.
+$${\Psi = \frac{1-\sqrt{5}}{2}, \ Fib=(n) = \frac{\Phi^n-\Psi^n}{\sqrt{5}}}$$ 귀납법과 피보타치 수열 정의를 바탕으로 \(\frac{(\Phi^n - \Psi^n)}{\sqrt{5}}\) 임을 밝혀라.
+문제풀이 # 피보나치 수열의 정의는 다음과 같다.
 $$\text{Fib}(n) = \text{Fib}(n-1) &#43; \text{Fib}(n-2)$$
 접근성을 위해 a 에 관한 식으로 다시 정리하면 다음과 같다.
 $$a_{n&#43;2} - a_{n&#43;1} - a_n = 0$$
-각 항의 관계식을 이차방정식으로 본다면, 다음과 같다.
-$$a_{n&#43;2} - (\alpha&#43;\beta)a_{n&#43;1} - (\alpha \beta)a_n = 0, \ \alpha&#43;\beta = 1, \ \alpha \beta = -1$$">
+각 항의 관계식을 이차방정식으로 본다면, 다음과 같다.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
   <meta property="article:section" content="docs">
+    <meta property="article:modified_time" content="2024-06-03T19:40:02+09:00">
     <meta property="article:tag" content="SICP">
 <title>1.13 | Dongle-log</title>
 <link rel="manifest" href="/manifest.json">
@@ -30,7 +33,7 @@ $$a_{n&#43;2} - (\alpha&#43;\beta)a_{n&#43;1} - (\alpha \beta)a_n = 0, \ \alpha&
 <link rel="canonical" href="https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/113/">
 <link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.c09ca681b2f343dea6f07b8fba696c3c358d7c25f0906d8cd3d9f80400519077.js" integrity="sha256-wJymgbLzQ96m8HuPumlsPDWNfCXwkG2M09n4BABRkHc=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.498cca51548567516e7f99ede2f6a34311fa6f84886e1014a3f6761bcd19b525.js" integrity="sha256-SYzKUVSFZ1Fuf5nt4vajQxH6b4SIbhAUo/Z2G80ZtSU=" crossorigin="anonymous"></script>
 
   
     
@@ -872,6 +875,97 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/122/" class="">1.22</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/123/" class="">1.23</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/124/" class="">1.24</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/125/" class="">1.25</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/126/" class="">1.26</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/127/" class="">1.27</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/128/" class="">1.28</a>
+  
+
+        </li>
+      
+    
   </ul>
 
         </li>
@@ -989,8 +1083,9 @@ https://github.com/alex-shpak/hugo-book
   <strong>문제</strong>
   <a class="anchor" href="#%eb%ac%b8%ec%a0%9c">#</a>
 </h2>
-<blockquote class="book-hint info">
-  <link rel="stylesheet" href="/katex/katex.min.css" />
+<blockquote>
+<p>
+<link rel="stylesheet" href="/katex/katex.min.css" />
 <script defer src="/katex/katex.min.js"></script>
 <script defer src="/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script><span>
   \(\Phi = \frac{1&#43;\sqrt{5}}{2}\)
@@ -1001,20 +1096,22 @@ https://github.com/alex-shpak/hugo-book
  이 <span>
   \( \frac{\Phi^n}{\sqrt{5}}\)
 </span>
-에 가장 가까운 정수임을 밝혀라.   
- <span>
-  \[\Psi = \frac{1-\sqrt{5}}{2}, \ Fib=(n) = \frac{\Phi^n-\psi^n}{\sqrt{5}}\]
+에 가장 가까운 정수임을 밝혀라.<br>
+$${\Psi = \frac{1-\sqrt{5}}{2}, \ Fib=(n) = \frac{\Phi^n-\Psi^n}{\sqrt{5}}}$$
+귀납법과 피보타치 수열 정의를 바탕으로 <span>
+  \(\frac{(\Phi^n - \Psi^n)}{\sqrt{5}}\)
 </span>
-
+임을 밝혀라.</p>
 </blockquote>
-
 <hr>
+</br>
+</br>
 <h2 id="문제풀이">
   <strong>문제풀이</strong>
   <a class="anchor" href="#%eb%ac%b8%ec%a0%9c%ed%92%80%ec%9d%b4">#</a>
 </h2>
-<blockquote class="book-hint warning">
-  <p>피보나치 수열의 정의는 다음과 같다.</p>
+<blockquote>
+<p>피보나치 수열의 정의는 다음과 같다.</p>
 <p>$$\text{Fib}(n) = \text{Fib}(n-1) + \text{Fib}(n-2)$$</p>
 <p>접근성을 위해 a 에 관한 식으로 다시 정리하면 다음과 같다.</p>
 <p>$$a_{n+2} - a_{n+1} - a_n = 0$$</p>
@@ -1037,18 +1134,15 @@ $$\frac{\varphi^n}{\sqrt5}=\text{Fib}(n)+\frac{\psi^n}{\sqrt5}$$</p>
 <p>양변에 Fib(n) 을 더하고 전개해주면 다음과 같다.</p>
 <p>$$\text{Fib}(n)-\frac{1}{2}&lt;\frac{\varphi^n}{\sqrt5}&lt;\text{Fib}(n)+\frac{1}{2}$$</p>
 <p>따라서 항상 가장 가까운 정수는 Fib(n)이 된다.</p>
-
 </blockquote>
-
 <hr>
+</br>
+</br>
 <h2 id="검토">
   <strong>검토</strong>
   <a class="anchor" href="#%ea%b2%80%ed%86%a0">#</a>
 </h2>
-<blockquote class="book-hint danger">
-  
-</blockquote>
-
+<hr>
 </article>
  
       
@@ -1057,6 +1151,12 @@ $$\frac{\varphi^n}{\sqrt5}=\text{Fib}(n)+\frac{\psi^n}{\sqrt5}$$</p>
         
   <div class="flex flex-wrap justify-between">
 
+
+  <div><a class="flex align-center" href="https://github.com/donghyun-chae//commit/4015bb5a35436f34e80b09a1f2bc14103641a8a9" title='Last modified by donghyun-chae | June 3, 2024' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="" />
+      <span>June 3, 2024</span>
+    </a>
+  </div>
 
 
 

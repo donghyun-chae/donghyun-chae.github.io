@@ -3,17 +3,19 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content=" SICP 1.03 # 문제 # 숫자 3개를 받아 큰 숫자 2개를 제곱한 후 그 2개 값을 덧셈하는 프로시저 정의하기. 문제풀이 # #lang scheme (define (sum_large_square x y z) (cond ((and (&gt;= x z) (&gt;= y z)) (&#43; (* x x) (* y y))) ((and (&gt;= y x) (&gt;= z x)) (&#43; (* y y) (* z z))) ((and (&gt;= z y) (&gt;= x y)) (&#43; (* z z) (* x x))) ) ) 검토 # ">
+<meta name="description" content=" SICP 1.03 # 문제 # 숫자 3개를 받아 그 중 큰 숫자 2개를 제곱한 후, 그 2개 값을 덧셈하여 내놓는 프로시저를 정의하라.
+문제풀이 # #lang scheme (define (sum_large_square x y z) (cond ((and (&gt;= x z) (&gt;= y z)) (&#43; (* x x) (* y y))) ((and (&gt;= y x) (&gt;= z x)) (&#43; (* y y) (* z z))) ((and (&gt;= z y) (&gt;= x y)) (&#43; (* z z) (* x x))) ) ) 검토 # ">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:url" content="https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/103/">
   <meta property="og:site_name" content="Dongle-log">
   <meta property="og:title" content="1.03">
-  <meta property="og:description" content=" SICP 1.03 # 문제 # 숫자 3개를 받아 큰 숫자 2개를 제곱한 후 그 2개 값을 덧셈하는 프로시저 정의하기. 문제풀이 # #lang scheme (define (sum_large_square x y z) (cond ((and (&amp;gt;= x z) (&amp;gt;= y z)) (&#43; (* x x) (* y y))) ((and (&amp;gt;= y x) (&amp;gt;= z x)) (&#43; (* y y) (* z z))) ((and (&amp;gt;= z y) (&amp;gt;= x y)) (&#43; (* z z) (* x x))) ) ) 검토 # ">
+  <meta property="og:description" content=" SICP 1.03 # 문제 # 숫자 3개를 받아 그 중 큰 숫자 2개를 제곱한 후, 그 2개 값을 덧셈하여 내놓는 프로시저를 정의하라.
+문제풀이 # #lang scheme (define (sum_large_square x y z) (cond ((and (&amp;gt;= x z) (&amp;gt;= y z)) (&#43; (* x x) (* y y))) ((and (&amp;gt;= y x) (&amp;gt;= z x)) (&#43; (* y y) (* z z))) ((and (&amp;gt;= z y) (&amp;gt;= x y)) (&#43; (* z z) (* x x))) ) ) 검토 # ">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
   <meta property="article:section" content="docs">
-    <meta property="article:modified_time" content="2024-05-17T15:19:36+09:00">
+    <meta property="article:modified_time" content="2024-06-03T19:40:02+09:00">
     <meta property="article:tag" content="SICP">
 <title>1.03 | Dongle-log</title>
 <link rel="manifest" href="/manifest.json">
@@ -21,7 +23,7 @@
 <link rel="canonical" href="https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/103/">
 <link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.c09ca681b2f343dea6f07b8fba696c3c358d7c25f0906d8cd3d9f80400519077.js" integrity="sha256-wJymgbLzQ96m8HuPumlsPDWNfCXwkG2M09n4BABRkHc=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.498cca51548567516e7f99ede2f6a34311fa6f84886e1014a3f6761bcd19b525.js" integrity="sha256-SYzKUVSFZ1Fuf5nt4vajQxH6b4SIbhAUo/Z2G80ZtSU=" crossorigin="anonymous"></script>
 
   
     
@@ -863,6 +865,97 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/122/" class="">1.22</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/123/" class="">1.23</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/124/" class="">1.24</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/125/" class="">1.25</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/126/" class="">1.26</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/127/" class="">1.27</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/128/" class="">1.28</a>
+  
+
+        </li>
+      
+    
   </ul>
 
         </li>
@@ -980,17 +1073,17 @@ https://github.com/alex-shpak/hugo-book
   <strong>문제</strong>
   <a class="anchor" href="#%eb%ac%b8%ec%a0%9c">#</a>
 </h2>
-<blockquote class="book-hint info">
-  숫자 3개를 받아 큰 숫자 2개를 제곱한 후 그 2개 값을 덧셈하는 프로시저 정의하기.
+<blockquote>
+<p>숫자 3개를 받아 그 중 큰 숫자 2개를 제곱한 후, 그 2개 값을 덧셈하여 내놓는 프로시저를 정의하라.</p>
 </blockquote>
-
 <hr>
+</br>
+</br>
 <h2 id="문제풀이">
   <strong>문제풀이</strong>
   <a class="anchor" href="#%eb%ac%b8%ec%a0%9c%ed%92%80%ec%9d%b4">#</a>
 </h2>
-<blockquote class="book-hint warning">
-  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span><span style="color:#f92672">#</span>lang scheme
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span><span style="color:#f92672">#</span>lang scheme
 </span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">define </span>(<span style="color:#a6e22e">sum_large_square</span> x y z)
 </span></span><span style="display:flex;"><span>  (<span style="color:#a6e22e">cond</span>
 </span></span><span style="display:flex;"><span>    ((<span style="color:#66d9ef">and </span>(&gt;= x z) (&gt;= y z))
@@ -1001,18 +1094,14 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>     (+ (* z z) (* x x)))
 </span></span><span style="display:flex;"><span>  )
 </span></span><span style="display:flex;"><span>)
-</span></span></code></pre></div>
-</blockquote>
-
-<hr>
+</span></span></code></pre></div><hr>
+</br>
+</br>
 <h2 id="검토">
   <strong>검토</strong>
   <a class="anchor" href="#%ea%b2%80%ed%86%a0">#</a>
 </h2>
-<blockquote class="book-hint danger">
-  
-</blockquote>
-
+<hr>
 </article>
  
       
@@ -1022,9 +1111,9 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex flex-wrap justify-between">
 
 
-  <div><a class="flex align-center" href="https://github.com/donghyun-chae//commit/7013c1cc1ae4a7a5e5268f13704fa162ed27c6cd" title='Last modified by donghyun-chae | May 17, 2024' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/donghyun-chae//commit/4015bb5a35436f34e80b09a1f2bc14103641a8a9" title='Last modified by donghyun-chae | June 3, 2024' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="" />
-      <span>May 17, 2024</span>
+      <span>June 3, 2024</span>
     </a>
   </div>
 

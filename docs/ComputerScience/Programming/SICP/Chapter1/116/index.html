@@ -3,16 +3,21 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="SICP 1.16 # 문제 # #lang sicp (define (even? n) (= (remainder n 2) 0)) (define (square x) (* x x)) (define (fast-expt b n) (cond ((= n 0) 1) ((even? n) (square (fast-expt b (/ n 2)))) (else (* b (fast-expt b (- n 1)))))) 현재의 fast-expt 는 로그 비례로 계산 시간이 늘어나는데 이를 유지하며 되도는 프로세스에서 반복하는 프로세스로 바꿔보자 # tip: 프로세스가 처음 돌아갈때 새 변수 a는 1로 시작해서 끝날때 결과값이 들어있게 한다.">
+<meta name="description" content="SICP 1.16 # 문제 # 현재의 fast-expt 는 로그 비례로 계산 시간이 늘어나는데 이를 유지하며 되도는 프로세스에서 반복하는 프로세스로 바꿔보자.
+tip: 프로세스가 처음 돌아갈때 새 변수 a는 1로 시작해서 끝날때 결과값이 들어있게 한다.
+#lang sicp (define (even? n) (= (remainder n 2) 0)) (define (square x) (* x x)) (define (fast-expt b n) (cond ((= n 0) 1) ((even? n) (square (fast-expt b (/ n 2)))) (else (* b (fast-expt b (- n 1)))))) 문제풀이 # 다음과 같은 핵심 아이디어를 활용하면 된다.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:url" content="https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/116/">
   <meta property="og:site_name" content="Dongle-log">
   <meta property="og:title" content="1.16">
-  <meta property="og:description" content="SICP 1.16 # 문제 # #lang sicp (define (even? n) (= (remainder n 2) 0)) (define (square x) (* x x)) (define (fast-expt b n) (cond ((= n 0) 1) ((even? n) (square (fast-expt b (/ n 2)))) (else (* b (fast-expt b (- n 1)))))) 현재의 fast-expt 는 로그 비례로 계산 시간이 늘어나는데 이를 유지하며 되도는 프로세스에서 반복하는 프로세스로 바꿔보자 # tip: 프로세스가 처음 돌아갈때 새 변수 a는 1로 시작해서 끝날때 결과값이 들어있게 한다.">
+  <meta property="og:description" content="SICP 1.16 # 문제 # 현재의 fast-expt 는 로그 비례로 계산 시간이 늘어나는데 이를 유지하며 되도는 프로세스에서 반복하는 프로세스로 바꿔보자.
+tip: 프로세스가 처음 돌아갈때 새 변수 a는 1로 시작해서 끝날때 결과값이 들어있게 한다.
+#lang sicp (define (even? n) (= (remainder n 2) 0)) (define (square x) (* x x)) (define (fast-expt b n) (cond ((= n 0) 1) ((even? n) (square (fast-expt b (/ n 2)))) (else (* b (fast-expt b (- n 1)))))) 문제풀이 # 다음과 같은 핵심 아이디어를 활용하면 된다.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
   <meta property="article:section" content="docs">
+    <meta property="article:modified_time" content="2024-06-03T19:40:02+09:00">
     <meta property="article:tag" content="SICP">
 <title>1.16 | Dongle-log</title>
 <link rel="manifest" href="/manifest.json">
@@ -20,7 +25,7 @@
 <link rel="canonical" href="https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/116/">
 <link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.c09ca681b2f343dea6f07b8fba696c3c358d7c25f0906d8cd3d9f80400519077.js" integrity="sha256-wJymgbLzQ96m8HuPumlsPDWNfCXwkG2M09n4BABRkHc=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.498cca51548567516e7f99ede2f6a34311fa6f84886e1014a3f6761bcd19b525.js" integrity="sha256-SYzKUVSFZ1Fuf5nt4vajQxH6b4SIbhAUo/Z2G80ZtSU=" crossorigin="anonymous"></script>
 
   
     
@@ -862,6 +867,97 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/122/" class="">1.22</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/123/" class="">1.23</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/124/" class="">1.24</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/125/" class="">1.25</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/126/" class="">1.26</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/127/" class="">1.27</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/128/" class="">1.28</a>
+  
+
+        </li>
+      
+    
   </ul>
 
         </li>
@@ -979,8 +1075,11 @@ https://github.com/alex-shpak/hugo-book
   <strong>문제</strong>
   <a class="anchor" href="#%eb%ac%b8%ec%a0%9c">#</a>
 </h2>
-<blockquote class="book-hint info">
-  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span><span style="color:#f92672">#</span>lang sicp
+<blockquote>
+<p>현재의 fast-expt 는 로그 비례로 계산 시간이 늘어나는데 이를 유지하며 되도는 프로세스에서 반복하는 프로세스로 바꿔보자.</p>
+<p>tip: 프로세스가 처음 돌아갈때 새 변수 a는 1로 시작해서 끝날때 결과값이 들어있게 한다.</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span><span style="color:#f92672">#</span>lang sicp
 </span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">define </span>(even? n)
 </span></span><span style="display:flex;"><span>  (= (remainder n <span style="color:#ae81ff">2</span>) <span style="color:#ae81ff">0</span>))
 </span></span><span style="display:flex;"><span>
@@ -990,20 +1089,25 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>  (<span style="color:#66d9ef">cond </span>((= n <span style="color:#ae81ff">0</span>) <span style="color:#ae81ff">1</span>)
 </span></span><span style="display:flex;"><span>        ((even? n) (<span style="color:#a6e22e">square</span> (<span style="color:#a6e22e">fast-expt</span> b (/ n <span style="color:#ae81ff">2</span>))))
 </span></span><span style="display:flex;"><span>        (<span style="color:#66d9ef">else </span>(* b (<span style="color:#a6e22e">fast-expt</span> b (- n <span style="color:#ae81ff">1</span>))))))
-</span></span></code></pre></div><h3 id="현재의-fast-expt-는-로그-비례로-계산-시간이-늘어나는데-이를-유지하며-되도는-프로세스에서-반복하는-프로세스로-바꿔보자">
-  <strong>현재의 fast-expt 는 로그 비례로 계산 시간이 늘어나는데 이를 유지하며 되도는 프로세스에서 반복하는 프로세스로 바꿔보자</strong>
-  <a class="anchor" href="#%ed%98%84%ec%9e%ac%ec%9d%98-fast-expt-%eb%8a%94-%eb%a1%9c%ea%b7%b8-%eb%b9%84%eb%a1%80%eb%a1%9c-%ea%b3%84%ec%82%b0-%ec%8b%9c%ea%b0%84%ec%9d%b4-%eb%8a%98%ec%96%b4%eb%82%98%eb%8a%94%eb%8d%b0-%ec%9d%b4%eb%a5%bc-%ec%9c%a0%ec%a7%80%ed%95%98%eb%a9%b0-%eb%90%98%eb%8f%84%eb%8a%94-%ed%94%84%eb%a1%9c%ec%84%b8%ec%8a%a4%ec%97%90%ec%84%9c-%eb%b0%98%eb%b3%b5%ed%95%98%eb%8a%94-%ed%94%84%eb%a1%9c%ec%84%b8%ec%8a%a4%eb%a1%9c-%eb%b0%94%ea%bf%94%eb%b3%b4%ec%9e%90">#</a>
-</h3>
-<p>tip: 프로세스가 처음 돌아갈때 새 변수 a는 1로 시작해서 끝날때 결과값이 들어있게 한다. 상태가 바뀌어도 변하지 않는 것을 찾아보자.</p>
-</blockquote>
-
-<hr>
+</span></span></code></pre></div><hr>
+</br>
+</br>
 <h2 id="문제풀이">
   <strong>문제풀이</strong>
   <a class="anchor" href="#%eb%ac%b8%ec%a0%9c%ed%92%80%ec%9d%b4">#</a>
 </h2>
-<blockquote class="book-hint warning">
-  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span><span style="color:#f92672">#</span>lang sicp
+<blockquote>
+<p>다음과 같은 핵심 아이디어를 활용하면 된다.
+
+<link rel="stylesheet" href="/katex/katex.min.css" />
+<script defer src="/katex/katex.min.js"></script>
+<script defer src="/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script><span>
+  \[ b^n = (b^2)^{n/2} = (b^{n/2})^2 \]
+</span>
+
+b를 제곱함으로써 지수를 뜻하는 n 을 반으로 줄일 수 있다.</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span><span style="color:#f92672">#</span>lang sicp
 </span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">define </span>(even? n)
 </span></span><span style="display:flex;"><span>  (= (remainder n <span style="color:#ae81ff">2</span>) <span style="color:#ae81ff">0</span>))
 </span></span><span style="display:flex;"><span>
@@ -1016,25 +1120,11 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>          (<span style="color:#66d9ef">else </span>(<span style="color:#a6e22e">iter</span> (* a b) b (- n <span style="color:#ae81ff">1</span>)))))
 </span></span><span style="display:flex;"><span>  (<span style="color:#a6e22e">iter</span> <span style="color:#ae81ff">1</span> b n)
 </span></span><span style="display:flex;"><span>  )
-</span></span></code></pre></div></br>
-다음과 같은 핵심 아이디어를 활용하면 된다.
-<link rel="stylesheet" href="/katex/katex.min.css" />
-<script defer src="/katex/katex.min.js"></script>
-<script defer src="/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script><span>
-  \[ b^n = (b^2)^{n/2} = (b^{n/2})^2 \]
-</span>
-<p>b를 제곱함으로써 지수를 뜻하는 n 을 반으로 줄일 수 있다.</p>
-</blockquote>
-
-<hr>
+</span></span></code></pre></div><hr>
 <h2 id="검토">
   <strong>검토</strong>
   <a class="anchor" href="#%ea%b2%80%ed%86%a0">#</a>
 </h2>
-<blockquote class="book-hint danger">
-  
-</blockquote>
-
 </article>
  
       
@@ -1043,6 +1133,12 @@ https://github.com/alex-shpak/hugo-book
         
   <div class="flex flex-wrap justify-between">
 
+
+  <div><a class="flex align-center" href="https://github.com/donghyun-chae//commit/4015bb5a35436f34e80b09a1f2bc14103641a8a9" title='Last modified by donghyun-chae | June 3, 2024' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="" />
+      <span>June 3, 2024</span>
+    </a>
+  </div>
 
 
 

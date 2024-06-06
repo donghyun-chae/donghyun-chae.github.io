@@ -3,15 +3,17 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="SICP 1.07 # 문제 # 기존 good-enough? 의 문제점 앞서 만든 sqrt의 good-enough? 부분을 개선해보자
-개선방법: 참값에 더 가까운 guess를 구하기 위해 새로 어림잡은 값을 조금씩 고치며 이전 값보다 더 나아지지 않을 때까지 계산을 하는 것이다. 문제풀이 # 1. 기존 good-enough? 의 문제점 # \(x\) 와 \(guess^2\) 의 차이가 0.001이 넘는가?로 판단하는데 뉴튼법의 점화식은 다음과 같다. \[a_{n&#43;1} = \frac{a_n &#43; \frac{x}{a_n}}{2}\] 이 점화식을 무한히 전개하면 특정한 수에 수렴하는 것을 알 수 있다.">
+<meta name="description" content="SICP 1.07 # \( \) 문제 # 기존 good-enough? 의 문제점 앞서 만든 sqrt의 good-enough? 부분을 개선해보자 개선방법: 참값에 더 가까운 guess를 구하기 위해 새로 어림잡은 값을 조금씩 고치며 이전 값보다 더 나아지지 않을 때까지 계산을 하는 것이다.
+문제풀이 # 기존 good-enough? 의 문제점
+\(x\) 와 \(guess^2\) 의 차이가 0.001이 넘는가?로 판단하는데 뉴튼법의 점화식은 다음과 같다. $${a_{n&#43;1} = \frac{a_n &#43; \frac{x}{a_n}}{2}}$$ 이 점화식을 무한히 전개하면 특정한 수에 수렴하는 것을 알 수 있다.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:url" content="https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/107/">
   <meta property="og:site_name" content="Dongle-log">
   <meta property="og:title" content="1.07">
-  <meta property="og:description" content="SICP 1.07 # 문제 # 기존 good-enough? 의 문제점 앞서 만든 sqrt의 good-enough? 부분을 개선해보자
-개선방법: 참값에 더 가까운 guess를 구하기 위해 새로 어림잡은 값을 조금씩 고치며 이전 값보다 더 나아지지 않을 때까지 계산을 하는 것이다. 문제풀이 # 1. 기존 good-enough? 의 문제점 # \(x\) 와 \(guess^2\) 의 차이가 0.001이 넘는가?로 판단하는데 뉴튼법의 점화식은 다음과 같다. \[a_{n&amp;#43;1} = \frac{a_n &amp;#43; \frac{x}{a_n}}{2}\] 이 점화식을 무한히 전개하면 특정한 수에 수렴하는 것을 알 수 있다.">
+  <meta property="og:description" content="SICP 1.07 # \( \) 문제 # 기존 good-enough? 의 문제점 앞서 만든 sqrt의 good-enough? 부분을 개선해보자 개선방법: 참값에 더 가까운 guess를 구하기 위해 새로 어림잡은 값을 조금씩 고치며 이전 값보다 더 나아지지 않을 때까지 계산을 하는 것이다.
+문제풀이 # 기존 good-enough? 의 문제점
+\(x\) 와 \(guess^2\) 의 차이가 0.001이 넘는가?로 판단하는데 뉴튼법의 점화식은 다음과 같다. $${a_{n&#43;1} = \frac{a_n &#43; \frac{x}{a_n}}{2}}$$ 이 점화식을 무한히 전개하면 특정한 수에 수렴하는 것을 알 수 있다.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
   <meta property="article:section" content="docs">
@@ -23,7 +25,7 @@
 <link rel="canonical" href="https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/107/">
 <link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.c09ca681b2f343dea6f07b8fba696c3c358d7c25f0906d8cd3d9f80400519077.js" integrity="sha256-wJymgbLzQ96m8HuPumlsPDWNfCXwkG2M09n4BABRkHc=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.498cca51548567516e7f99ede2f6a34311fa6f84886e1014a3f6761bcd19b525.js" integrity="sha256-SYzKUVSFZ1Fuf5nt4vajQxH6b4SIbhAUo/Z2G80ZtSU=" crossorigin="anonymous"></script>
 
   
     
@@ -865,6 +867,97 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/122/" class="">1.22</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/123/" class="">1.23</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/124/" class="">1.24</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/125/" class="">1.25</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/126/" class="">1.26</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/127/" class="">1.27</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/128/" class="">1.28</a>
+  
+
+        </li>
+      
+    
   </ul>
 
         </li>
@@ -978,72 +1071,68 @@ https://github.com/alex-shpak/hugo-book
   SICP 1.07
   <a class="anchor" href="#sicp-107">#</a>
 </h1>
+
+<link rel="stylesheet" href="/katex/katex.min.css" />
+<script defer src="/katex/katex.min.js"></script>
+<script defer src="/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script><span>
+  \( \)
+</span>
+
 <h2 id="문제">
   <strong>문제</strong>
   <a class="anchor" href="#%eb%ac%b8%ec%a0%9c">#</a>
 </h2>
-<blockquote class="book-hint info">
-  <ol>
+<blockquote>
+<ol>
 <li>기존 good-enough? 의 문제점</li>
-<li>앞서 만든 sqrt의 good-enough? 부분을 개선해보자<br>
-개선방법: 참값에 더 가까운 guess를 구하기 위해 새로 어림잡은 값을 조금씩 고치며 이전 값보다 더 나아지지 않을 때까지 계산을 하는 것이다.</li>
+<li>앞서 만든 sqrt의 good-enough? 부분을 개선해보자</li>
 </ol>
-
+<p>개선방법: 참값에 더 가까운 guess를 구하기 위해 새로 어림잡은 값을 조금씩 고치며 이전 값보다 더 나아지지 않을 때까지 계산을 하는 것이다.</p>
 </blockquote>
-
 <hr>
+</br>
+</br>
 <h2 id="문제풀이">
   <strong>문제풀이</strong>
   <a class="anchor" href="#%eb%ac%b8%ec%a0%9c%ed%92%80%ec%9d%b4">#</a>
 </h2>
-<blockquote class="book-hint warning">
-  <h2 id="1-기존-good-enough-의-문제점">
-  1. 기존 good-enough? 의 문제점
-  <a class="anchor" href="#1-%ea%b8%b0%ec%a1%b4-good-enough-%ec%9d%98-%eb%ac%b8%ec%a0%9c%ec%a0%90">#</a>
-</h2>
-<link rel="stylesheet" href="/katex/katex.min.css" />
-<script defer src="/katex/katex.min.js"></script>
-<script defer src="/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script><span>
+<blockquote>
+<ol>
+<li>기존 good-enough? 의 문제점<br>
+<span>
   \(x\)
 </span>
- 와 <span>
+와 <span>
   \(guess^2\)
 </span>
-의 차이가 0.001이 넘는가?로 판단하는데 
-뉴튼법의 점화식은 다음과 같다. 
-<span class="optional">
-  \[a_{n&#43;1} = \frac{a_n &#43; \frac{x}{a_n}}{2}\]
-</span>
-<p>이 점화식을 무한히 전개하면 특정한 수에 수렴하는 것을 알 수 있다.</p>
-<span class="optional">
-  \[\lim\limits_{n\to\infty}a_{n&#43;1} = \lim\limits_{n\to\infty}\frac{a_n &#43; \frac{x}{a_n}}{2}\]
-</span>
-<p>양변에 극한을 취해주고 n으로 치환하면</p>
-<span class="optional">
-  \[\lim\limits_{n\to\infty}a_{n} = n\]
-</span>
-<p>다음과 같이 정리된다.</p>
-<span class="optional">
-  \[n = \sqrt{x}\]
-</span>
-<p>즉 n이 커질수록 루트x 에 수렴한다는 것인데, 수렴하는 값이 너무 크거나 작아서 제곱했을 때 차이가 x와 0.001을 넘는다면
-현재 알고리즘에서는 무한재귀에 빠진다.</p>
-<p>
-
-<p class="md__image">
-  <img
-    src="/img/ComputerScience/Programming/SICP/Chapter1/7.png"
-    style="max-width: 70%"
-    alt=""
-    
-  />
-</p>
-</p>
-<h2 id="2-앞서-만든-sqrt의-good-enough-부분을-개선해보자">
-  2. 앞서 만든 sqrt의 good-enough? 부분을 개선해보자
-  <a class="anchor" href="#2-%ec%95%9e%ec%84%9c-%eb%a7%8c%eb%93%a0-sqrt%ec%9d%98-good-enough-%eb%b6%80%eb%b6%84%ec%9d%84-%ea%b0%9c%ec%84%a0%ed%95%b4%eb%b3%b4%ec%9e%90">#</a>
-</h2>
-<p>(improve guess x) 와 x 의 차이가 아니라 그 전 값인 guess 의 차이를 비교함으로써 x의 값과 상관 없이 제곱근을 구할 수 있다.</p>
+의 차이가 0.001이 넘는가?로 판단하는데
+뉴튼법의 점화식은 다음과 같다.
+$${a_{n+1} = \frac{a_n + \frac{x}{a_n}}{2}}$$
+이 점화식을 무한히 전개하면 특정한 수에 수렴하는 것을 알 수 있다.
+$${\lim\limits_{n\to\infty}a_{n+1} = \lim\limits_{n\to\infty}\frac{a_n + \frac{x}{a_n}}{2}}$$
+양변에 극한을 취해주고 n으로 치환하면
+$${\lim\limits_{n\to\infty}a_{n} = n}$$
+다음과 같이 정리된다.
+$${n = \sqrt{x}}$$
+즉 n이 커질수록 루트x 에 수렴한다는 것인데, 수렴하는 값이 너무 크거나 작아서 제곱했을 때 차이가 <br>
+x와 0.001을 넘는다면 현재 알고리즘에서는 무한재귀에 빠진다.</li>
+</ol>
+</blockquote>
+<pre tabindex="0"><code>(sqrt 1000000000000)
+1.0
+500000000000.5
+250000000001.25
+...
+31622776.601683795
+31622776.601683795
+31622776.601683795
+...
+</code></pre><blockquote>
+<ol start="2">
+<li>앞서 만든 sqrt의 good-enough? 부분을 개선해보자 <br>
+(improve guess x) 와 x 의 차이가 아니라 그 전 값인 guess 의 차이를 비교함으로써 x의 값과 상관 없이 제곱근을 구할 수 있다.</li>
+</ol>
+</blockquote>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span><span style="color:#f92672">#</span>lang scheme
 </span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">define </span>(<span style="color:#a6e22e">sqrt-iter</span> guess x)
 </span></span><span style="display:flex;"><span>  (<span style="color:#66d9ef">if </span>(<span style="color:#a6e22e">good-enough?</span> guess x)
@@ -1064,16 +1153,16 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">define </span>(sqrt x)
 </span></span><span style="display:flex;"><span>  (<span style="color:#a6e22e">sqrt-iter</span> <span style="color:#ae81ff">1.0</span> x))
-</span></span></code></pre></div>
-</blockquote>
-
-<hr>
+</span></span></code></pre></div><hr>
+</br>
+</br>
 <h2 id="검토">
   <strong>검토</strong>
   <a class="anchor" href="#%ea%b2%80%ed%86%a0">#</a>
 </h2>
-<blockquote class="book-hint danger">
-  <p>만약 (improve guess x) 와 guess가 같을때 까지 실행한다면 어떻게 될까?</p>
+<blockquote>
+<p>만약 (improve guess x) 와 guess가 같을때 까지 실행한다면 어떻게 될까?</p>
+</blockquote>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span><span style="color:#f92672">#</span>lang scheme
 </span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">define </span>(<span style="color:#a6e22e">sqrt-iter</span> guess x)
 </span></span><span style="display:flex;"><span>  (<span style="color:#66d9ef">if </span>(<span style="color:#a6e22e">good-enough?</span> guess x)
@@ -1094,9 +1183,7 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">define </span>(sqrt x)
 </span></span><span style="display:flex;"><span>  (<span style="color:#a6e22e">sqrt-iter</span> <span style="color:#ae81ff">1.0</span> x))
-</span></span></code></pre></div>
-</blockquote>
-
+</span></span></code></pre></div><hr>
 </article>
  
       

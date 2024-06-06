@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="SICP 1.10 # 문제 # 애커만 함수를 나타낸 프로시저로 다음을 계산하고 f,g,h 프로시저의 기능을 수학적으로 정의하라.
-#lang scheme (define (A x y) (cond ((= y 0) 0) ((= x 0) (* 2 y)) ((= y 1) 2) (else (A (- x 1) (A x (- y 1)))))) (A 1 10) (A 2 4) (A 3 3) (define (f n) (A 0 n)) (define (g n) (A 1 n)) (define (h n) (A 2 n)) 문제풀이 # (A 1 10) # (A 0 (A 1 9)) (A 0 (A 0 (A 1 8))) (A 0 (A 0 (A 0 (A 1 7)))) (A 0 (A 0 (A 0 (A 0 (A 1 6))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 5)))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 4))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 3)))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 2))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 1)))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 2))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 4)))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 8))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 16)))))) (A 0 (A 0 (A 0 (A 0 (A 0 32))))) (A 0 (A 0 (A 0 (A 0 64)))) (A 0 (A 0 (A 0 128))) (A 0 (A 0 256)) (A 0 512) 1024 (A 2 4) # (A 1 (A 2 3)) (A 1 (A 1 (A 2 2))) (A 1 (A 1 (A 1 (A 2 1)))) (A 1 (A 1 (A 1 2))) (A 1 (A 1 (A 0 (A 1 1)))) (A 1 (A 1 (A 0 2))) (A 1 (A 1 4)) (A 1 (A 0 (A 1 3))) (A 1 (A 0 (A 0 (A 1 2)))) (A 1 (A 0 (A 0 (A 0 (A 1 1))))) (A 1 (A 0 (A 0 (A 0 2)))) (A 1 (A 0 (A 0 4))) (A 1 (A 0 8)) (A 1 16) (A 0 (A 1 15)) (A 0 (A 0 (A 1 14))) (A 0 (A 0 (A 0 (A 1 13)))) (A 0 (A 0 (A 0 (A 0 (A 1 12))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 11)))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 10))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 9)))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 8))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 7)))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 6))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 5)))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 4))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 3)))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 2))))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 1)))))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 2))))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 4)))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 8))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 16)))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 32))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 64)))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 128))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 256)))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 512))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 1024)))))) (A 0 (A 0 (A 0 (A 0 (A 0 2048))))) (A 0 (A 0 (A 0 (A 0 4096)))) (A 0 (A 0 (A 0 8192))) (A 0 (A 0 16384)) (A 0 32768) 65536 (A 3 3) # (A 2 (A 3 2)) (A 2 (A 2 (A 3 1))) (A 2 (A 2 2)) (A 2 (A 1 (A 2 1))) (A 2 (A 1 2)) (A 2 (A 0 (A 1 1))) (A 2 (A 0 2)) (A 2 4) (A 1 (A 2 3)) (A 1 (A 1 (A 2 2))) (A 1 (A 1 (A 1 (A 2 1)))) (A 1 (A 1 (A 1 2))) (A 1 (A 1 (A 0 (A 1 1)))) (A 1 (A 1 (A 0 2))) (A 1 (A 1 4)) (A 1 (A 0 (A 1 3))) (A 1 (A 0 (A 0 (A 1 2)))) (A 1 (A 0 (A 0 (A 0 (A 1 1))))) (A 1 (A 0 (A 0 (A 0 2)))) (A 1 (A 0 (A 0 4))) (A 1 (A 0 8)) (A 1 16) (A 0 (A 1 15)) (A 0 (A 0 (A 1 14))) (A 0 (A 0 (A 0 (A 1 13)))) (A 0 (A 0 (A 0 (A 0 (A 1 12))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 11)))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 10))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 9)))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 8))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 7)))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 6))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 5)))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 4))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 3)))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 2))))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 1)))))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 2))))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 4)))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 8))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 16)))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 32))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 64)))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 128))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 256)))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 512))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 1024)))))) (A 0 (A 0 (A 0 (A 0 (A 0 2048))))) (A 0 (A 0 (A 0 (A 0 4096)))) (A 0 (A 0 (A 0 8192))) (A 0 (A 0 16384)) (A 0 32768) 65536 (define (f n) (A 0 n))">
+<meta name="description" content="SICP 1.10 # \( \) 문제 # 애커만 함수를 나타낸 프로시저로 다음을 계산하고 f,g,h 프로시저의 기능을 수학적으로 정의하라.
+#lang scheme (define (A x y) (cond ((= y 0) 0) ((= x 0) (* 2 y)) ((= y 1) 2) (else (A (- x 1) (A x (- y 1)))))) (A 1 10) (A 2 4) (A 3 3) (define (f n) (A 0 n)) (define (g n) (A 1 n)) (define (h n) (A 2 n)) 문제풀이 # (A 1 10)">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:url" content="https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/110/">
   <meta property="og:site_name" content="Dongle-log">
   <meta property="og:title" content="1.10">
-  <meta property="og:description" content="SICP 1.10 # 문제 # 애커만 함수를 나타낸 프로시저로 다음을 계산하고 f,g,h 프로시저의 기능을 수학적으로 정의하라.
-#lang scheme (define (A x y) (cond ((= y 0) 0) ((= x 0) (* 2 y)) ((= y 1) 2) (else (A (- x 1) (A x (- y 1)))))) (A 1 10) (A 2 4) (A 3 3) (define (f n) (A 0 n)) (define (g n) (A 1 n)) (define (h n) (A 2 n)) 문제풀이 # (A 1 10) # (A 0 (A 1 9)) (A 0 (A 0 (A 1 8))) (A 0 (A 0 (A 0 (A 1 7)))) (A 0 (A 0 (A 0 (A 0 (A 1 6))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 5)))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 4))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 3)))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 2))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 1)))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 2))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 4)))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 8))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 16)))))) (A 0 (A 0 (A 0 (A 0 (A 0 32))))) (A 0 (A 0 (A 0 (A 0 64)))) (A 0 (A 0 (A 0 128))) (A 0 (A 0 256)) (A 0 512) 1024 (A 2 4) # (A 1 (A 2 3)) (A 1 (A 1 (A 2 2))) (A 1 (A 1 (A 1 (A 2 1)))) (A 1 (A 1 (A 1 2))) (A 1 (A 1 (A 0 (A 1 1)))) (A 1 (A 1 (A 0 2))) (A 1 (A 1 4)) (A 1 (A 0 (A 1 3))) (A 1 (A 0 (A 0 (A 1 2)))) (A 1 (A 0 (A 0 (A 0 (A 1 1))))) (A 1 (A 0 (A 0 (A 0 2)))) (A 1 (A 0 (A 0 4))) (A 1 (A 0 8)) (A 1 16) (A 0 (A 1 15)) (A 0 (A 0 (A 1 14))) (A 0 (A 0 (A 0 (A 1 13)))) (A 0 (A 0 (A 0 (A 0 (A 1 12))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 11)))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 10))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 9)))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 8))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 7)))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 6))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 5)))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 4))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 3)))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 2))))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 1)))))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 2))))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 4)))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 8))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 16)))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 32))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 64)))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 128))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 256)))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 512))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 1024)))))) (A 0 (A 0 (A 0 (A 0 (A 0 2048))))) (A 0 (A 0 (A 0 (A 0 4096)))) (A 0 (A 0 (A 0 8192))) (A 0 (A 0 16384)) (A 0 32768) 65536 (A 3 3) # (A 2 (A 3 2)) (A 2 (A 2 (A 3 1))) (A 2 (A 2 2)) (A 2 (A 1 (A 2 1))) (A 2 (A 1 2)) (A 2 (A 0 (A 1 1))) (A 2 (A 0 2)) (A 2 4) (A 1 (A 2 3)) (A 1 (A 1 (A 2 2))) (A 1 (A 1 (A 1 (A 2 1)))) (A 1 (A 1 (A 1 2))) (A 1 (A 1 (A 0 (A 1 1)))) (A 1 (A 1 (A 0 2))) (A 1 (A 1 4)) (A 1 (A 0 (A 1 3))) (A 1 (A 0 (A 0 (A 1 2)))) (A 1 (A 0 (A 0 (A 0 (A 1 1))))) (A 1 (A 0 (A 0 (A 0 2)))) (A 1 (A 0 (A 0 4))) (A 1 (A 0 8)) (A 1 16) (A 0 (A 1 15)) (A 0 (A 0 (A 1 14))) (A 0 (A 0 (A 0 (A 1 13)))) (A 0 (A 0 (A 0 (A 0 (A 1 12))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 11)))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 10))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 9)))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 8))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 7)))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 6))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 5)))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 4))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 3)))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 2))))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 1 1)))))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 2))))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 4)))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 8))))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 16)))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 32))))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 64)))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 128))))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 256)))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 512))))))) (A 0 (A 0 (A 0 (A 0 (A 0 (A 0 1024)))))) (A 0 (A 0 (A 0 (A 0 (A 0 2048))))) (A 0 (A 0 (A 0 (A 0 4096)))) (A 0 (A 0 (A 0 8192))) (A 0 (A 0 16384)) (A 0 32768) 65536 (define (f n) (A 0 n))">
+  <meta property="og:description" content="SICP 1.10 # \( \) 문제 # 애커만 함수를 나타낸 프로시저로 다음을 계산하고 f,g,h 프로시저의 기능을 수학적으로 정의하라.
+#lang scheme (define (A x y) (cond ((= y 0) 0) ((= x 0) (* 2 y)) ((= y 1) 2) (else (A (- x 1) (A x (- y 1)))))) (A 1 10) (A 2 4) (A 3 3) (define (f n) (A 0 n)) (define (g n) (A 1 n)) (define (h n) (A 2 n)) 문제풀이 # (A 1 10)">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
   <meta property="article:section" content="docs">
@@ -23,7 +23,7 @@
 <link rel="canonical" href="https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/110/">
 <link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.c09ca681b2f343dea6f07b8fba696c3c358d7c25f0906d8cd3d9f80400519077.js" integrity="sha256-wJymgbLzQ96m8HuPumlsPDWNfCXwkG2M09n4BABRkHc=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.498cca51548567516e7f99ede2f6a34311fa6f84886e1014a3f6761bcd19b525.js" integrity="sha256-SYzKUVSFZ1Fuf5nt4vajQxH6b4SIbhAUo/Z2G80ZtSU=" crossorigin="anonymous"></script>
 
   
     
@@ -865,6 +865,97 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/122/" class="">1.22</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/123/" class="">1.23</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/124/" class="">1.24</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/125/" class="">1.25</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/126/" class="">1.26</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/127/" class="">1.27</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/128/" class="">1.28</a>
+  
+
+        </li>
+      
+    
   </ul>
 
         </li>
@@ -978,12 +1069,20 @@ https://github.com/alex-shpak/hugo-book
   SICP 1.10
   <a class="anchor" href="#sicp-110">#</a>
 </h1>
+
+<link rel="stylesheet" href="/katex/katex.min.css" />
+<script defer src="/katex/katex.min.js"></script>
+<script defer src="/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script><span>
+  \( \)
+</span>
+
 <h2 id="문제">
   <strong>문제</strong>
   <a class="anchor" href="#%eb%ac%b8%ec%a0%9c">#</a>
 </h2>
-<blockquote class="book-hint info">
-  <p>애커만 함수를 나타낸 프로시저로 다음을 계산하고 f,g,h 프로시저의 기능을 수학적으로 정의하라.</p>
+<blockquote>
+<p>애커만 함수를 나타낸 프로시저로 다음을 계산하고 f,g,h 프로시저의 기능을 수학적으로 정의하라.</p>
+</blockquote>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span><span style="color:#f92672">#</span>lang scheme
 </span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">define </span>(<span style="color:#a6e22e">A</span> x y)
 </span></span><span style="display:flex;"><span>  (<span style="color:#66d9ef">cond </span>((= y <span style="color:#ae81ff">0</span>) <span style="color:#ae81ff">0</span>)
@@ -999,19 +1098,16 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">define </span>(<span style="color:#a6e22e">f</span> n) (<span style="color:#a6e22e">A</span> <span style="color:#ae81ff">0</span> n))
 </span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">define </span>(<span style="color:#a6e22e">g</span> n) (<span style="color:#a6e22e">A</span> <span style="color:#ae81ff">1</span> n))
 </span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">define </span>(<span style="color:#a6e22e">h</span> n) (<span style="color:#a6e22e">A</span> <span style="color:#ae81ff">2</span> n))
-</span></span></code></pre></div>
-</blockquote>
-
-<hr>
+</span></span></code></pre></div><hr>
+</br>
+</br>
 <h2 id="문제풀이">
   <strong>문제풀이</strong>
   <a class="anchor" href="#%eb%ac%b8%ec%a0%9c%ed%92%80%ec%9d%b4">#</a>
 </h2>
-<blockquote class="book-hint warning">
-  <h2 id="a-1-10">
-  (A 1 10)
-  <a class="anchor" href="#a-1-10">#</a>
-</h2>
+<blockquote>
+<p>(A 1 10)</p>
+</blockquote>
 <pre tabindex="0"><code>(A 0 (A 1 9))
 (A 0 (A 0 (A 1 8)))
 (A 0 (A 0 (A 0 (A 1 7))))
@@ -1031,10 +1127,9 @@ https://github.com/alex-shpak/hugo-book
 (A 0 (A 0 256))
 (A 0 512)
 1024
-</code></pre><h2 id="a-2-4">
-  (A 2 4)
-  <a class="anchor" href="#a-2-4">#</a>
-</h2>
+</code></pre><blockquote>
+<p>(A 2 4)</p>
+</blockquote>
 <pre tabindex="0"><code>(A 1 (A 2 3))
 (A 1 (A 1 (A 2 2)))
 (A 1 (A 1 (A 1 (A 2 1))))
@@ -1080,10 +1175,9 @@ https://github.com/alex-shpak/hugo-book
 (A 0 (A 0 16384))
 (A 0 32768)
 65536
-</code></pre><h2 id="a-3-3">
-  (A 3 3)
-  <a class="anchor" href="#a-3-3">#</a>
-</h2>
+</code></pre><blockquote>
+<p>(A 3 3)</p>
+</blockquote>
 <pre tabindex="0"><code>(A 2 (A 3 2))
 (A 2 (A 2 (A 3 1)))
 (A 2 (A 2 2))
@@ -1137,34 +1231,22 @@ https://github.com/alex-shpak/hugo-book
 (A 0 (A 0 16384))
 (A 0 32768)
 65536
-</code></pre><p>(define (f n) (A 0 n))</p>
-<link rel="stylesheet" href="/katex/katex.min.css" />
-<script defer src="/katex/katex.min.js"></script>
-<script defer src="/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script><span>
-  \( 2n\)
-</span>
-<hr>
-<p>(define (g n) (A 1 n))</p>
-<span>
-  \( 2^n \)
-</span>
-<hr>
-<p>(define (h n) (A 2 n))</p>
-<span>
-  \( a_{n&#43;1} = 2^{a_n} \)
-</span>
-
+</code></pre><blockquote>
+<p>(define (f n) (A 0 n))
+$${2n}$$</p>
+<p>(define (g n) (A 1 n))
+$${2^n}$$</p>
+<p>(define (h n) (A 2 n))
+$${a_{n+1} = 2^{a_n}}$$</p>
 </blockquote>
-
 <hr>
+</br>
+</br>
 <h2 id="검토">
   <strong>검토</strong>
   <a class="anchor" href="#%ea%b2%80%ed%86%a0">#</a>
 </h2>
-<blockquote class="book-hint danger">
-  
-</blockquote>
-
+<hr>
 </article>
  
       

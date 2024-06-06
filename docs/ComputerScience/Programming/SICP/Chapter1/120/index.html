@@ -3,18 +3,19 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="SICP 1.20 # 문제 # #lang sicp (define (gcd a b) (if (= b 0) a (gcd b (remainder a b)))) 유클리드 호제법으로 최대공약수를 구하는 알고리즘이다. (gcd 206 40) 을 계산할 때
-1. 정의대로 계산법을 적용했을 때의 프로세스와 remainder 연산이 쓰이는 곳을 표시하고 얼마나 사용하는지 구하라. # 2. 인자먼저 계산법을 적용했을 때의 프로세스와 remainder 연산이 쓰이는 곳을 표시하고 얼마나 사용하는지 구하라. # 문제풀이 # 1. 정의대로 계산법을 적용했을 때의 프로세스와 remainder 연산이 쓰이는 곳을 표시하고 얼마나 사용하는지 구하라.">
+<meta name="description" content="SICP 1.20 # 문제 # 다음은 유클리드 호제법으로 최대공약수를 구하는 알고리즘이다. (gcd 206 40) 을 계산할 때
+정의대로 계산법을 적용했을 때의 프로세스와 remainder 연산이 쓰이는 곳을 표시하고 얼마나 사용하는지 구하라. 인자먼저 계산법을 적용했을 때의 프로세스와 remainder 연산이 쓰이는 곳을 표시하고 얼마나 사용하는지 구하라. #lang sicp (define (gcd a b) (if (= b 0) a (gcd b (remainder a b)))) 문제풀이 # 정의대로 계산법을 적용했을 때의 프로세스와 remainder 연산이 쓰이는 곳을 표시하고 얼마나 사용하는지 구하라.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:url" content="https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/120/">
   <meta property="og:site_name" content="Dongle-log">
   <meta property="og:title" content="1.20">
-  <meta property="og:description" content="SICP 1.20 # 문제 # #lang sicp (define (gcd a b) (if (= b 0) a (gcd b (remainder a b)))) 유클리드 호제법으로 최대공약수를 구하는 알고리즘이다. (gcd 206 40) 을 계산할 때
-1. 정의대로 계산법을 적용했을 때의 프로세스와 remainder 연산이 쓰이는 곳을 표시하고 얼마나 사용하는지 구하라. # 2. 인자먼저 계산법을 적용했을 때의 프로세스와 remainder 연산이 쓰이는 곳을 표시하고 얼마나 사용하는지 구하라. # 문제풀이 # 1. 정의대로 계산법을 적용했을 때의 프로세스와 remainder 연산이 쓰이는 곳을 표시하고 얼마나 사용하는지 구하라.">
+  <meta property="og:description" content="SICP 1.20 # 문제 # 다음은 유클리드 호제법으로 최대공약수를 구하는 알고리즘이다. (gcd 206 40) 을 계산할 때
+정의대로 계산법을 적용했을 때의 프로세스와 remainder 연산이 쓰이는 곳을 표시하고 얼마나 사용하는지 구하라. 인자먼저 계산법을 적용했을 때의 프로세스와 remainder 연산이 쓰이는 곳을 표시하고 얼마나 사용하는지 구하라. #lang sicp (define (gcd a b) (if (= b 0) a (gcd b (remainder a b)))) 문제풀이 # 정의대로 계산법을 적용했을 때의 프로세스와 remainder 연산이 쓰이는 곳을 표시하고 얼마나 사용하는지 구하라.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
   <meta property="article:section" content="docs">
+    <meta property="article:modified_time" content="2024-06-03T19:40:02+09:00">
     <meta property="article:tag" content="SICP">
 <title>1.20 | Dongle-log</title>
 <link rel="manifest" href="/manifest.json">
@@ -22,7 +23,7 @@
 <link rel="canonical" href="https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/120/">
 <link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.c09ca681b2f343dea6f07b8fba696c3c358d7c25f0906d8cd3d9f80400519077.js" integrity="sha256-wJymgbLzQ96m8HuPumlsPDWNfCXwkG2M09n4BABRkHc=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.498cca51548567516e7f99ede2f6a34311fa6f84886e1014a3f6761bcd19b525.js" integrity="sha256-SYzKUVSFZ1Fuf5nt4vajQxH6b4SIbhAUo/Z2G80ZtSU=" crossorigin="anonymous"></script>
 
   
     
@@ -864,6 +865,97 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/122/" class="">1.22</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/123/" class="">1.23</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/124/" class="">1.24</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/125/" class="">1.25</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/126/" class="">1.26</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/127/" class="">1.27</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/128/" class="">1.28</a>
+  
+
+        </li>
+      
+    
   </ul>
 
         </li>
@@ -981,34 +1073,38 @@ https://github.com/alex-shpak/hugo-book
   <strong>문제</strong>
   <a class="anchor" href="#%eb%ac%b8%ec%a0%9c">#</a>
 </h2>
-<blockquote class="book-hint info">
-  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span><span style="color:#f92672">#</span>lang sicp
+<blockquote>
+<p>다음은 유클리드 호제법으로 최대공약수를 구하는 알고리즘이다.
+(gcd 206 40) 을 계산할 때</p>
+<ol>
+<li>정의대로 계산법을 적용했을 때의 프로세스와 remainder 연산이 쓰이는 곳을 표시하고 얼마나 사용하는지 구하라.</li>
+<li>인자먼저 계산법을 적용했을 때의 프로세스와 remainder 연산이 쓰이는 곳을 표시하고 얼마나 사용하는지 구하라.</li>
+</ol>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span><span style="color:#f92672">#</span>lang sicp
 </span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">define </span>(gcd a b)
 </span></span><span style="display:flex;"><span>  (<span style="color:#66d9ef">if </span>(= b <span style="color:#ae81ff">0</span>)
 </span></span><span style="display:flex;"><span>      a
 </span></span><span style="display:flex;"><span>      (gcd b (remainder a b))))
-</span></span></code></pre></div><p>유클리드 호제법으로 최대공약수를 구하는 알고리즘이다.
-(gcd 206 40) 을 계산할 때</p>
-<h3 id="1-정의대로-계산법을-적용했을-때의-프로세스와-remainder-연산이-쓰이는-곳을-표시하고-얼마나-사용하는지-구하라">
-  <strong>1. 정의대로 계산법을 적용했을 때의 프로세스와 remainder 연산이 쓰이는 곳을 표시하고 얼마나 사용하는지 구하라.</strong>
-  <a class="anchor" href="#1-%ec%a0%95%ec%9d%98%eb%8c%80%eb%a1%9c-%ea%b3%84%ec%82%b0%eb%b2%95%ec%9d%84-%ec%a0%81%ec%9a%a9%ed%96%88%ec%9d%84-%eb%95%8c%ec%9d%98-%ed%94%84%eb%a1%9c%ec%84%b8%ec%8a%a4%ec%99%80-remainder-%ec%97%b0%ec%82%b0%ec%9d%b4-%ec%93%b0%ec%9d%b4%eb%8a%94-%ea%b3%b3%ec%9d%84-%ed%91%9c%ec%8b%9c%ed%95%98%ea%b3%a0-%ec%96%bc%eb%a7%88%eb%82%98-%ec%82%ac%ec%9a%a9%ed%95%98%eb%8a%94%ec%a7%80-%ea%b5%ac%ed%95%98%eb%9d%bc">#</a>
-</h3>
-<h3 id="2-인자먼저-계산법을-적용했을-때의-프로세스와-remainder-연산이-쓰이는-곳을-표시하고-얼마나-사용하는지-구하라">
-  <strong>2. 인자먼저 계산법을 적용했을 때의 프로세스와 remainder 연산이 쓰이는 곳을 표시하고 얼마나 사용하는지 구하라.</strong>
-  <a class="anchor" href="#2-%ec%9d%b8%ec%9e%90%eb%a8%bc%ec%a0%80-%ea%b3%84%ec%82%b0%eb%b2%95%ec%9d%84-%ec%a0%81%ec%9a%a9%ed%96%88%ec%9d%84-%eb%95%8c%ec%9d%98-%ed%94%84%eb%a1%9c%ec%84%b8%ec%8a%a4%ec%99%80-remainder-%ec%97%b0%ec%82%b0%ec%9d%b4-%ec%93%b0%ec%9d%b4%eb%8a%94-%ea%b3%b3%ec%9d%84-%ed%91%9c%ec%8b%9c%ed%95%98%ea%b3%a0-%ec%96%bc%eb%a7%88%eb%82%98-%ec%82%ac%ec%9a%a9%ed%95%98%eb%8a%94%ec%a7%80-%ea%b5%ac%ed%95%98%eb%9d%bc">#</a>
-</h3>
-</blockquote>
-
-<hr>
+</span></span></code></pre></div><hr>
+</br>
+</br>
 <h2 id="문제풀이">
   <strong>문제풀이</strong>
   <a class="anchor" href="#%eb%ac%b8%ec%a0%9c%ed%92%80%ec%9d%b4">#</a>
 </h2>
-<blockquote class="book-hint warning">
-  <h3 id="1-정의대로-계산법을-적용했을-때의-프로세스와-remainder-연산이-쓰이는-곳을-표시하고-얼마나-사용하는지-구하라">
-  <strong>1. 정의대로 계산법을 적용했을 때의 프로세스와 remainder 연산이 쓰이는 곳을 표시하고 얼마나 사용하는지 구하라.</strong>
-  <a class="anchor" href="#1-%ec%a0%95%ec%9d%98%eb%8c%80%eb%a1%9c-%ea%b3%84%ec%82%b0%eb%b2%95%ec%9d%84-%ec%a0%81%ec%9a%a9%ed%96%88%ec%9d%84-%eb%95%8c%ec%9d%98-%ed%94%84%eb%a1%9c%ec%84%b8%ec%8a%a4%ec%99%80-remainder-%ec%97%b0%ec%82%b0%ec%9d%b4-%ec%93%b0%ec%9d%b4%eb%8a%94-%ea%b3%b3%ec%9d%84-%ed%91%9c%ec%8b%9c%ed%95%98%ea%b3%a0-%ec%96%bc%eb%a7%88%eb%82%98-%ec%82%ac%ec%9a%a9%ed%95%98%eb%8a%94%ec%a7%80-%ea%b5%ac%ed%95%98%eb%9d%bc">#</a>
-</h3>
+<blockquote>
+<ol>
+<li>정의대로 계산법을 적용했을 때의 프로세스와 remainder 연산이 쓰이는 곳을 표시하고 얼마나 사용하는지 구하라.
+다음과 같이 프로세스가 형성된다. <br>
+프로세스2 - 1번<br>
+프로세스4 - 2번<br>
+프로세스6 - 4번<br>
+프로세스8 - 7번<br>
+프로세스9 - 4번<br>
+총 18번 실행된다.</li>
+</ol>
+</blockquote>
 <pre tabindex="0"><code>(gcd 206 40)
 
 (gcd 40 (reaminder 206 40)) - 1
@@ -1042,17 +1138,12 @@ https://github.com/alex-shpak/hugo-book
     (gcd (remainder (remainder 40 (remainder 206 40)) (remainder (remainder 206 40) (remainder 40 (remainder 206 40)))) (remainder (remainder (remainder 206 40) (remainder 40 (remainder 206 40))) (remainder (remainder 40 (remainder 206 40)) (remainder (remainder 206 40) (remainder 40 (remainder 206 40)))))) - 9
 
 (remainder (remainder 206 40) (remainder 40 (remainder 206 40))) - 10
-</code></pre><p>위와 같이 프로세스가 형성된다. <br>
-프로세스2 - 1번<br>
-프로세스4 - 2번<br>
-프로세스6 - 4번<br>
-프로세스8 - 7번<br>
-프로세스9 - 4번<br>
-총 18번 실행된다.</p>
-<h3 id="2-인자먼저-계산법을-적용했을-때의-프로세스와-remainder-연산이-쓰이는-곳을-표시하고-얼마나-사용하는지-구하라">
-  <strong>2. 인자먼저 계산법을 적용했을 때의 프로세스와 remainder 연산이 쓰이는 곳을 표시하고 얼마나 사용하는지 구하라.</strong>
-  <a class="anchor" href="#2-%ec%9d%b8%ec%9e%90%eb%a8%bc%ec%a0%80-%ea%b3%84%ec%82%b0%eb%b2%95%ec%9d%84-%ec%a0%81%ec%9a%a9%ed%96%88%ec%9d%84-%eb%95%8c%ec%9d%98-%ed%94%84%eb%a1%9c%ec%84%b8%ec%8a%a4%ec%99%80-remainder-%ec%97%b0%ec%82%b0%ec%9d%b4-%ec%93%b0%ec%9d%b4%eb%8a%94-%ea%b3%b3%ec%9d%84-%ed%91%9c%ec%8b%9c%ed%95%98%ea%b3%a0-%ec%96%bc%eb%a7%88%eb%82%98-%ec%82%ac%ec%9a%a9%ed%95%98%eb%8a%94%ec%a7%80-%ea%b5%ac%ed%95%98%eb%9d%bc">#</a>
-</h3>
+</code></pre><blockquote>
+<ol start="2">
+<li>인자먼저 계산법을 적용했을 때의 프로세스와 remainder 연산이 쓰이는 곳을 표시하고 얼마나 사용하는지 구하라.</li>
+</ol>
+<p>총 4번 실행된다.</p>
+</blockquote>
 <pre tabindex="0"><code>(gcd 206 40)
 
 (gcd 40 (reaminder 206 40)) - 1
@@ -1070,19 +1161,14 @@ https://github.com/alex-shpak/hugo-book
 (gcd 2 (remainder 4 2)) - 7
 
 2
-</code></pre><p>총 4번 실행된다.</p>
-
-</blockquote>
-
-<hr>
+</code></pre><hr>
+</br>
+</br>
 <h2 id="검토">
   <strong>검토</strong>
   <a class="anchor" href="#%ea%b2%80%ed%86%a0">#</a>
 </h2>
-<blockquote class="book-hint danger">
-  
-</blockquote>
-
+<hr>
 </article>
  
       
@@ -1091,6 +1177,12 @@ https://github.com/alex-shpak/hugo-book
         
   <div class="flex flex-wrap justify-between">
 
+
+  <div><a class="flex align-center" href="https://github.com/donghyun-chae//commit/4015bb5a35436f34e80b09a1f2bc14103641a8a9" title='Last modified by donghyun-chae | June 3, 2024' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="" />
+      <span>June 3, 2024</span>
+    </a>
+  </div>
 
 
 
