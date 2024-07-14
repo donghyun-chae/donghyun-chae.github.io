@@ -337,6 +337,48 @@
       <description>SICP 1.28 # 문제 # 페르마 검사가 틀리지 않게 바꾼 검사 중 밀러-라빈 검사가 있다.&#xA;페르마 검사와 달리 \(n\) 이 소수고 \( 0 &amp;lt; a &amp;lt; n \) 인 정수 \(a\) 에 대하여 \(a^{n-1} \pmod n = 1\) 로 맞아떨어진다.&#xA;밀러-라빈 검사 expmod 에서 제곱을 할 때마다 &amp;lsquo; \( 1 \pmod n\) 의 뻔하지 않은 제곱근&amp;rsquo;, 즉 1이나 \(n-1\) 은 아니면서 제곱한 값이 \( 1 \pmod n\) 인 수인지 알아보고 그런 제곱근이 있다면 \(n\) 이 소수가 아님을 밝힐 수 있다.</description>
     </item>
     <item>
+      <title>1.29</title>
+      <link>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/129/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/129/</guid>
+      <description>SICP 1.29 # 문제 # 심프슨 방법은 정적분 값을 더 정확히 근사하는 방법이다.&#xA;심프슨 방법에서 정적분 값은 \(\frac{h}{3}(y_0&amp;#43;4y_1&amp;#43;2y_2&amp;#43;4y_3&amp;#43;...&amp;#43;2y_{n-2}&amp;#43;4y_{n-1}&amp;#43;y_n)\) 이렇게 구할 수 있으며 짝수 n에 대하여 \( h=\frac{b-a}{n} \) 이고 \(y_k=f(a&amp;#43;kh)\) 이다.&#xA;f,a,b,n 을 인자로 받는 심프슨 방법 프로시저를 작성하고 기존의 방법과 비교해봐라.&#xA;문제풀이 # 심프슨 방법에서 첫 항과 끝 항을 제외하고 홀수항은 4, 짝수항은 2의 계수를 갖는다.&#xA;따라서 짝수 항을 짝수 항끼리 홀수 항을 홀수 항끼리 묶을 수 있다. \[\frac{h}{3}(y_0&amp;#43;4(y_1&amp;#43;y_3&amp;#43;.</description>
+    </item>
+    <item>
+      <title>1.30</title>
+      <link>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/130/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/130/</guid>
+      <description> SICP 1.30 # 문제 # 1.29에서 sum은 선형 재귀적 프로세스를 갖는다.&#xA;sum이 선형 반복 프로세스를 갖게꿈 바꾼다 할때 다음의 빈칸을 채워서 프로시저를 작성하라.&#xA;#lang sicp (define (sum term a next b) (define (iter a result) (if ⟨??⟩ ⟨??⟩ (iter ⟨??⟩ ⟨??⟩))) (iter ⟨??⟩ ⟨??⟩)) 문제풀이 # #lang sicp (define (sum term a next b) (define (iter a result) (if (&amp;gt; a b) result (iter (next a) (+ result (term a))))) (iter a 0)) 검토 # </description>
+    </item>
+    <item>
+      <title>1.31</title>
+      <link>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/131/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/131/</guid>
+      <description>SICP 1.31 # 문제 # a. sum 프로시저와 비슷하게 어떤 구간 속에 있는 숫자마다 정해진 함수의 값을 구하고 그 값을 모두 곱하는 프로시저 product를 짜보라.&#xA;그 다음 아래 식을 바탕으로 \(\pi\) 에 가까운 값을 얻어보라.&#xA;\[\frac{\pi}{4}=\frac{2\cdot4\cdot4\cdot6\cdot6\cdot8\cdot\cdot\cdot}{3\cdot3\cdot5\cdot5\cdot7\cdot7\cdot\cdot\cdot}\] b. product의 프로세스가 되돈다면 반복하도록, 반복하면 되돌게끔 고쳐보라.&#xA;문제풀이 # a. 우선 product의 프로시저는 sum 프로시저를 약간 변형하여 쉽게 구할 수 있다.&#xA;#lang sicp (define (product term a next b) (if (&amp;gt; a b) 1 (* (term a) (product term (next a) next b)))) 주어진 식의 일반항의 곱으로 표현하면 다음과 같다.</description>
+    </item>
+    <item>
+      <title>1.32</title>
+      <link>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/132/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/132/</guid>
+      <description>SICP 1.32 # 문제 # a. 아래 처럼 어떤 수열을 묶어가는 개념 accumulate가 있을때 앞 장의 sum과 product이 accumulate를 활용해 만들어짐을 밝혀라.&#xA;(accumulate combiner null-value term a next b) b. accumulate 프로세스가 되돈다면 반복하도록, 반복하면 되돌도록 고쳐 보라.&#xA;문제풀이 # a.&#xA;#lang sicp (define (accumulate combiner null-value term a next b) (if (&amp;gt; a b) null-value (combiner (term a) (accumulate combiner null-value term (next a) next b)))) (define (sum term a next b) (accumulate + 0 term a next b)) (define (product term a next b) (accumulate * 1 term a next b)) b.</description>
+    </item>
+    <item>
+      <title>1.33</title>
+      <link>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/133/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/133/</guid>
+      <description>SICP 1.33 # 문제 # 거르개 (필터링) 기능을 추가하여 filtered-accumulate를 만들어보자.&#xA;a. a~b 사이의 모든 소수를 제곱하여 더하는 식&#xA;b. n과 서로소 인 n보다 작고 0보다 큰 모든 정수를 곱하는 식&#xA;문제풀이 # #lang sicp (define (filtered-accumulate filter combiner null-value term a next b) (if (and (&amp;gt; a b) (filter a)) null-value (combiner (if (filter a) (term a) null-value) (filtered-accumulate filter combiner null-value term (next a) next b)))) (define (prime_square_sum a b) (filtered-accumulate prime?</description>
+    </item>
+    <item>
+      <title>1.34</title>
+      <link>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/134/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/134/</guid>
+      <description>SICP 1.34 # 문제 # 다음의 프로시저에서 (f f) 를 계산하려 하면 어떤 일이 벌어지고 왜 그럴까?&#xA;#lang sicp (define (f g) (g 2)) (define (square x) (* x x)) (f square) (f (lambda (z) (* z (+ z 1)))) (f f) 문제풀이 # (f f) 의 실행 결과는 다음과 같다. 그 이유는 (f g) 에서 받는 g는 프로시저를 인자로 받는 자리이다.&#xA;(g 2)에서 프로시저에 쓰이기 때문에 프로시저가 아니면 arguments does not match 이런 문구를 포함한 오류가 난다.</description>
+    </item>
+    <item>
       <title></title>
       <link>https://donghyun-chae.github.io/docs/HowToSolveIt/Reflection/otherway/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
