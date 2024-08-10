@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="나를 돌아보는 시간 # 프로그램 짜기를 시작하고 만든 것 중 다른 사람이 쓸만한 제대로 된 것이 하나도 없다고 느꼈다.
+그래서 로블록스 게임에 도전해야겠다고 마음먹고 개발을 했었다.
+굳이 로블록스였던 이유는 어린 아이들이 많이 이용하기 때문에 실력이 부족한 내가 만들어도 누군가 사용할 수 있지 않을까 싶어서였다.
+실제로 생각보다 많은 500명이 넘는 사람이 플레이 하였다.
+이렇게 몇가지 결과물을 만들어보면서 느낀 것은 나의 생산성은 굉장히 낮다는 것과 혼자서 만들 수 있는 것은 많지 않다는 것이다.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://donghyun-chae.github.io/docs/swjungle/week01/101/">
+  <meta property="og:site_name" content="Dongle-log">
+  <meta property="og:title" content="나를 돌아보는 시간 ">
+  <meta property="og:description" content="나를 돌아보는 시간 # 프로그램 짜기를 시작하고 만든 것 중 다른 사람이 쓸만한 제대로 된 것이 하나도 없다고 느꼈다.
+그래서 로블록스 게임에 도전해야겠다고 마음먹고 개발을 했었다.
+굳이 로블록스였던 이유는 어린 아이들이 많이 이용하기 때문에 실력이 부족한 내가 만들어도 누군가 사용할 수 있지 않을까 싶어서였다.
+실제로 생각보다 많은 500명이 넘는 사람이 플레이 하였다.
+이렇게 몇가지 결과물을 만들어보면서 느낀 것은 나의 생산성은 굉장히 낮다는 것과 혼자서 만들 수 있는 것은 많지 않다는 것이다.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+  <meta property="article:section" content="docs">
+    <meta property="article:tag" content="Swjungle">
+<title>나를 돌아보는 시간  | Dongle-log</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="canonical" href="https://donghyun-chae.github.io/docs/swjungle/week01/101/">
+<link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.126149975ff43174dd9518eab693dd90c623028e386b1500c56fcda88d805a90.js" integrity="sha256-EmFJl1/0MXTdlRjqtpPdkMYjAo44axUAxW/NqI2AWpA=" crossorigin="anonymous"></script>
+
+  
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-P9T7P0F1VP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-P9T7P0F1VP');
+        }
+      </script>
+    
+  
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><img src="/logo.png" alt="Logo" /><span>Dongle-log</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c702cc3fba0c88b3540371e9ffc2449c" class="toggle"  />
+    <label for="section-c702cc3fba0c88b3540371e9ffc2449c" class="flex justify-between">
+      <a href="/docs/HowToSolveIt/" class="">어떻게 문제를 풀 것인가?</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8d4a381a82e9d88f9a37982175135486" class="toggle"  />
+    <label for="section-8d4a381a82e9d88f9a37982175135486" class="flex justify-between">
+      <a role="button" class="">1. 문제 이해하기</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/KnowingProblem/whatisproblem/" class="">구하려는 것이 뭐야?</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/KnowingProblem/seeproblem/" class="">구하려는 것을 살펴봐</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/KnowingProblem/coditionsati/" class="">조건은 만족될 수 있어?</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/KnowingProblem/draw/" class="">그림으로 그려봐</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/KnowingProblem/divide/" class="">조건을 여러 부분으로 나눠봐</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8c6edf5de069960a380014347e39c522" class="toggle"  />
+    <label for="section-8c6edf5de069960a380014347e39c522" class="flex justify-between">
+      <a role="button" class="">2. 계획하기</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Planning/haveseen/" class="">전에 본 적 있어?</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Planning/knowsimilar/" class="">관련된 문제를 알고 있어?</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Planning/canutilize/" class="">관련된 문제를 풀어봤으면 그것을 활용할 수 있을까?</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Planning/otherwords/" class="">문제를 다른 말로 바꿔봐</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Planning/notwork/" class="">그래도 안된다면..</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Planning/hidden/" class="">자료에서 유용한 것을 찾아보자</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Planning/useall/" class="">자료는 모두 썼어?</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-dcb34f0d0588899a59641d655a5714d0" class="toggle"  />
+    <label for="section-dcb34f0d0588899a59641d655a5714d0" class="flex justify-between">
+      <a role="button" class="">3. 실행하기</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Excuting/beforeexcute/" class="">실행 전 생각을 검토해봐</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-15ad3088383e6183ab70bfaf5c68e8b6" class="toggle"  />
+    <label for="section-15ad3088383e6183ab70bfaf5c68e8b6" class="flex justify-between">
+      <a role="button" class="">4. 반성</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Reflection/checkresult/" class="">결과를 점검할 수 있는가?</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8a2f57a0eadde746e733ecc5b7eb5832" class="toggle"  />
+    <label for="section-8a2f57a0eadde746e733ecc5b7eb5832" class="flex justify-between">
+      <a role="button" class="">아이디어 사전</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Dictionary/workingbackwards/" class="">거꾸로 생각하기</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Dictionary/wisdomofproverbs/" class="">교훈에 담긴 지혜</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Dictionary/DHS/" class="">결의, 희망, 성공</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Dictionary/induction/" class="">귀납 / 수학적 귀납법</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/HowToSolveIt/Dictionary/reductio/" class="">귀류법 / 간접증명법</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-eae88e73edcc9dc8f420f11812970218" class="toggle"  />
+    <label for="section-eae88e73edcc9dc8f420f11812970218" class="flex justify-between">
+      <a role="button" class="">컴퓨터 공학</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-976ec6b153c84ecb9daec4b14f57cdd1" class="toggle"  />
+    <label for="section-976ec6b153c84ecb9daec4b14f57cdd1" class="flex justify-between">
+      <a role="button" class="">프로그래밍</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-56dc9c31c377262d8cfd0faf85b6b93f" class="toggle"  />
+    <label for="section-56dc9c31c377262d8cfd0faf85b6b93f" class="flex justify-between">
+      <a href="/docs/ComputerScience/Programming/SICP/" class="">컴퓨터 프로그램의 구조와 해석</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3a38039995da08de3317c24c5a322d48" class="toggle"  />
+    <label for="section-3a38039995da08de3317c24c5a322d48" class="flex justify-between">
+      <a role="button" class="">Chapter1</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/101/" class="">1.01 </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/102/" class="">1.02 </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/103/" class="">1.03</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/104/" class="">1.04</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/105/" class="">1.05 </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/106/" class="">1.06</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/107/" class="">1.07</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/108/" class="">1.08</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/109/" class="">1.09</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/110/" class="">1.10</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/111/" class="">1.11</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/112/" class="">1.12</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/113/" class="">1.13</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/114/" class="">1.14</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/115/" class="">1.15</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/116/" class="">1.16</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/117/" class="">1.17</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/118/" class="">1.18</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/119/" class="">1.19</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/120/" class="">1.20</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/121/" class="">1.21</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/122/" class="">1.22</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/123/" class="">1.23</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/124/" class="">1.24</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/125/" class="">1.25</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/126/" class="">1.26</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/127/" class="">1.27</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/128/" class="">1.28</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/129/" class="">1.29</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/130/" class="">1.30</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/131/" class="">1.31</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/132/" class="">1.32</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/133/" class="">1.33</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/134/" class="">1.34</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/135/" class="">1.35</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/136/" class="">1.36</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2252be8c449429ddc53fb362d4884fac" class="toggle"  />
+    <label for="section-2252be8c449429ddc53fb362d4884fac" class="flex justify-between">
+      <a role="button" class="">수학</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8cfdfaf32f689ce7e3d2a6040ab1f66a" class="toggle" checked />
+    <label for="section-8cfdfaf32f689ce7e3d2a6040ab1f66a" class="flex justify-between">
+      <a role="button" class="">SW사관학교 정글</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a58482e814daa469d24ea8aeff8a45ec" class="toggle" checked />
+    <label for="section-a58482e814daa469d24ea8aeff8a45ec" class="flex justify-between">
+      <a role="button" class="">WEEK01</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/swjungle/week01/101/" class="active">나를 돌아보는 시간 </a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/posts/"  >
+        Blog
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://github.com/donghyun-chae/"  target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>나를 돌아보는 시간 </strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#나를-돌아보는-시간">나를 돌아보는 시간</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="나를-돌아보는-시간">
+  나를 돌아보는 시간
+  <a class="anchor" href="#%eb%82%98%eb%a5%bc-%eb%8f%8c%ec%95%84%eb%b3%b4%eb%8a%94-%ec%8b%9c%ea%b0%84">#</a>
+</h1>
+<blockquote>
+<p>프로그램 짜기를 시작하고 만든 것 중 다른 사람이 쓸만한 제대로 된 것이 하나도 없다고 느꼈다.<br>
+그래서 로블록스 게임에 도전해야겠다고 마음먹고 개발을 했었다.<br>
+굳이 로블록스였던 이유는 어린 아이들이 많이 이용하기 때문에 실력이 부족한 내가 만들어도 누군가 사용할 수 있지 않을까 싶어서였다.<br>
+실제로 생각보다 많은 500명이 넘는 사람이 플레이 하였다.<br>
+이렇게 몇가지 결과물을 만들어보면서 느낀 것은 나의 생산성은 굉장히 낮다는 것과 혼자서 만들 수 있는 것은 많지 않다는 것이다.<br>
+이 2가지를 뼈저리게 느꼈었다.<br>
+어떤 코드를 짤때 스스로 생각하기 보단 남이 짠 코드를 가져와서 수정하는 것이 많았고 코드를 직접 짜는 능력과 보는 능력 둘다 부족했다.<br>
+이런 문제를 개선하기 위해선 프로그래밍과 컴퓨터의 본질부터 알아야했다.<br>
+그래서 나는 컴퓨터 공학을 배워야겠다고 생각했다.<br>
+이 분야를 정말 잘해보고 싶었고 조금만 장기적으로 생각해본다면 컴퓨터 공학은 정말 나에게 필요한 학문이었다.<br>
+그렇게 컴퓨터 공학을 제대로 배워야겠다고 생각하고 수강한 것이 Harvard CS50 였다. (정말 좋은 강의였다.)<br>
+이 강의를 보며 내가 프로그래밍을 하며 불편하고 답답했던 것들이 해소되는 기분이였다.<br>
+그리고 이 강의를 처음 들을때 나는 이 강의만 들으면 컴퓨터 공학의 기초를 알 수 있어! 라고 착각했다.<br>
+CS50 강의를 다 들은 후 컴퓨터과학이 여는 세계, 수학 리부트 등을 보며 컴퓨터에 대한 이해와 오랫동안 잊고 있던 수학을 다시 복기 했다.<br>
+그 후 우연히 SICP라는 책을 접했고 아직 1장을 막 끝냈음에도 프로그래밍을 바라보는 관점이 많이 바뀐 것 같다.<br>
+SICP를 다 읽을 쯤이면 정말 많이 성장해있을 것 같다.<br>
+그 후 카이스트 정글에 들어왔다.<br>
+5개월 동안 좋은 사람들, 좋은 사람들과 일하고 소통하는법, 문제를 파고드는 자세와 새로운 것을 배우는 태도를 배우고 싶다.<br>
+거추장스럽거나 겉으로만 멋있는, 사람들이 못알아드는 멋진 용어를 많이 알아서 있어보이게 사용하기, 자기 객관화의 실패 등을 정말 피하고 싶다.<br>
+정글이 끝난 후에 기본을 정말 잘했으면 좋겠다. 박자도 못맞추는 기타리스트가 되기보단 아직 가요는 잘 못치지만 박자는 딱딱 맞추는 사람이고 싶다.<br>
+그리고 뭐든지 해결할 수 있다는 자신감과 좋은 사람을 보는 눈을 가졌으면 좋겠다.<br>
+정글에서의 삶, 내 삶에 가지고 가는 나의 자세는 다음과 같다.</p>
+</blockquote>
+<ol>
+<li>삶에 대한 적극성</li>
+</ol>
+<p>그냥 수동적이고 멍하니 방관하는 삶 보단 적극적으로 나서고 도전하고</p>
+<p>실패하고 경험하고 발전하는 삶을 살자.</p>
+<ol start="2">
+<li>자기 자신을 믿자</li>
+</ol>
+<p>나를 진심으로 믿을 사람은 나 밖에 없고 내가 나의 가능성을 못 믿어서 포기해버리는 것 만큼 끔직한건 없다.</p>
+<p>된다고 생각하면 된다. 될때 까지 하면 된다는 마음가짐으로 안될 이유보단 될 이유를 찾고</p>
+<p>안된다는 생각을 할 시간에 어떻게 하면 되게 할까를 생각하자.</p>
+<ol start="3">
+<li>다른 사람에게 도움이 되자</li>
+</ol>
+<p>다른 사람에게 도움을 주는 것이 행복하므로 나의 행복을 위해서도 쓸모 있는 사람이 되자.</p>
+<p>시간이 지나도 이 글을 보며 초심을 찾는 그런 글이 됐으면 좋겠다.</p>
+<hr>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/donghyun-chae//edit/main/exampleSite/content/docs/swjungle/week01/101.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+<script
+  src="https://utteranc.es/client.js"
+  repo="donghyun-chae/donghyun-chae.github.io"
+  issue-term="pathname"
+  theme="preferred-color-scheme"
+  crossorigin="anonymous"
+  async
+></script>
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#나를-돌아보는-시간">나를 돌아보는 시간</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

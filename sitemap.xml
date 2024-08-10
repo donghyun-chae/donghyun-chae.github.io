@@ -17,6 +17,10 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://donghyun-chae.github.io/docs/swjungle/week01/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/workingbackwards/</loc>
     <lastmod>2024-05-20T12:07:46+09:00</lastmod>
     <changefreq>daily</changefreq>
@@ -27,18 +31,12 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://donghyun-chae.github.io/docs/Mathematics/Concrete/</loc>
-    <lastmod>2024-05-12T19:58:01+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/KnowingProblem/whatisproblem/</loc>
     <lastmod>2024-04-20T23:15:25+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://donghyun-chae.github.io/docs/Mathematics/LinearAlgebra/</loc>
-    <lastmod>2024-05-12T19:58:01+09:00</lastmod>
+    <loc>https://donghyun-chae.github.io/docs/swjungle/week01/101/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -58,7 +56,7 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/</loc>
-    <lastmod>2024-06-06T09:31:17+09:00</lastmod>
+    <lastmod>2024-07-14T09:18:48+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -92,6 +90,11 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://donghyun-chae.github.io/docs/ComputerScience/</loc>
+    <lastmod>2024-05-12T19:58:01+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/103/</loc>
     <lastmod>2024-06-06T09:31:17+09:00</lastmod>
     <changefreq>daily</changefreq>
@@ -112,6 +115,11 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://donghyun-chae.github.io/docs/Mathematics/</loc>
+    <lastmod>2024-05-12T19:58:01+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/KnowingProblem/coditionsati/</loc>
     <lastmod>2024-04-20T23:15:25+09:00</lastmod>
     <changefreq>daily</changefreq>
@@ -124,6 +132,10 @@
   </url><url>
     <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Reflection/</loc>
     <lastmod>2024-04-19T20:40:12+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://donghyun-chae.github.io/docs/swjungle/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -148,17 +160,12 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/reductio/</loc>
-    <lastmod>2024-06-03T19:40:02+09:00</lastmod>
+    <lastmod>2024-07-14T09:18:48+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Planning/notwork/</loc>
     <lastmod>2024-04-21T13:06:21+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://donghyun-chae.github.io/docs/Mathematics/</loc>
-    <lastmod>2024-05-12T19:58:01+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -169,11 +176,6 @@
   </url><url>
     <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/KnowingProblem/divide/</loc>
     <lastmod>2024-04-20T23:15:25+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://donghyun-chae.github.io/docs/ComputerScience/</loc>
-    <lastmod>2024-05-12T19:58:01+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -303,26 +305,40 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/129/</loc>
+    <lastmod>2024-07-14T09:18:48+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/130/</loc>
+    <lastmod>2024-07-14T09:18:48+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/131/</loc>
+    <lastmod>2024-07-14T09:18:48+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/132/</loc>
+    <lastmod>2024-07-14T09:18:48+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/133/</loc>
+    <lastmod>2024-07-14T09:18:48+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/134/</loc>
+    <lastmod>2024-07-14T09:18:48+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/135/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/136/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -342,17 +358,17 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/categories/</loc>
-    <lastmod>2024-06-06T09:31:17+09:00</lastmod>
+    <lastmod>2024-07-14T09:18:48+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/categories/Dictionary/</loc>
-    <lastmod>2024-06-03T19:40:02+09:00</lastmod>
+    <lastmod>2024-07-14T09:18:48+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/docs/</loc>
-    <lastmod>2024-06-06T09:31:17+09:00</lastmod>
+    <lastmod>2024-07-14T09:18:48+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -367,7 +383,7 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/tags/HowToSolveIt/</loc>
-    <lastmod>2024-06-03T19:40:02+09:00</lastmod>
+    <lastmod>2024-07-14T09:18:48+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -387,17 +403,25 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/tags/SICP/</loc>
-    <lastmod>2024-06-06T09:31:17+09:00</lastmod>
+    <lastmod>2024-07-14T09:18:48+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/categories/SICP/</loc>
-    <lastmod>2024-06-06T09:31:17+09:00</lastmod>
+    <lastmod>2024-07-14T09:18:48+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://donghyun-chae.github.io/tags/swjungle/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/tags/</loc>
-    <lastmod>2024-06-06T09:31:17+09:00</lastmod>
+    <lastmod>2024-07-14T09:18:48+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://donghyun-chae.github.io/categories/week01/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
