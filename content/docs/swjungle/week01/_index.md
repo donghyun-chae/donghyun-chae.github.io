@@ -1,5 +1,5 @@
 ---
 weight: 1
 bookCollapseSection: true
-title: "구체 수학"
+title: "WEEK01"
 ---

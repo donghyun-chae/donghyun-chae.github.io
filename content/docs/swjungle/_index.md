@@ -1,6 +1,6 @@
 ---
-weight: 3
+weight: 4
 bookCollapseSection: true
 bookFlatSection: true
-title: "수학"
+title: "SW사관학교 정글"
 ---
