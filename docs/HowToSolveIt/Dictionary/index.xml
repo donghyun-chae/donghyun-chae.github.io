@@ -1,46 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>아이디어 사전 on Dongle-log</title>
-    <link>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/</link>
-    <description>Recent content in 아이디어 사전 on Dongle-log</description>
-    <generator>Hugo 0.125.0</generator>
-    <language>en</language>
-    <atom:link href="https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>거꾸로 생각하기</title>
-      <link>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/workingbackwards/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/workingbackwards/</guid>
-      <description>거꾸로 생각하기 # 거꾸로 생각하기 방법은 동물이 문제를 푸는 방법에서 착안했으며 # 여기선 이 실험에 대해 개략적으로 살펴 볼 것이다. # 이 방법에 대한 구체적 서술은 &amp;ldquo;파푸스&amp;quot;에서 진행된다&#xA;1. 4L 와 9L 통이 있을 때 정확히 6L를 담으시오. 라는 문제가 있을때 이런 2개의 용기를 생각할 수 있을 것이다. 그러나 6L짜리 눈금은 없으므로 이런 저런 궁리를 시작할 것이다.&#xA;일반적으로 쏟았다가 채워보기를 반복하며 주어진 것으로 구하려는 것을 곧바로 연구할 것이다. 2. 현명한 사람들은 그런 시도에 너무 많은 시간을 쏟지 않고 방향을 바꾸어 거꾸로 생각해본다.</description>
-    </item>
-    <item>
-      <title>교훈에 담긴 지혜</title>
-      <link>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/wisdomofproverbs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/wisdomofproverbs/</guid>
-      <description>교훈에 담긴 지혜 # 문제를 해결한다는 것은 인간의 기본적인 활동이고 사고의 목적이다. # 여기선 문제 해결 시 도움을 주는 교훈을 살펴본다. # 교훈은 이 색으로 표시한다. # 1. 잘못 이해한 사람은 잘못 대답한다.&#xA;문제를 해결하기 위해 가장 먼저 해야하는 것은 문제를 이해하는 것이다.&#xA;시작하기 전 목표를 생각해라.&#xA;우리는 달성하고자 하는 목표를 분명히 알아야 한다.&#xA;바보는 출발점을 주시하고 현인은 목표를 주시한다.&#xA;사람들은 흔히 달성하고자 하는 목표를 이해하기도 전에 행동에 나선다.</description>
-    </item>
-    <item>
-      <title>결의, 희망, 성공</title>
-      <link>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/DHS/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/DHS/</guid>
-      <description>결의, 희망, 성공 # 문제를 해결하는 것은 지적인 활동을 넘어서 의지와 정서가 중요하다. # 1. 잘될 때 계속하는 것은 쉽지만 일이 잘 안풀릴때 견디기는 어렵다.&#xA;계속하기 위해선 희망을 갖고 출발해야 하며, 작은 성공을 반복해야한다.&#xA;성공하지 못했다고 경멸해서는 안되며 성공할 수 있는 목표를 찾아야 한다.&#xA;2. 문제를 해결하는 것은 의지의 문제다.&#xA;문제를 해결하고자 하는 욕구가 없다면 아무런 문제도 해결 할 수 없다.&#xA;실패를 통해 인내를 배우고 조그만 진전의 가치를 평가하는 법을 배우며</description>
-    </item>
-    <item>
-      <title>귀납 / 수학적 귀납법</title>
-      <link>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/induction/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/induction/</guid>
-      <description>귀납 / 수학적 귀납법 # 귀납은 특수한 상황에서 일반적인 것을 발견하는 과정이다. # 수학적 귀납은 어떤 종류의 정리를 증명하기 위한 것으로 수학에서만 쓰인다. # 1. 우연히 다음 사실을 접했다. 이런 식에서 각 수를 어떤 수의 제곱이나 세제곱으로 바라보면 다음과 같이 다시 바라볼 수 있다.&#xA;여기서 1부터 순차적인 수의 세제곱의 합은 어떤 수의 제곱이 되는 것을 볼 수 있는데&#xA;이것이 일반적으로 적용되는 지를 연구하는 것이 귀납인 것이다. 특수한 상황 -&amp;gt; 일반적인 상황</description>
-    </item>
-    <item>
-      <title>귀류법 / 간접증명법</title>
-      <link>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/reductio/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/reductio/</guid>
-      <description>귀류법 / 간접증명법 # 귀류법은 가정으로 부터 명백히 틀린 것을 유도하여 가정이 틀림을 증명하는 것이다. # 간접증명법은 정반대의 가정이 거짓임을 보임으로써 어떤 주장이 참임을 증명하는 것이다. # 1. 귀류법&#xA;0~9 까지의 숫자를 한 번씩만 사용하여 수를 만드는데 그 수의 합이 100이 되도록 만들어보자.&#xA;구하려는 것은? 100이란 수를 만드는 수의 집합&#xA;조건은? 1. 0-9를 한번씩 사용해야한다. 2. 합이 100이어야 한다.&#xA;조건 가운데 1번만 남겨보면 {19, 28, 37, 46, 50} 은 만족한다.</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>아이디어 사전 on Dongle-log</title><link>http://localhost:1313/docs/HowToSolveIt/Dictionary/</link><description>Recent content in 아이디어 사전 on Dongle-log</description><generator>Hugo 0.125.0</generator><language>en</language><atom:link href="http://localhost:1313/docs/HowToSolveIt/Dictionary/index.xml" rel="self" type="application/rss+xml"/><item><title>거꾸로 생각하기</title><link>http://localhost:1313/docs/HowToSolveIt/Dictionary/workingbackwards/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/HowToSolveIt/Dictionary/workingbackwards/</guid><description>거꾸로 생각하기 # 거꾸로 생각하기 방법은 동물이 문제를 푸는 방법에서 착안했으며 # 여기선 이 실험에 대해 개략적으로 살펴 볼 것이다. # 이 방법에 대한 구체적 서술은 &amp;ldquo;파푸스&amp;quot;에서 진행된다
+1. 4L 와 9L 통이 있을 때 정확히 6L를 담으시오. 라는 문제가 있을때 이런 2개의 용기를 생각할 수 있을 것이다. 그러나 6L짜리 눈금은 없으므로 이런 저런 궁리를 시작할 것이다.
+일반적으로 쏟았다가 채워보기를 반복하며 주어진 것으로 구하려는 것을 곧바로 연구할 것이다. 2. 현명한 사람들은 그런 시도에 너무 많은 시간을 쏟지 않고 방향을 바꾸어 거꾸로 생각해본다.</description></item><item><title>교훈에 담긴 지혜</title><link>http://localhost:1313/docs/HowToSolveIt/Dictionary/wisdomofproverbs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/HowToSolveIt/Dictionary/wisdomofproverbs/</guid><description>교훈에 담긴 지혜 # 문제를 해결한다는 것은 인간의 기본적인 활동이고 사고의 목적이다. # 여기선 문제 해결 시 도움을 주는 교훈을 살펴본다. # 교훈은 이 색으로 표시한다. # 1. 잘못 이해한 사람은 잘못 대답한다.
+문제를 해결하기 위해 가장 먼저 해야하는 것은 문제를 이해하는 것이다.
+시작하기 전 목표를 생각해라.
+우리는 달성하고자 하는 목표를 분명히 알아야 한다.
+바보는 출발점을 주시하고 현인은 목표를 주시한다.
+사람들은 흔히 달성하고자 하는 목표를 이해하기도 전에 행동에 나선다.</description></item><item><title>결의, 희망, 성공</title><link>http://localhost:1313/docs/HowToSolveIt/Dictionary/DHS/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/HowToSolveIt/Dictionary/DHS/</guid><description>결의, 희망, 성공 # 문제를 해결하는 것은 지적인 활동을 넘어서 의지와 정서가 중요하다. # 1. 잘될 때 계속하는 것은 쉽지만 일이 잘 안풀릴때 견디기는 어렵다.
+계속하기 위해선 희망을 갖고 출발해야 하며, 작은 성공을 반복해야한다.
+성공하지 못했다고 경멸해서는 안되며 성공할 수 있는 목표를 찾아야 한다.
+2. 문제를 해결하는 것은 의지의 문제다.
+문제를 해결하고자 하는 욕구가 없다면 아무런 문제도 해결 할 수 없다.
+실패를 통해 인내를 배우고 조그만 진전의 가치를 평가하는 법을 배우며</description></item><item><title>귀납 / 수학적 귀납법</title><link>http://localhost:1313/docs/HowToSolveIt/Dictionary/induction/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/HowToSolveIt/Dictionary/induction/</guid><description>귀납 / 수학적 귀납법 # 귀납은 특수한 상황에서 일반적인 것을 발견하는 과정이다. # 수학적 귀납은 어떤 종류의 정리를 증명하기 위한 것으로 수학에서만 쓰인다. # 1. 우연히 다음 사실을 접했다. 이런 식에서 각 수를 어떤 수의 제곱이나 세제곱으로 바라보면 다음과 같이 다시 바라볼 수 있다.
+여기서 1부터 순차적인 수의 세제곱의 합은 어떤 수의 제곱이 되는 것을 볼 수 있는데
+이것이 일반적으로 적용되는 지를 연구하는 것이 귀납인 것이다. 특수한 상황 -&amp;gt; 일반적인 상황</description></item><item><title>귀류법 / 간접증명법</title><link>http://localhost:1313/docs/HowToSolveIt/Dictionary/reductio/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/HowToSolveIt/Dictionary/reductio/</guid><description>귀류법 / 간접증명법 # 귀류법은 가정으로 부터 명백히 틀린 것을 유도하여 가정이 틀림을 증명하는 것이다. # 간접증명법은 정반대의 가정이 거짓임을 보임으로써 어떤 주장이 참임을 증명하는 것이다. # 1. 귀류법
+0~9 까지의 숫자를 한 번씩만 사용하여 수를 만드는데 그 수의 합이 100이 되도록 만들어보자.
+구하려는 것은? 100이란 수를 만드는 수의 집합
+조건은? 1. 0-9를 한번씩 사용해야한다. 2. 합이 100이어야 한다.
+조건 가운데 1번만 남겨보면 {19, 28, 37, 46, 50} 은 만족한다.</description></item></channel></rss>

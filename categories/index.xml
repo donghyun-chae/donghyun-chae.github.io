@@ -8,41 +8,6 @@
     <language>en</language>
     <atom:link href="https://donghyun-chae.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Dictionary</title>
-      <link>https://donghyun-chae.github.io/categories/Dictionary/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donghyun-chae.github.io/categories/Dictionary/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Excuting</title>
-      <link>https://donghyun-chae.github.io/categories/Excuting/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donghyun-chae.github.io/categories/Excuting/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>KnowingProblem</title>
-      <link>https://donghyun-chae.github.io/categories/KnowingProblem/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donghyun-chae.github.io/categories/KnowingProblem/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Planning</title>
-      <link>https://donghyun-chae.github.io/categories/Planning/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donghyun-chae.github.io/categories/Planning/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Reflection</title>
-      <link>https://donghyun-chae.github.io/categories/Reflection/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://donghyun-chae.github.io/categories/Reflection/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>SICP</title>
       <link>https://donghyun-chae.github.io/categories/SICP/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

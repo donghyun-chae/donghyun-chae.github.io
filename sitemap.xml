@@ -2,11 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/KnowingProblem/</loc>
-    <lastmod>2024-04-19T20:40:12+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/101/</loc>
     <lastmod>2024-06-06T09:31:17+09:00</lastmod>
     <changefreq>daily</changefreq>
@@ -18,40 +13,12 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/docs/swjungle/week01/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/workingbackwards/</loc>
-    <lastmod>2024-05-20T12:07:46+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Reflection/checkresult/</loc>
-    <lastmod>2024-05-08T14:25:51+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/KnowingProblem/whatisproblem/</loc>
-    <lastmod>2024-04-20T23:15:25+09:00</lastmod>
+    <lastmod>2024-08-10T16:52:04+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/docs/swjungle/week01/101/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Excuting/beforeexcute/</loc>
-    <lastmod>2024-04-21T22:08:26+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/</loc>
-    <lastmod>2024-06-03T19:40:02+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Planning/haveseen/</loc>
-    <lastmod>2024-04-20T23:15:25+09:00</lastmod>
+    <lastmod>2024-08-10T16:52:04+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -70,28 +37,8 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Planning/</loc>
-    <lastmod>2024-04-19T20:40:12+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Planning/knowsimilar/</loc>
-    <lastmod>2024-04-20T23:15:25+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/wisdomofproverbs/</loc>
-    <lastmod>2024-05-08T14:25:51+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/KnowingProblem/seeproblem/</loc>
-    <lastmod>2024-04-20T23:15:25+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://donghyun-chae.github.io/docs/ComputerScience/</loc>
-    <lastmod>2024-05-12T19:58:01+09:00</lastmod>
+    <lastmod>2024-08-10T16:52:04+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -100,28 +47,8 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Excuting/</loc>
-    <lastmod>2024-04-19T20:40:12+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/DHS/</loc>
-    <lastmod>2024-05-08T14:25:51+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Planning/canutilize/</loc>
-    <lastmod>2024-04-21T13:06:21+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://donghyun-chae.github.io/docs/Mathematics/</loc>
-    <lastmod>2024-05-12T19:58:01+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/KnowingProblem/coditionsati/</loc>
-    <lastmod>2024-04-20T23:15:25+09:00</lastmod>
+    <lastmod>2024-08-10T16:52:04+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -130,27 +57,8 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Reflection/</loc>
-    <lastmod>2024-04-19T20:40:12+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://donghyun-chae.github.io/docs/swjungle/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/induction/</loc>
-    <lastmod>2024-05-20T12:07:46+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/KnowingProblem/draw/</loc>
-    <lastmod>2024-04-20T23:15:25+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Planning/otherwords/</loc>
-    <lastmod>2024-04-21T13:06:21+09:00</lastmod>
+    <lastmod>2024-08-10T16:52:04+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -159,43 +67,13 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/reductio/</loc>
-    <lastmod>2024-07-14T09:18:48+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Planning/notwork/</loc>
-    <lastmod>2024-04-21T13:06:21+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Dictionary/</loc>
-    <lastmod>2024-05-08T14:25:51+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/KnowingProblem/divide/</loc>
-    <lastmod>2024-04-20T23:15:25+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/106/</loc>
     <lastmod>2024-06-06T09:31:17+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Planning/hidden/</loc>
-    <lastmod>2024-04-21T22:08:26+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/107/</loc>
     <lastmod>2024-06-06T09:31:17+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Planning/useall/</loc>
-    <lastmod>2024-04-21T22:08:26+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -335,20 +213,12 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/135/</loc>
+    <lastmod>2024-08-10T16:52:04+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/docs/ComputerScience/Programming/SICP/Chapter1/136/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Reflection/otherway/</loc>
-    <lastmod>2024-05-08T14:25:51+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://donghyun-chae.github.io/docs/HowToSolveIt/Reflection/useresult/</loc>
-    <lastmod>2024-05-08T14:25:51+09:00</lastmod>
+    <lastmod>2024-08-10T16:52:04+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -358,70 +228,42 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/categories/</loc>
-    <lastmod>2024-07-14T09:18:48+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://donghyun-chae.github.io/categories/Dictionary/</loc>
-    <lastmod>2024-07-14T09:18:48+09:00</lastmod>
+    <lastmod>2024-08-10T16:52:04+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/docs/</loc>
-    <lastmod>2024-07-14T09:18:48+09:00</lastmod>
+    <lastmod>2024-08-10T16:52:04+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/</loc>
-    <lastmod>2024-06-06T09:31:17+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://donghyun-chae.github.io/categories/Excuting/</loc>
-    <lastmod>2024-04-21T22:08:26+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://donghyun-chae.github.io/tags/HowToSolveIt/</loc>
-    <lastmod>2024-07-14T09:18:48+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://donghyun-chae.github.io/categories/KnowingProblem/</loc>
-    <lastmod>2024-04-20T23:15:25+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://donghyun-chae.github.io/categories/Planning/</loc>
-    <lastmod>2024-04-21T22:08:26+09:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://donghyun-chae.github.io/categories/Reflection/</loc>
-    <lastmod>2024-05-08T14:25:51+09:00</lastmod>
+    <lastmod>2024-08-10T16:52:04+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/tags/SICP/</loc>
-    <lastmod>2024-07-14T09:18:48+09:00</lastmod>
+    <lastmod>2024-08-10T16:52:04+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/categories/SICP/</loc>
-    <lastmod>2024-07-14T09:18:48+09:00</lastmod>
+    <lastmod>2024-08-10T16:52:04+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/tags/swjungle/</loc>
+    <lastmod>2024-08-10T16:52:04+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/tags/</loc>
-    <lastmod>2024-07-14T09:18:48+09:00</lastmod>
+    <lastmod>2024-08-10T16:52:04+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://donghyun-chae.github.io/categories/week01/</loc>
+    <lastmod>2024-08-10T16:52:04+09:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
