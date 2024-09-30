@@ -15,6 +15,13 @@
       <description> SICP 1.01 # 문제 # 여러 식들이 어떻게 계산되는가?&#xA;문제풀이 # 검토 # </description>
     </item>
     <item>
+      <title>Week07 WIL</title>
+      <link>https://donghyun-chae.github.io/docs/swjungle/week07/101/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donghyun-chae.github.io/docs/swjungle/week07/101/</guid>
+      <description>Week07 WIL # 1 - CPU 스케쥴링을 알아야 하는 이유는 컴퓨터에게 일을 더 잘 시키기 위해서 입니다. 그렇다면 일을 잘한다는 것은 무엇일까요? 그 평가 기준에는 반환 시간, 공정성, 응답시간이 있습니다. 반환 시간은 작업 시작 시간 에서 끝낸 시간을 차인 즉 실제 작업 한 시간이고 공정성은 작업들이 공평하게 자원을 쓸 수 있는가 하는 것이고 응답 시간이란 요청 받은 시간으로 부터 처음 실행될 때 까지의 시간 차를 의미 합니다.&#xA;2 - 오늘 다룰 CPU 스케쥴링의 종류는 다음과 같습니다.</description>
+    </item>
+    <item>
       <title>나를 돌아보는 시간 </title>
       <link>https://donghyun-chae.github.io/docs/swjungle/week01/101/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
