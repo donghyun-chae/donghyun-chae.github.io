@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>WIL on Dongle-log</title>
+    <link>https://donghyun-chae.github.io/docs/swjungle/wil/</link>
+    <description>Recent content in WIL on Dongle-log</description>
+    <generator>Hugo 0.125.0</generator>
+    <language>en</language>
+    <atom:link href="https://donghyun-chae.github.io/docs/swjungle/wil/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Week07 WIL</title>
+      <link>https://donghyun-chae.github.io/docs/swjungle/wil/101/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donghyun-chae.github.io/docs/swjungle/wil/101/</guid>
+      <description>Week07 WIL # 1 - CPU 스케쥴링을 알아야 하는 이유는 컴퓨터에게 일을 더 잘 시키기 위해서 입니다. 그렇다면 일을 잘한다는 것은 무엇일까요? 그 평가 기준에는 반환 시간, 공정성, 응답시간이 있습니다. 반환 시간은 작업 시작 시간 에서 끝낸 시간을 차인 즉 실제 작업 한 시간이고 공정성은 작업들이 공평하게 자원을 쓸 수 있는가 하는 것이고 응답 시간이란 요청 받은 시간으로 부터 처음 실행될 때 까지의 시간 차를 의미 합니다.&#xA;2 - 오늘 다룰 CPU 스케쥴링의 종류는 다음과 같습니다.</description>
+    </item>
+    <item>
+      <title>Week08 WIL</title>
+      <link>https://donghyun-chae.github.io/docs/swjungle/wil/102/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donghyun-chae.github.io/docs/swjungle/wil/102/</guid>
+      <description>Week08 WIL # User Program # 유저 프로그램은 어떻게 실행될까? Arguments passing # 현재 pintos 는 cmd_line 을 그대로 파일 이름으로 쓰고 있어서&#xA;load 할 때 disk 에서 파일을 제대로 찾을 수 없다.&#xA;다음 그림과 같이 cmd_line 을 적절히 쪼개어 파일 이름과 인자를 구분해야한다.&#xA;char *argv[MAX_ARG_SIZE / 2 + 1]; int argc = 0; char *token; char *save_ptr; token = strtok_r(file_name, &amp;#34; &amp;#34;, &amp;amp;save_ptr); while (token != NULL) { argv[argc] = token; token = strtok_r(NULL, &amp;#34; &amp;#34;, &amp;amp;save_ptr); argc++; } → 이렇게 코드를 실행하면 file_name = “/bin/ls” argv = [&amp;quot;-l&amp;quot;, &amp;ldquo;foo&amp;rdquo;, &amp;ldquo;bar&amp;rdquo;] argc = 3 이렇게 쪼개진다.</description>
+    </item>
+  </channel>
+</rss>

@@ -17,11 +17,15 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://donghyun-chae.github.io/docs/swjungle/week07/</loc>
+    <loc>https://donghyun-chae.github.io/docs/swjungle/wil/101/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://donghyun-chae.github.io/docs/swjungle/week07/101/</loc>
+    <loc>https://donghyun-chae.github.io/docs/swjungle/wil/102/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://donghyun-chae.github.io/docs/swjungle/wil/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -272,6 +276,10 @@
   </url><url>
     <loc>https://donghyun-chae.github.io/categories/week01/</loc>
     <lastmod>2024-08-10T16:52:04+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://donghyun-chae.github.io/categories/week07/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
