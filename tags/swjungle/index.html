@@ -17,7 +17,7 @@
 <link rel="canonical" href="https://donghyun-chae.github.io/tags/swjungle/">
 <link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.ebd742c2ea1deaeb5e0cc4772fe33ad32007d807dc4ce252901b338157a0ef9b.js" integrity="sha256-69dCwuod6uteDMR3L&#43;M60yAH2AfcTOJSkBszgVeg75s=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.dc745b300e2e68effebfc1644dd7265d815e57188251da30a6cb4093b0c9dcc4.js" integrity="sha256-3HRbMA4uaO/&#43;v8FkTdcmXYFeVxiCUdowpstAk7DJ3MQ=" crossorigin="anonymous"></script>
 
   
     
@@ -748,6 +748,19 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/swjungle/wil/103/" class="">Week09 WIL</a>
+  
+
+        </li>
+      
+    
   </ul>
 
         </li>
@@ -840,7 +853,7 @@ https://github.com/alex-shpak/hugo-book
       
         <li class="flex justify-between">
           <a href="/categories/week01/">Week01</a>
-          <span>2</span>
+          <span>3</span>
         </li>
       
         <li class="flex justify-between">
@@ -864,7 +877,7 @@ https://github.com/alex-shpak/hugo-book
       
         <li class="flex justify-between">
           <a href="/tags/swjungle/">Swjungle</a>
-          <span>3</span>
+          <span>4</span>
         </li>
       
       </ul>
@@ -943,6 +956,36 @@ load 할 때 disk 에서 파일을 제대로 찾을 수 없다.
 다음 그림과 같이 cmd_line 을 적절히 쪼개어 파일 이름과 인자를 구분해야한다.
 char *argv[MAX_ARG_SIZE / 2 + 1]; int argc = 0; char *token; char *save_ptr; token = strtok_r(file_name, &#34; &#34;, &amp;save_ptr); while (token != NULL) { argv[argc] = token; token = strtok_r(NULL, &#34; &#34;, &amp;save_ptr); argc++; } → 이렇게 코드를 실행하면 file_name = “/bin/ls” argv = [&quot;-l&quot;, &ldquo;foo&rdquo;, &ldquo;bar&rdquo;] argc = 3 이렇게 쪼개진다.
         <a href="/docs/swjungle/wil/102/">...</a>
+      
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/docs/swjungle/wil/103/">Week09 WIL</a>
+    </h2>
+    
+
+
+  
+  <div>
+    
+      <a href="/categories/week01/">Week01</a>
+  </div>
+  
+
+  
+  <div>
+    
+      <a href="/tags/swjungle/">Swjungle</a>
+  </div>
+  
+
+
+
+
+    <p>Week09 WIL # Virtual memory in pintos # 핀토스에서 가상 메모리 구현도 Hash table 로 spt 구현하여 vm_entry(page) 관리하기 # bool spt_insert_page (struct supplemental_page_table *spt, struct page *page) { // int succ = false; /* TODO: Fill this function. */ /* NOTE: The beginning where custom code is added */ if (hash_insert(&amp;spt-&gt;pages, &amp;page-&gt;hash_elem) != NULL) { free(page); return false; } return true; /* NOTE: The end where custom code is added */ // return succ; } → spt insert 함수
+        <a href="/docs/swjungle/wil/103/">...</a>
       
     </p>
   </article>
@@ -1031,7 +1074,7 @@ char *argv[MAX_ARG_SIZE / 2 + 1]; int argc = 0; char *token; char *save_ptr; tok
       
         <li class="flex justify-between">
           <a href="/categories/week01/">Week01</a>
-          <span>2</span>
+          <span>3</span>
         </li>
       
         <li class="flex justify-between">
@@ -1055,7 +1098,7 @@ char *argv[MAX_ARG_SIZE / 2 + 1]; int argc = 0; char *token; char *save_ptr; tok
       
         <li class="flex justify-between">
           <a href="/tags/swjungle/">Swjungle</a>
-          <span>3</span>
+          <span>4</span>
         </li>
       
       </ul>
