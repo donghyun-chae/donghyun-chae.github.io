@@ -29,6 +29,13 @@
       <description>Week09 WIL # Virtual memory in pintos # 핀토스에서 가상 메모리 구현도 Hash table 로 spt 구현하여 vm_entry(page) 관리하기 # bool spt_insert_page (struct supplemental_page_table *spt, struct page *page) { // int succ = false; /* TODO: Fill this function. */ /* NOTE: The beginning where custom code is added */ if (hash_insert(&amp;amp;spt-&amp;gt;pages, &amp;amp;page-&amp;gt;hash_elem) != NULL) { free(page); return false; } return true; /* NOTE: The end where custom code is added */ // return succ; } → spt insert 함수</description>
     </item>
     <item>
+      <title>Week10 WIL</title>
+      <link>https://donghyun-chae.github.io/docs/swjungle/wil/104/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://donghyun-chae.github.io/docs/swjungle/wil/104/</guid>
+      <description>Week10 WIL # 1. PML4(페이지 맵 레벨 4) # 페이지 테이블 구조: PML4는 x86-64 아키텍처의 가상 메모리 관리에서 사용하는 페이지 테이블의 최상위 레벨입니다. PML4는 48비트 주소 공간을 사용하는 시스템에서 512개의 페이지 디렉토리 포인터를 가리킵니다.&#xA;계층 구조: PML4는 다음과 같은 계층 구조를 가지고 있습니다:&#xA;PML4(레벨 4)&#xA;PDP(페이지 디렉토리 포인터, 레벨 3)&#xA;PD(페이지 디렉토리, 레벨 2)&#xA;PT(페이지 테이블, 레벨 1)&#xA;이 계층 구조를 통해 커널은 가상 주소를 물리 주소로 변환할 수 있습니다.</description>
+    </item>
+    <item>
       <title>나를 돌아보는 시간 </title>
       <link>https://donghyun-chae.github.io/docs/swjungle/week01/101/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

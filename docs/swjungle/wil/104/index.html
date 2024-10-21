@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Week10 WIL # 1. PML4(페이지 맵 레벨 4) # 페이지 테이블 구조: PML4는 x86-64 아키텍처의 가상 메모리 관리에서 사용하는 페이지 테이블의 최상위 레벨입니다. PML4는 48비트 주소 공간을 사용하는 시스템에서 512개의 페이지 디렉토리 포인터를 가리킵니다.
+계층 구조: PML4는 다음과 같은 계층 구조를 가지고 있습니다:
+PML4(레벨 4)
+PDP(페이지 디렉토리 포인터, 레벨 3)
+PD(페이지 디렉토리, 레벨 2)
+PT(페이지 테이블, 레벨 1)
+이 계층 구조를 통해 커널은 가상 주소를 물리 주소로 변환할 수 있습니다.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://donghyun-chae.github.io/docs/swjungle/wil/104/">
+  <meta property="og:site_name" content="Dongle-log">
+  <meta property="og:title" content="Week10 WIL">
+  <meta property="og:description" content="Week10 WIL # 1. PML4(페이지 맵 레벨 4) # 페이지 테이블 구조: PML4는 x86-64 아키텍처의 가상 메모리 관리에서 사용하는 페이지 테이블의 최상위 레벨입니다. PML4는 48비트 주소 공간을 사용하는 시스템에서 512개의 페이지 디렉토리 포인터를 가리킵니다.
+계층 구조: PML4는 다음과 같은 계층 구조를 가지고 있습니다:
+PML4(레벨 4)
+PDP(페이지 디렉토리 포인터, 레벨 3)
+PD(페이지 디렉토리, 레벨 2)
+PT(페이지 테이블, 레벨 1)
+이 계층 구조를 통해 커널은 가상 주소를 물리 주소로 변환할 수 있습니다.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+  <meta property="article:section" content="docs">
+    <meta property="article:tag" content="Swjungle">
+<title>Week10 WIL | Dongle-log</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="canonical" href="https://donghyun-chae.github.io/docs/swjungle/wil/104/">
+<link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.c3c908f3bb20f1a272ed8d9d5a0291e11dbd3167ffa4e8be0f4d932b13a68dee.js" integrity="sha256-w8kI87sg8aJy7Y2dWgKR4R29MWf/pOi&#43;D02TKxOmje4=" crossorigin="anonymous"></script>
+
+  
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-P9T7P0F1VP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-P9T7P0F1VP');
+        }
+      </script>
+    
+  
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><img src="/logo.png" alt="Logo" /><span>Dongle-log</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-eae88e73edcc9dc8f420f11812970218" class="toggle"  />
+    <label for="section-eae88e73edcc9dc8f420f11812970218" class="flex justify-between">
+      <a role="button" class="">컴퓨터 공학</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-976ec6b153c84ecb9daec4b14f57cdd1" class="toggle"  />
+    <label for="section-976ec6b153c84ecb9daec4b14f57cdd1" class="flex justify-between">
+      <a role="button" class="">프로그래밍</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-56dc9c31c377262d8cfd0faf85b6b93f" class="toggle"  />
+    <label for="section-56dc9c31c377262d8cfd0faf85b6b93f" class="flex justify-between">
+      <a href="/docs/ComputerScience/Programming/SICP/" class="">컴퓨터 프로그램의 구조와 해석</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3a38039995da08de3317c24c5a322d48" class="toggle"  />
+    <label for="section-3a38039995da08de3317c24c5a322d48" class="flex justify-between">
+      <a role="button" class="">Chapter1</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/101/" class="">1.01 </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/102/" class="">1.02 </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/103/" class="">1.03</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/104/" class="">1.04</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/105/" class="">1.05 </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/106/" class="">1.06</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/107/" class="">1.07</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/108/" class="">1.08</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/109/" class="">1.09</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/110/" class="">1.10</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/111/" class="">1.11</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/112/" class="">1.12</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/113/" class="">1.13</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/114/" class="">1.14</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/115/" class="">1.15</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/116/" class="">1.16</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/117/" class="">1.17</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/118/" class="">1.18</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/119/" class="">1.19</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/120/" class="">1.20</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/121/" class="">1.21</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/122/" class="">1.22</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/123/" class="">1.23</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/124/" class="">1.24</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/125/" class="">1.25</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/126/" class="">1.26</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/127/" class="">1.27</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/128/" class="">1.28</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/129/" class="">1.29</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/130/" class="">1.30</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/131/" class="">1.31</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/132/" class="">1.32</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/133/" class="">1.33</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/134/" class="">1.34</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/135/" class="">1.35</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/ComputerScience/Programming/SICP/Chapter1/136/" class="">1.36</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2252be8c449429ddc53fb362d4884fac" class="toggle"  />
+    <label for="section-2252be8c449429ddc53fb362d4884fac" class="flex justify-between">
+      <a role="button" class="">수학</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8cfdfaf32f689ce7e3d2a6040ab1f66a" class="toggle" checked />
+    <label for="section-8cfdfaf32f689ce7e3d2a6040ab1f66a" class="flex justify-between">
+      <a role="button" class="">SW사관학교 정글</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a58482e814daa469d24ea8aeff8a45ec" class="toggle"  />
+    <label for="section-a58482e814daa469d24ea8aeff8a45ec" class="flex justify-between">
+      <a role="button" class="">WEEK01</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/swjungle/week01/101/" class="">나를 돌아보는 시간 </a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5096925bbdd1dd0e6e6ba9a5463e7a81" class="toggle" checked />
+    <label for="section-5096925bbdd1dd0e6e6ba9a5463e7a81" class="flex justify-between">
+      <a role="button" class="">WIL</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/swjungle/wil/101/" class="">Week07 WIL</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/swjungle/wil/102/" class="">Week08 WIL</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/swjungle/wil/103/" class="">Week09 WIL</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/swjungle/wil/104/" class="active">Week10 WIL</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/posts/"  >
+        Blog
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://github.com/donghyun-chae/"  target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Week10 WIL</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#week10-wil">Week10 WIL</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#1-pml4페이지-맵-레벨-4">1. PML4(페이지 맵 레벨 4)</a></li>
+            <li><a href="#2-mmu메모리-관리-유닛">2. MMU(메모리 관리 유닛)</a></li>
+            <li><a href="#mmap-의-매커니즘">mmap 의 매커니즘</a></li>
+            <li><a href="#munmap-의-구현">munmap 의 구현</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="week10-wil">
+  Week10 WIL
+  <a class="anchor" href="#week10-wil">#</a>
+</h1>
+<hr>
+<h3 id="1-pml4페이지-맵-레벨-4">
+  1. PML4(페이지 맵 레벨 4)
+  <a class="anchor" href="#1-pml4%ed%8e%98%ec%9d%b4%ec%a7%80-%eb%a7%b5-%eb%a0%88%eb%b2%a8-4">#</a>
+</h3>
+<blockquote>
+<p>페이지 테이블 구조: PML4는 x86-64 아키텍처의 가상 메모리 관리에서 사용하는 페이지 테이블의 최상위 레벨입니다. PML4는 48비트 주소 공간을 사용하는 시스템에서 512개의 페이지 디렉토리 포인터를 가리킵니다.<br>
+계층 구조: PML4는 다음과 같은 계층 구조를 가지고 있습니다:<br>
+PML4(레벨 4)<br>
+PDP(페이지 디렉토리 포인터, 레벨 3)<br>
+PD(페이지 디렉토리, 레벨 2)<br>
+PT(페이지 테이블, 레벨 1)<br>
+이 계층 구조를 통해 커널은 가상 주소를 물리 주소로 변환할 수 있습니다. 사용자가 프로그램을 실행할 때, 커널은 PML4를 사용하여 가상 주소를 찾아 해당하는 물리 페이지를 결정합니다.</p>
+</blockquote>
+<h3 id="2-mmu메모리-관리-유닛">
+  2. MMU(메모리 관리 유닛)
+  <a class="anchor" href="#2-mmu%eb%a9%94%eb%aa%a8%eb%a6%ac-%ea%b4%80%eb%a6%ac-%ec%9c%a0%eb%8b%9b">#</a>
+</h3>
+<blockquote>
+<p>하드웨어 지원: MMU는 CPU의 하드웨어 구성 요소로, 가상 주소를 물리 주소로 변환하는 작업을 수행합니다.<br>
+주소 변환: CPU가 가상 주소에 접근할 때 MMU는 PML4를 참조하여 적절한 페이지 테이블을 찾아 해당하는 물리 주소를 반환합니다.<br>
+페이지 폴트 처리: 만약 MMU가 요청된 가상 주소가 현재 유효한 페이지가 아닐 경우, 페이지 폴트를 발생시킵니다. 이 경우 커널이 페이지 폴트를 처리하고 필요한 페이지를 로드하여 페이지 테이블을 업데이트해야 합니다.<br>
+작업 흐름<br>
+프로세스가 가상 주소에 접근: 프로세스가 가상 주소에 접근하면 CPU는 MMU에 요청합니다.<br>
+MMU가 PML4를 사용하여 주소 변환: MMU는 PML4를 참조하여 해당 가상 주소의 물리 주소를 찾습니다.<br>
+페이지 폴트 발생 시 커널 개입: 요청된 페이지가 메모리에 없는 경우 페이지 폴트가 발생하고, 커널은 필요한 페이지를 메모리에 로드하고 페이지 테이블을 업데이트합니다.</p>
+</blockquote>
+<hr>
+<h3 id="mmap-의-매커니즘">
+  mmap 의 매커니즘
+  <a class="anchor" href="#mmap-%ec%9d%98-%eb%a7%a4%ec%bb%a4%eb%8b%88%ec%a6%98">#</a>
+</h3>
+<blockquote>
+<p>
+
+<p class="md__image">
+  <img
+    src="/img/swjungle/041.png"
+    style="max-width: 70%"
+    alt=""
+    
+  />
+</p>
+</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">/* Do the mmap */</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">do_mmap</span> (<span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>addr, <span style="color:#66d9ef">size_t</span> length, <span style="color:#66d9ef">int</span> writable, <span style="color:#66d9ef">struct</span> file <span style="color:#f92672">*</span>file, <span style="color:#66d9ef">off_t</span> offset) {
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">/* NOTE: The beginning where custom code is added */</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> (addr <span style="color:#f92672">==</span> NULL <span style="color:#f92672">||</span> (file <span style="color:#f92672">==</span> NULL) <span style="color:#f92672">||</span> (addr <span style="color:#f92672">+</span> length <span style="color:#f92672">&gt;=</span> KERN_BASE) <span style="color:#f92672">||</span> ((<span style="color:#66d9ef">long</span>)length <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">0</span>) <span style="color:#f92672">||</span> (<span style="color:#a6e22e">pg_round_down</span>(addr) <span style="color:#f92672">!=</span> addr))
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> NULL;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">struct</span> file <span style="color:#f92672">*</span>mmap_file <span style="color:#f92672">=</span> <span style="color:#a6e22e">file_reopen</span>(file);
+</span></span><span style="display:flex;"><span>  	<span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span> first_addr <span style="color:#f92672">=</span> addr;
+</span></span><span style="display:flex;"><span>  	<span style="color:#66d9ef">size_t</span> read_bytes <span style="color:#f92672">=</span> length <span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">file_length</span>(file) <span style="color:#f92672">?</span> <span style="color:#a6e22e">file_length</span>(file) <span style="color:#f92672">:</span> length;
+</span></span><span style="display:flex;"><span>  	<span style="color:#66d9ef">size_t</span> zero_bytes <span style="color:#f92672">=</span> PGSIZE <span style="color:#f92672">-</span> (read_bytes <span style="color:#f92672">%</span> PGSIZE);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">while</span> (read_bytes <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">||</span> zero_bytes <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>) {
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">size_t</span> page_read_bytes <span style="color:#f92672">=</span> read_bytes <span style="color:#f92672">&lt;</span> PGSIZE <span style="color:#f92672">?</span> read_bytes : PGSIZE;
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">size_t</span> page_zero_bytes <span style="color:#f92672">=</span> PGSIZE <span style="color:#f92672">-</span> page_read_bytes;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">struct</span> file_page <span style="color:#f92672">*</span>info <span style="color:#f92672">=</span> (<span style="color:#66d9ef">struct</span> file_page<span style="color:#f92672">*</span>)<span style="color:#a6e22e">malloc</span>(<span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">struct</span> file_page));
+</span></span><span style="display:flex;"><span>		info<span style="color:#f92672">-&gt;</span>file <span style="color:#f92672">=</span> mmap_file;
+</span></span><span style="display:flex;"><span>		info<span style="color:#f92672">-&gt;</span>offset <span style="color:#f92672">=</span> offset;
+</span></span><span style="display:flex;"><span>		info<span style="color:#f92672">-&gt;</span>page_read_bytes <span style="color:#f92672">=</span> page_read_bytes;
+</span></span><span style="display:flex;"><span>		info<span style="color:#f92672">-&gt;</span>page_zero_bytes <span style="color:#f92672">=</span> page_zero_bytes;
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">vm_alloc_page_with_initializer</span> (VM_FILE, addr, writable, lazy_load_segment_mmap, info)) {
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">return</span> NULL;
+</span></span><span style="display:flex;"><span>    	}
+</span></span><span style="display:flex;"><span>		read_bytes <span style="color:#f92672">-=</span> page_read_bytes;
+</span></span><span style="display:flex;"><span>		zero_bytes <span style="color:#f92672">-=</span> page_zero_bytes;
+</span></span><span style="display:flex;"><span>		addr <span style="color:#f92672">+=</span> PGSIZE;
+</span></span><span style="display:flex;"><span>		offset <span style="color:#f92672">+=</span> page_read_bytes;
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> first_addr;
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">/* NOTE: The end where custom code is added */</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><blockquote>
+<p>mmap 으로 할당한 페이지는 VM_FILE 페이지다.
+할당을 해도 프로세스가 해당 va 로 접근하여 page fault 가 발생하기 전까지는 load 되지 않는 lazy_load 방식으로 구현하였다.</p>
+</blockquote>
+<h3 id="munmap-의-구현">
+  munmap 의 구현
+  <a class="anchor" href="#munmap-%ec%9d%98-%ea%b5%ac%ed%98%84">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">/* 파일 매핑된 페이지를 정리하고 필요시 디스크에 쓰는 함수 */</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">bool</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">file_cleanup</span>(<span style="color:#66d9ef">struct</span> page <span style="color:#f92672">*</span>page) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">ASSERT</span>(page <span style="color:#f92672">!=</span> NULL);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">ASSERT</span>(page<span style="color:#f92672">-&gt;</span>operations<span style="color:#f92672">-&gt;</span>type <span style="color:#f92672">==</span> VM_FILE);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">struct</span> file <span style="color:#f92672">*</span>file <span style="color:#f92672">=</span> page<span style="color:#f92672">-&gt;</span>file.file;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">size_t</span> write_bytes <span style="color:#f92672">=</span> page<span style="color:#f92672">-&gt;</span>file.page_read_bytes;  <span style="color:#75715e">// 실제 써야 할 크기
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">bool</span> success <span style="color:#f92672">=</span> true;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (page<span style="color:#f92672">-&gt;</span>frame) {  <span style="color:#75715e">// 프레임이 있는 경우만 처리
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">// 페이지가 더럽혀졌고 쓰기 가능한 경우만 디스크에 쓰기
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">pml4_is_dirty</span>(<span style="color:#a6e22e">thread_current</span>()<span style="color:#f92672">-&gt;</span>pml4, page<span style="color:#f92672">-&gt;</span>va) <span style="color:#f92672">&amp;&amp;</span>
+</span></span><span style="display:flex;"><span>            page<span style="color:#f92672">-&gt;</span>writable) {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">file_seek</span>(file, page<span style="color:#f92672">-&gt;</span>file.offset);
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">file_write_at</span>(file, page<span style="color:#f92672">-&gt;</span>frame<span style="color:#f92672">-&gt;</span>kva,
+</span></span><span style="display:flex;"><span>                write_bytes, page<span style="color:#f92672">-&gt;</span>file.offset) <span style="color:#f92672">!=</span> write_bytes) {
+</span></span><span style="display:flex;"><span>                success <span style="color:#f92672">=</span> false;
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">pml4_clear_page</span>(<span style="color:#a6e22e">thread_current</span>()<span style="color:#f92672">-&gt;</span>pml4, page<span style="color:#f92672">-&gt;</span>va);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (page<span style="color:#f92672">-&gt;</span>frame<span style="color:#f92672">-&gt;</span>frame_elem.next <span style="color:#f92672">!=</span> NULL) {  <span style="color:#75715e">// 리스트에 있는 경우만
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#a6e22e">list_remove</span>(<span style="color:#f92672">&amp;</span>page<span style="color:#f92672">-&gt;</span>frame<span style="color:#f92672">-&gt;</span>frame_elem);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> success;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* Do the munmap */</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">do_munmap</span>(<span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>addr) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (addr <span style="color:#f92672">==</span> NULL <span style="color:#f92672">||</span> <span style="color:#a6e22e">pg_round_down</span>(addr) <span style="color:#f92672">!=</span> addr) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> false;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">struct</span> <span style="color:#66d9ef">thread</span> <span style="color:#f92672">*</span>curr <span style="color:#f92672">=</span> <span style="color:#a6e22e">thread_current</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">struct</span> supplemental_page_table <span style="color:#f92672">*</span>spt <span style="color:#f92672">=</span> <span style="color:#f92672">&amp;</span>curr<span style="color:#f92672">-&gt;</span>spt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 첫 페이지로 파일 정보 확인
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">struct</span> page <span style="color:#f92672">*</span>first_page <span style="color:#f92672">=</span> <span style="color:#a6e22e">spt_find_page</span>(spt, addr);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (first_page <span style="color:#f92672">==</span> NULL <span style="color:#f92672">||</span> first_page<span style="color:#f92672">-&gt;</span>operations<span style="color:#f92672">-&gt;</span>type <span style="color:#f92672">!=</span> VM_FILE) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> false;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">struct</span> file <span style="color:#f92672">*</span>file <span style="color:#f92672">=</span> first_page<span style="color:#f92672">-&gt;</span>file.file;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">off_t</span> file_size <span style="color:#f92672">=</span> <span style="color:#a6e22e">file_length</span>(file);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>cur_addr <span style="color:#f92672">=</span> addr;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">bool</span> success <span style="color:#f92672">=</span> true;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 파일 크기만큼 페이지 순회하며 정리
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">while</span> (file_size <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">struct</span> page <span style="color:#f92672">*</span>page <span style="color:#f92672">=</span> <span style="color:#a6e22e">spt_find_page</span>(spt, cur_addr);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (page <span style="color:#f92672">==</span> NULL <span style="color:#f92672">||</span> page<span style="color:#f92672">-&gt;</span>operations<span style="color:#f92672">-&gt;</span>type <span style="color:#f92672">!=</span> VM_FILE) {
+</span></span><span style="display:flex;"><span>            success <span style="color:#f92672">=</span> false;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// 페이지 정리 및 디스크 쓰기
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">file_cleanup</span>(page)) {
+</span></span><span style="display:flex;"><span>            success <span style="color:#f92672">=</span> false;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// 물리 메모리 해제
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#66d9ef">if</span> (page<span style="color:#f92672">-&gt;</span>frame) {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> (page<span style="color:#f92672">-&gt;</span>frame<span style="color:#f92672">-&gt;</span>kva) {
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">palloc_free_page</span>(page<span style="color:#f92672">-&gt;</span>frame<span style="color:#f92672">-&gt;</span>kva);
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">free</span>(page<span style="color:#f92672">-&gt;</span>frame);  <span style="color:#75715e">// 프레임 구조체 해제
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// SPT에서 페이지 제거
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">spt_remove_page</span>(spt, page);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// 다음 페이지 주소로 이동
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        cur_addr <span style="color:#f92672">+=</span> PGSIZE;
+</span></span><span style="display:flex;"><span>        file_size <span style="color:#f92672">-=</span> (file_size <span style="color:#f92672">&gt;=</span> PGSIZE) <span style="color:#f92672">?</span> PGSIZE : file_size;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> success;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><hr>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/donghyun-chae//edit/main/exampleSite/content/docs/swjungle/wil/104.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+<script
+  src="https://utteranc.es/client.js"
+  repo="donghyun-chae/donghyun-chae.github.io"
+  issue-term="pathname"
+  theme="preferred-color-scheme"
+  crossorigin="anonymous"
+  async
+></script>
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#week10-wil">Week10 WIL</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#1-pml4페이지-맵-레벨-4">1. PML4(페이지 맵 레벨 4)</a></li>
+            <li><a href="#2-mmu메모리-관리-유닛">2. MMU(메모리 관리 유닛)</a></li>
+            <li><a href="#mmap-의-매커니즘">mmap 의 매커니즘</a></li>
+            <li><a href="#munmap-의-구현">munmap 의 구현</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
