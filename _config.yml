@@ -21,7 +21,7 @@ title: "Dongle"
 description: "관심 가는 주제로 글을 쓰고 있습니다."
 baseurl: ""
 url: "https://donghyun-chae.github.io"
-logo: "/images/logo.jpg"
+logo: "/images/duck-logo.jpg"
 date_format: "%B %-d, %Y"
 read_time: true
 words_per_minute: 200
@@ -30,11 +30,9 @@ mathjax:
   combo: "tex-svg"
   tags:  "ams"
 
-google_fonts:
-  - name: "Nanum Myeongjo"
-    weights: "400,700"
-  - name: "Nanum Gothic"
-    weights: "400,700"
+# google_fonts:
+#   - name: "Pretendard"
+#     weights: "400,700"
     
 google_analytics: # Google Analytics id, e.g. "UA-NNNNNNNN-N"
 disqus:
