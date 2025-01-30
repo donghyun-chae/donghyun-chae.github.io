@@ -1,10 +1,21 @@
 ---
-title: "첫 번째 포스트"
-categories:
-  - Blog
-tags:
-  - Jekyll
-  - Update
+layout: post
+title: "Math Test"
 ---
 
-첫 번째 블로그 포스트입니다.
+Inline math: $E = mc^2$
+
+Display math:
+
+$$
+\begin{align*}
+\frac{\partial f}{\partial x} &= 2x \\
+\frac{\partial f}{\partial y} &= 2y
+\end{align*}
+$$
+
+Or using equation environment:
+
+\begin{equation}
+\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}
+\end{equation}
